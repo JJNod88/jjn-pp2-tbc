@@ -16,30 +16,11 @@ let scissorsIcon = document.getElementById('scissors');
 
 
 
-
-/** 
- * I needed to iterate through the choices in an array that returned a value.
- * I did math floor for a whole integer, and random * 3 (the number of possible choices)
- * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
- */
- function computerChoices() {
-    let choiceArray = ['rock', 'paper', 'scissors'];
-        let randomNumber = Math.floor(Math.random() * 3); 
-            return choiceArray[randomNumber];
-}
-console.log(computerChoices());
-
-
-// linking my clicks with the buttons 
-function theGame(userClicks) {
-}
-
-
 /**
  * I have added event listener to each of the main elements. 
- * using 'the game('element')' it then passes the value of each to the main game function
+ * using 'thegame('element')' it then passes the value of each to thegame function
  */
-function mainEListeners() {
+ function mainEListeners() {
     rockIcon.addEventListener('click', function() {
         theGame('rock');
     });
@@ -52,6 +33,30 @@ function mainEListeners() {
 }
 
 mainEListeners();
+
+
+// linking my clicks with each of the 3 icons. Added userclicks in my parenthese here
+function theGame(userClicks) {
+    let computerChooses = setChoices();
+    console.log('user choice ' + userClicks)
+    console.log('computer chooses ' + computerChooses);
+};
+
+
+/** 
+ * I needed to iterate through the choices in an array that returned some form of value.
+ * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
+ * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
+ */
+ function setChoices() {
+    let choiceArray = ['rock', 'paper', 'scissors'];
+        let randomNumber = Math.floor(Math.random() * 3); 
+            return choiceArray[randomNumber];
+}
+console.log(setChoices());
+
+
+
 
 
 

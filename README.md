@@ -29,6 +29,7 @@ it consists of a header element, game area, score area and a feedback form where
 credits
 CloudConvert for webp converter imagecompressor.com to reduce image size
 w3schools for switch and case statements - provided a good basis for my main games win / lose capability.
+lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
 
 bugs
 My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 
@@ -40,3 +41,4 @@ bug. My concole log for the rock paper scissor iteration using math.floor & rand
 fix:
 
 my let array for my rock paper scissors in my computerChopices was declared but valiue was never read
+fix: i hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
