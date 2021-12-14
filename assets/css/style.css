@@ -40,7 +40,7 @@ h1 {
 
 #game-area {
     display: flex;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 #rock {
@@ -89,18 +89,26 @@ h1 {
     background-color: yellow;
 }
 
+/* result section */
+#result-section {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 900;
+    padding-top: 2%;
+}
+
 /* score section */
 #score-area {
     display: flex;
     text-align: center;
     font-size: 130%;
     font-weight: 900;
-    padding-top: 5%;
+    padding-top: 3%;
+    flex-direction: column;
 }
 
 #userScore {
     flex: 1;
-    padding: 1%;
 }
 
 #computerScore {
@@ -112,7 +120,7 @@ h1 {
     color: green;
 }
 
-#computerScoreDigit {
+#compScoreDigit {
     color: red;
 }
 
