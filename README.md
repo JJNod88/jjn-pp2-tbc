@@ -32,3 +32,6 @@ w3schools for switch and case statements - provided a good basis for my main gam
 
 bugs
 My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 
+
+In my event listeners, i tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
+fix: I hadnt actually created the function, so it was displaying 'theGame is not defined;

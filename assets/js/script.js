@@ -20,31 +20,46 @@ let scissorsIcon = document.getElementById('scissors');
  * I did math floor for a whole integer, and random * 3 (the number of possible choices)
  * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
  */
+
+
+
+/**
+ * I have added event listener to each of the main elements. 
+ * using 'the game('element')' it then passes the value of each to the main game function
+ */
+function mainEListeners() {
+    rockIcon.addEventListener('click', function() {
+        theGame('rock');
+    });
+    paperIcon.addEventListener('click', function() {
+        theGame('paper');
+    });
+    scissorsIcon.addEventListener('click', function() {
+        theGame('scissors');
+    });
+}
+
+mainEListeners() 
+
+
+
+// linking my clicks with the buttons 
+function theGame(userClicks) {
+    console.log(' hey hey ' + userClicks);
+}
+
 function computerChoices() {
     let userChoices = ['rock', 'paper', 'scissors'];
     let randomNumber = Math.floor(Math.random() * 3);
         return userChoices[randomNumber];
 }
 
-/**
- * I have added event listener to each of the main elements. 
- * using 'the game('element')' it then passes the value of each to the main game function
- */
-    rockIcon.addEventListener('click', function() {
-        console.log('You clicked Rock');
-    });
-    paperIcon.addEventListener('click', function() {
-        console.log('You clicked Paper');
-    });
-    scissorsIcon.addEventListener('click', function() {
-        console.log('You clicked Scissors');
-    });
 
 
 /** 
  * This is my attempt at the logic. I used switch and case for the 
  */
-function mainGame(userChoices) {
+function hjuh(userChoices) {
     let computerChoice = computerChoices();
     // win
         switch (userChoices + computerChoice) {
@@ -62,6 +77,9 @@ function mainGame(userChoices) {
                 console.log('Draw! Close one.')
         }
 }
+
+
+
 
 // function for collating the score when user wins
 function userWin() {
