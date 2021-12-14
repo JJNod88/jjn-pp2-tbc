@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* body and top level css */
+
+body {
+    background: lightgray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+    margin: auto;
+    padding: 3%;
+}
+
+/* header css */
+
+#main-header {
+    height: 3em;
+    width: 100%;
+    position: fixed;
+}
+
+#nav-header {
+    font-size: 150%;
+    z-index: 999;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+/* Game Section */
+
+#game-area {
+    height: 600px;
+    display: flex;
+}
+
+#player-card {
+    flex: 1;
+    background-color: rgb(103, 128, 159);
+    margin: 1% 7%;
+    border: 1px solid rgb(103, 128, 159);
+    border-radius: 15%;
+}
+
+#computer-card {
+    flex: 1;
+    background-color: red;
+    margin: 1% 7%;
+    border: 1px solid red;
+    border-radius: 15%;
+}
+
+#attributeArea {
+    margin: 27rem 0;
+    text-align: center;
+    font-size: 150%;
+} 
+
+#attributeArea p {
+    font-weight: bold;
+}
+
+#attributeArea button {
+    border: 1px solid black;
+    letter-spacing: 2px;
+    padding: 2% 4%;
+    font-size: 80%;
+}
+
+.userSelector:hover {
+    background-color: yellow;
+}
+
+/* score section */
+#score-area {
+    height: 50px;
+    display: flex;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 900;
+}
+
+#userScore {
+    flex: 1;
+    padding: 1%;
+}
+
+#computerScore {
+    flex: 1;
+    padding: 1%;
+}
+
+#userScoreDigit {
+    color: green;
+}
+
+#computerScoreDigit {
+    color: red;
+}
+
+/* footer */
+#footer {
+    height: 2em;
+    font-size: 150%;
+    text-align: center;
+    position: relative;
+    z-index: 998;
+    padding: 3%;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
