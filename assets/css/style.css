@@ -98,7 +98,7 @@ h1 {
 }
 
 /* score section */
-#score-area {
+.score-area {
     display: flex;
     text-align: center;
     font-size: 130%;
