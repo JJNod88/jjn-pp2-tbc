@@ -30,6 +30,7 @@ credits
 CloudConvert for webp converter imagecompressor.com to reduce image size
 w3schools for switch and case statements - provided a good basis for my main games win / lose capability.
 lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
+https://www.javatpoint.com/if-else-vs-switch - this helped me decide and use the switch case instead of if else 
 
 bugs
 My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 

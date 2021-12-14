@@ -38,8 +38,12 @@ mainEListeners();
 // linking my clicks with each of the 3 icons. Added userclicks in my parenthese here
 function theGame(userClicks) {
     let computerChooses = setChoices();
-    console.log('user choice ' + userClicks)
-    console.log('computer chooses ' + computerChooses);
+        if (userClicks === computerChooses) {
+            console.log('it ws a draw') 
+        } else if (userClicks
+
+        )
+        }
 };
 
 
