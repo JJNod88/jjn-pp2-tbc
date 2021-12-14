@@ -24,10 +24,10 @@ let scissorsIcon = document.getElementById('scissors');
  */
  function computerChoices() {
     let choiceArray = ['rock', 'paper', 'scissors'];
-        console.log(Math.floor(Math.random() * 3)); 
+        let randomNumber = Math.floor(Math.random() * 3); 
+            return choiceArray[randomNumber];
 }
-
-computerChoices();
+console.log(computerChoices());
 
 
 // linking my clicks with the buttons 
