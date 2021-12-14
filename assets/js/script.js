@@ -15,12 +15,24 @@ let paperIcon = document.getElementById('paper');
 let scissorsIcon = document.getElementById('scissors');
 
 
+
+
 /** 
- * Main function. I needed to iterate through the choices in an array that returned a value.
+ * I needed to iterate through the choices in an array that returned a value.
  * I did math floor for a whole integer, and random * 3 (the number of possible choices)
  * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
  */
+ function computerChoices() {
+    let choiceArray = ['rock', 'paper', 'scissors'];
+        console.log(Math.floor(Math.random() * 3)); 
+}
 
+computerChoices();
+
+
+// linking my clicks with the buttons 
+function theGame(userClicks) {
+}
 
 
 /**
@@ -39,52 +51,13 @@ function mainEListeners() {
     });
 }
 
-mainEListeners() 
-
-
-
-// linking my clicks with the buttons 
-function theGame(userClicks) {
-    console.log(' hey hey ' + userClicks);
-}
-
-function computerChoices() {
-    let userChoices = ['rock', 'paper', 'scissors'];
-    let randomNumber = Math.floor(Math.random() * 3);
-        return userChoices[randomNumber];
-}
-
-
-
-/** 
- * This is my attempt at the logic. I used switch and case for the 
- */
-function hjuh(userChoices) {
-    let computerChoice = computerChoices();
-    // win
-        switch (userChoices + computerChoice) {
-            case    'paperrock':
-            case    'rockscissors':
-            case    'scissorspaper':
-                console.log('Awesome, you won')
-            case    'rockpaper':
-            case    'paperscissors':
-            case    'scissorsrock':
-                console.log('Oh no, you lost. Better look next time!')
-            case    'rockrock':
-            case    'scissorscissor':
-            case    'paperpaper':
-                console.log('Draw! Close one.')
-        }
-}
+mainEListeners();
 
 
 
 
-// function for collating the score when user wins
-function userWin() {
-}
 
-// function for collating the score when computer wins
-function computerWin() {
-}
+
+
+
+

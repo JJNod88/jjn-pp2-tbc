@@ -35,3 +35,8 @@ My three main elements of rock, paper and scissors were in global Lets. when i f
 
 In my event listeners, i tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
 fix: I hadnt actually created the function, so it was displaying 'theGame is not defined;
+
+bug. My concole log for the rock paper scissor iteration using math.floor & random was not giving me a number
+fix:
+
+my let array for my rock paper scissors in my computerChopices was declared but valiue was never read
