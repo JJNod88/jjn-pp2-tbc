@@ -75,19 +75,28 @@ console.log(setChoices())
 userClicks();
 
 
-function checkAnswer() {
+function userDraws() {
+    console.log('User Drew')
+}
+
+function userWins() {
+    console.log('User Win')
 
 }
 
+function userLoses() {
+    console.log('User Lost')
+}
+
 /**
- * This is the logic behind my game. Rock beats scissors etc.
+ * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
  */
 function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
             result = 'Draw!';
             resultDiv = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
-            console.log('User Drew');
+            userDraws();
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
@@ -97,7 +106,7 @@ function theGame(userClicks) {
         } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
-            console.log('User Win')
+            userWins();
         } else {
             if (userClicks === 'rock' && (computerChooses === 'paper')) {
                 result = 'You lost';
@@ -108,7 +117,7 @@ function theGame(userClicks) {
             } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
                 result = 'You lost';
                 resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
-                console.log('User Lost');
+                userLoses();
             }
         }
     }
