@@ -36,6 +36,16 @@ h1 {
     font-weight: 900;
 }
 
+/* rules and play section */
+#rules {
+    text-align: center;
+}
+
+#rulesButton {
+    font-size: 100%;
+    padding: 1%;
+}
+
 /* Game Section */
 
 #game-area {

@@ -2,18 +2,17 @@ console.log('hey');
 
 
 // These lets are my storage variable
-let userScore = 0;
+var userScore = 0;
 let userScored = document.getElementById('userScoreDigit');
-let computerScore = 0;
+var computerScore = 0;
 let compScored = document.getElementById('compScoreDigit'); 
 // Used a query selector to get the first element
 let scoreBoardDiv = document.querySelector('.score-area');
-let resultDiv = document.querySelector('.result-section');
+var resultDiv = document.querySelector('.result-section');
 // Needed to obtain the 3 main elements for playing the game. I did this putting them in "let"
 let rockIcon = document.getElementById('rock');
 let paperIcon = document.getElementById('paper');
 let scissorsIcon = document.getElementById('scissors');
-
 
 
 /**
@@ -35,16 +34,36 @@ let scissorsIcon = document.getElementById('scissors');
 mainEListeners();
 
 
-// linking my clicks with each of the 3 icons. Added userclicks in my parenthese here
+// linking my clicks with each of the 3 icons which competes with the computers random choice
 function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
-            console.log('it ws a draw') 
-        } else if (userClicks
-
-        )
+            result = 'Draw!';
+            resultDiv = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
+            console.log(theGame);
+        } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
+            result = 'You Won!';
+            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+        } else if (userClicks === 'scissors' && (computerChooses === 'paper')) {
+            result = 'You Won!';
+            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+        } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
+            result = 'You Won!';
+            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+        } else {
+            if (userClicks === 'rock' && (computerChooses === 'paper')) {
+                result = 'You lost';
+                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
+            } else if (userClicks === 'paper' && (computerChooses === 'scissors')) {
+                result = 'You lost';
+                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
+            } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
+                result = 'You lost';
+                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
+            }
         }
 };
+theGame()
 
 
 /** 
@@ -57,16 +76,4 @@ function theGame(userClicks) {
         let randomNumber = Math.floor(Math.random() * 3); 
             return choiceArray[randomNumber];
 }
-console.log(setChoices());
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(setChoices())
