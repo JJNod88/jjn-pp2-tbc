@@ -1,18 +1,26 @@
 console.log('hey');
 
 
-// These lets are my storage variable
+// These lets are my storage variables
 var userScore = 0;
 let userScored = document.getElementById('userScoreDigit');
 var computerScore = 0;
 let compScored = document.getElementById('compScoreDigit'); 
-// Used a query selector to get the first element
-let scoreBoardDiv = document.querySelector('.score-area');
-var resultDiv = document.querySelector('.result-section');
-// Needed to obtain the 3 main elements for playing the game. I did this putting them in "let"
-let rockIcon = document.getElementById('rock');
-let paperIcon = document.getElementById('paper');
-let scissorsIcon = document.getElementById('scissors');
+let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
+let resultDiv = document.querySelector('.result-section');
+let rockIcon = document.getElementById('rock'); // User Clicks
+let paperIcon = document.getElementById('paper'); // User Clicks
+let scissorsIcon = document.getElementById('scissors'); // User Clicks
+let result;
+let buttons = document.getElementsByTagName('buttons') // buttons
+
+
+// Added event listeners for the buttons once the dom has loaded
+document.addEventListener("DOMContentLoaded", function () {
+
+    for (let button of buttons)
+        button.addEventListener("click", function () {
+            if (this.getAttribute('data-type') === "rules-btn") {
 
 
 /**

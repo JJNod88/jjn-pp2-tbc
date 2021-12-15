@@ -51,52 +51,53 @@ h1 {
 #game-area {
     display: flex;
     padding-top: 2%;
-}
-
-#rock {
-    flex: 1;
-    margin: 1%;
-    text-align: right;
-
-}
-
-#paper {
-    flex: 1;
-    margin: 1%;
-    text-align: center;
-}
-
-#scissors {
-    flex: 1;
-    margin: 1%;
-    text-align: left;
-}
-
-.far {
-    font-size: 1500%;
-    text-align: center;
     justify-content: center;
 }
 
-#buttonArea {
+#game-area button {
+    margin: 2%;
+    padding: 2%;
+    font-size: 500%;
+}
+
+.btn:focus {
+    outline: none;
+}
+.btn-red{
+    color: red;
+    border-color: red;
+    border-radius: 50%;
     text-align: center;
-    font-size: 110%;
-    margin: 1rem;
-} 
-
-#buttonArea p {
-    font-weight: bold;
 }
 
-#buttonArea button {
-    border: 1px solid black;
-    letter-spacing: 2px;
-    padding: 1% 3%;
-    font-size: 100%;
+.btn-red:active,
+.btn-red:hover {
+    background-color: red;
+    color: white;
 }
 
-.userSelector:hover {
-    background-color: yellow;
+.btn-green{
+    color: green;
+    border-color: green;
+    border-radius: 50%;
+}
+
+.btn-green:active,
+.btn-green:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn-blue{
+    color: blue;
+    border-color: blue;
+    border-radius: 50%;
+}
+
+.btn-blue:active,
+.btn-blue:hover {
+    background-color: blue;
+    color: white;
 }
 
 /* result section */
