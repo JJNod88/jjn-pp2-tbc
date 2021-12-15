@@ -43,3 +43,5 @@ fix:
 
 my let array for my rock paper scissors in my computerChopices was declared but valiue was never read
 fix: i hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
+
+bug: added event listener to my button, added inner.html to my rule that on click, it shows all of the rules in js html. But, when i click rule, nothing happens, 

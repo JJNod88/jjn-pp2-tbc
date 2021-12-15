@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute('data-type') === "rules-btn") {
                 let rulesDiv = document.getElementById('gameRules');
-                rulesDiv = `
+                rulesDiv.innerHTML = (`
                 <h2>Here is how to play our simple game:</h2>
                 <ol>
                     <li>Below are three choices of Rock, Paper and Scissors</li>
@@ -37,16 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li>Each winner receives a point. The first to 5 points wins!</li>
                 </ol>
                 <p>Good luck, and enjoy!</p>
-                `;
-            }
-        }
-    };
+                `);
+                document.body.insertBefore(gameRules, rulesDiv);
+            }  else {
+                theGame();
+            };
+        });
+
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
  * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
- */
- function setChoices() {
+ **/
+
+function setChoices() {
     let choiceArray = ['rock', 'paper', 'scissors'];
         let randomNumber = Math.floor(Math.random() * 3); 
             return choiceArray[randomNumber];
@@ -57,7 +61,7 @@ console.log(setChoices())
  * I have added event listener to each of the main elements. 
  * using 'thegame('element')' it then passes the value of each to thegame function
  */
- function userSelectors() {
+ function userClicks() {
     rockIcon.addEventListener('click', function() {
         theGame('rock');
     });
@@ -68,7 +72,7 @@ console.log(setChoices())
         theGame('scissors');
     });
 };
-userSelectors();
+userClicks();
 
 
 function checkAnswer() {
@@ -76,7 +80,6 @@ function checkAnswer() {
 }
 
 /**
- * 
  * This is the logic behind my game. Rock beats scissors etc.
  */
 function theGame(userClicks) {
@@ -84,7 +87,7 @@ function theGame(userClicks) {
         if (userClicks === computerChooses) {
             result = 'Draw!';
             resultDiv = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
-            console.log(theGame);
+            console.log('User Drew');
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
@@ -94,6 +97,7 @@ function theGame(userClicks) {
         } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+            console.log('User Win')
         } else {
             if (userClicks === 'rock' && (computerChooses === 'paper')) {
                 result = 'You lost';
@@ -104,19 +108,8 @@ function theGame(userClicks) {
             } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
                 result = 'You lost';
                 resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
+                console.log('User Lost');
             }
         }
-};
-theGame()
-
-
-
-
-function addUserScore() {
-
-}
-
-
-function addCompScore() {
-
-}
+    }
+});
