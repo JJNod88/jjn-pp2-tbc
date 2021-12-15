@@ -1,47 +1,78 @@
 ReadMe for Jon's new project 2, javaScript
 
-Introduction
-Value
-UX
-Accessibility
-Responsiveness
-Features
-Technologies
-Validation
-Testing
-Deployment
-Credits
-introduction
+* Introduction
+* Value
+* UX
+* Accessibility
+* Responsiveness
+* Features
+* Technologies
+* Validation
+* Testing
+* Deployment
+* Credits
 
+
+
+# Introduction
 The site has been built to host the iconic Rock, Paper Scissor game.
 The user can choose which element they want to choose in hopes of beating the comoputer. 
 A score will be kept depending on the result of each round.
 
+# Value
 
-ux
+
+# UX
 Accessibility
 Responsiveness
 features
 Card game style battle using the Top trumpz method of choosing your cards best ability to overpower your competitors.
 it consists of a header element, game area, score area and a feedback form where you can requests new heroes to be added.
 
+# Accessibility
 
-credits
-CloudConvert for webp converter imagecompressor.com to reduce image size
-w3schools for switch and case statements - provided a good basis for my main games win / lose capability.
-lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
-https://www.javatpoint.com/if-else-vs-switch - this helped me decide and use the switch case instead of if else 
+# Responsiveness
 
-bugs
-My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 
+# Features
+The website comprises a number of features that make it entuitive, usable and fun
 
-In my event listeners, i tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
-fix: I hadnt actually created the function, so it was displaying 'theGame is not defined;
+# Credits
+* CloudConvert for webp converter imagecompressor.com to reduce image size
+* lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
+* I utilised the [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) resources to boost my knowledge of functions and how to structure them
 
-bug. My concole log for the rock paper scissor iteration using math.floor & random was not giving me a number
-fix:
+# Testing
+JS ConsoleLog tests:
+* Button array within the Dom Loader, including innerHTML addition to the 'Rules div'
+    * console.log tested to see if it was showing....
+* Random choice array for each of the three main choices (rock, paper, scissors).
+    * console.log tested a random number to ensure the Math was working up to 3 - success
+* Event Listener for rock paper scissor. console.log(rock or paper or scissor). 
+    * Replaced by function = theGame()
+* console.log for the game logic. Testing user choice vs computer choice
+    * Replaced by the functions = userDraws(), userWins(), userLoses()
+    * console.log tested these - success.
+* 
 
-my let array for my rock paper scissors in my computerChopices was declared but valiue was never read
-fix: i hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
+# Bugs
+1. My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 
+    * 
 
-bug: added event listener to my button, added inner.html to my rule that on click, it shows all of the rules in js html. But, when i click rule, nothing happens, 
+2. In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
+    * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
+
+3. My console log for the rock, paper scissor iteration using math.floor & random was not giving me a number
+
+4. My let array for my rock paper scissors in my setChoices was declared but valiue was never read, it was greyed out.
+    * fix: I hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
+    * This was something i learned during my coding. At first, seeing grey made me think I had made a mistale, but on reflection things are grey because they havent been declared, called etc.
+
+5. Added event listener to my button, added inner.html to my 'rules infromation div' that on click, it shows all of the 'game rules'  in js html. But, when i click rule, nothing happen. I am keeping this as i want this to run from JS and not be set in the index.html file.
+    * 
+
+
+# Technologies
+Three technologies were used to build the interactive front-website website:
+* HTML for the structure
+* CSS for the design
+* JavaScript for the interactivity and DOM manipulation.
