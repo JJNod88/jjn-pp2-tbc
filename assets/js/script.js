@@ -14,7 +14,7 @@ let userScored = document.getElementById('userScoreDigit'); // User score displa
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
-let resultDiv = document.getElementById('resultUpdate');
+let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
 
 
 
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute('data-type') === "rules-btn") {
                 let rulesDiv = document.getElementById('gameRules');
                 rulesDiv.innerHTML = (`
+                <div id="newRulesDiv> 
                 <h2>Here is how to play our simple game:</h2>
                 <ol>
                     <li>Below are three choices of Rock, Paper and Scissors</li>
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li>Each winner receives a point. The first to 5 points wins!</li>
                 </ol>
                 <p>Good luck, and enjoy!</p>
+                </div>
                 `);
                 document.body.insertBefore(gameRules, rulesDiv);
             }  else {
@@ -79,7 +81,7 @@ userClicks();
  */
 function userDraws(userClicks) {
     console.log('User Draws');
-    resultDiv.innerHTML = `A Draw! you both chose ${userClicks}. Keep going!`;
+    resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
 
 }
 
@@ -127,4 +129,3 @@ function theGame(userClicks) {
         }
     }
 });
-thegame();
