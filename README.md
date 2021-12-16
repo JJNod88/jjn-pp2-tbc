@@ -17,24 +17,23 @@ ReadMe for Jon's new project 2, javaScript
 # Introduction
 The site has been built to host the iconic Rock, Paper Scissor game.
 The user can choose which element they want to choose in hopes of beating the comoputer. 
-A score will be kept depending on the result of each round.
+A score will be kept depending on the result of each round - When a user reaches 10 before the computer, a second more challenging game is accessible.
 
 # Value
 
-
 # UX
-Accessibility
-Responsiveness
-features
-Card game style battle using the Top trumpz method of choosing your cards best ability to overpower your competitors.
-it consists of a header element, game area, score area and a feedback form where you can requests new heroes to be added.
 
 # Accessibility
 
 # Responsiveness
 
 # Features
-The website comprises a number of features that make it entuitive, usable and fun
+The website comprises a number of features that make it intuitive, usable and fun.
+- Two runnable games of Rock, Paper Scissors
+    - Gives a result to the user of how they won, drew or lost
+    - Second game is of increased difficulty, only accessible when the first game is won
+- A score tracking System and results section
+- A score limit, giving Users something to aim for by gaining access to the second game by winning the first. 
 
 # Credits
 * CloudConvert for webp converter imagecompressor.com to reduce image size
@@ -56,8 +55,6 @@ JS ConsoleLog tests:
 * 
 
 # Bugs
-1. My three main elements of rock, paper and scissors were in global Lets. when i first began to create my code, i did not really understand where they needed to go. 
-    * 
 
 2. In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
@@ -71,17 +68,17 @@ JS ConsoleLog tests:
 5. Added event listener to my button, added inner.html to my 'rules infromation div' that on click, it shows all of the 'game rules'  in js html. But, when i click rule, nothing happen. I am keeping this as i want this to run from JS and not be set in the index.html file.
     * 
 
-6. When clicking rock, it is only logging a draw
-    * Fix: I had my user winds, draws, loses functions added incorrectly. see bug 7. This fixed it. 
+6. When clicking rock, it is only logging a draw to the console.
+    * Fix: I had my user win, draw and loss functions added incorrectly. see bug 7. This fixed it. 
 
 7. When clicking my buttons, it wasn't incrementing the score every time.
     * I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
 
-8. I added innerHTML to the results display but nothing was happening. tried query selector, elemebt by id
-    * I hadn't called the game function. Once i did, this then updated!
+8. I added innerHTML to the results display but nothing was happening. I tried query selector, element by id etc.
+    * I hadn't called the game function. 
 
-9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the functions parenthese.
-    * I had both userClick and computerChooses in the function parenthese on the actual Logic of the game. I removed these also, and it worked!.
+9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the draw functions parenthese.
+    * I had both userClick and computerChooses in the function parenthese on the actual Logic of the game (theGame function). I removed these also, and it worked!.
 
 10. I wanted to add some text colour to the result section that correlated to the result. I added a classList, but it wasnt changing color:
     * Because it was a class, i added the '.' - but removing this meant it worked.
