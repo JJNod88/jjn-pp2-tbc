@@ -77,10 +77,9 @@ userClicks();
 /**
  * Three functions that collate the score from the gamne logic and incriment user & comp scores
  */
-function userDraws(userClicks, computerChooses) {
-    resultUpdate = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
+function userDraws(userClicks) {
     console.log('User Draws');
-    resultDiv.innerHTML = `A Draw! you both chose ${userClicks}. You got this.`;
+    resultDiv.innerHTML = `A Draw! you both chose ${userClicks}. Keep going!`;
 
 }
 
@@ -88,14 +87,14 @@ function userWins(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('userScoreDigit').innerText);
     document.getElementById("userScoreDigit").innerText = ++zeroScore;
     console.log('User Wins');
-    resultDiv.innerHTML = `You won! ${userClicks}  beats ${computerChooses}. Good job!`;
+    resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
 }
 
 function userLoses(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('compScoreDigit').innerText);
     document.getElementById("compScoreDigit").innerText = ++zeroScore;
     console.log('User Loses');
-    resultDiv.innerHTML = `Too bad. ${computerChooses} beats ${userClicks}. Try again!`;
+    resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
 }
 
 
@@ -107,7 +106,7 @@ function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
             result = 'Draw!';
-            userDraws(userClicks + computerChooses);
+            userDraws(userClicks);
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
             userWins(userClicks, computerChooses);

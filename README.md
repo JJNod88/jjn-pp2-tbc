@@ -79,6 +79,9 @@ JS ConsoleLog tests:
 8. I added innerHTML to the results display but nothing was happening. tried query selector, elemebt by id
     * I hadn't called the game function. Once i did, this then updated!
 
+9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the functions parenthese.
+    * I had both userClick and computerChooses in the function parenthese on the actual Logic of the game. I removed these also, and it worked!.
+
 # Technologies
 Three technologies were used to build the interactive front-website website:
 * HTML for the structure
