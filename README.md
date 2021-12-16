@@ -70,6 +70,11 @@ JS ConsoleLog tests:
 5. Added event listener to my button, added inner.html to my 'rules infromation div' that on click, it shows all of the 'game rules'  in js html. But, when i click rule, nothing happen. I am keeping this as i want this to run from JS and not be set in the index.html file.
     * 
 
+6. When clicking rock, it is only logging a draw
+    * I had my user winds, draws, loses functions added incorrectly. see bug 7. This fixed it. 
+
+7. When clicking my buttons, it wasn't incrementing the score every time.
+    * I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
 
 # Technologies
 Three technologies were used to build the interactive front-website website:

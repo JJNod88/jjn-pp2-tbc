@@ -15,7 +15,7 @@ var computerScore = 0;
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
-let resultDiv = document.querySelector('.result-section');
+let resultDiv = document.getElementById('result-section');
 
 
 
@@ -76,17 +76,23 @@ userClicks();
 
 
 function userDraws() {
-    console.log('User Drew')
+    console.log('User Draws');
+
 }
 
 function userWins() {
-    console.log('User Win')
-
+    let zeroScore = parseInt(document.getElementById('userScoreDigit').innerText);
+    document.getElementById("userScoreDigit").innerText = ++zeroScore;
+    console.log('User Wins');
 }
 
 function userLoses() {
-    console.log('User Lost')
+    let zeroScore = parseInt(document.getElementById('compScoreDigit').innerText);
+    document.getElementById("compScoreDigit").innerText = ++zeroScore;
+    console.log('User Loses');
 }
+
+
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
@@ -100,9 +106,11 @@ function theGame(userClicks) {
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+            userWins();
         } else if (userClicks === 'scissors' && (computerChooses === 'paper')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
+            userWins();
         } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
             result = 'You Won!';
             resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
@@ -116,9 +124,8 @@ function theGame(userClicks) {
                 resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
             } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
                 result = 'You lost';
-                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
-                userLoses();
-            }
+                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;          
+            } userLoses();
         }
     }
 });
