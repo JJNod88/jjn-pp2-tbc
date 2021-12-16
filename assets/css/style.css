@@ -114,6 +114,18 @@ h1 {
     padding-top: 2%;
 }
 
+.user-won {
+    color: green;
+}
+
+.user-draw {
+    color: darkgrey;
+}
+
+.user-loss {
+    color: red;
+}
+
 /* score section */
 .score-area {
     display: flex;

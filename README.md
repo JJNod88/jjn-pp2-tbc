@@ -40,6 +40,7 @@ The website comprises a number of features that make it entuitive, usable and fu
 * CloudConvert for webp converter imagecompressor.com to reduce image size
 * lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
 * I utilised the [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) resources to boost my knowledge of functions and how to structure them
+    * settimeout was highlighted here - fixed my Result Text colour solution.
 
 # Testing
 JS ConsoleLog tests:
@@ -71,7 +72,7 @@ JS ConsoleLog tests:
     * 
 
 6. When clicking rock, it is only logging a draw
-    * I had my user winds, draws, loses functions added incorrectly. see bug 7. This fixed it. 
+    * Fix: I had my user winds, draws, loses functions added incorrectly. see bug 7. This fixed it. 
 
 7. When clicking my buttons, it wasn't incrementing the score every time.
     * I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
@@ -81,6 +82,13 @@ JS ConsoleLog tests:
 
 9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the functions parenthese.
     * I had both userClick and computerChooses in the function parenthese on the actual Logic of the game. I removed these also, and it worked!.
+
+10. I wanted to add some text colour to the result section that correlated to the result. I added a classList, but it wasnt changing color:
+    * Because it was a class, i added the '.' - but removing this meant it worked.
+
+11. When i added colour to my result wording, it stayed there.
+    * Fix: setTimeOut function helped with this
+    
 
 # Technologies
 Three technologies were used to build the interactive front-website website:

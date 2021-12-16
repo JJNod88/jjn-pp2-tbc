@@ -78,11 +78,13 @@ userClicks();
 
 /**
  * Three functions that collate the score from the gamne logic and incriment user & comp scores
+ * I also update the results and choices in these functions
  */
 function userDraws(userClicks) {
     console.log('User Draws');
     resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
-
+    document.getElementById('resultUpdate').classList.add('user-draw');
+    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-draw')}, 2000) 
 }
 
 function userWins(userClicks, computerChooses) {
@@ -90,6 +92,8 @@ function userWins(userClicks, computerChooses) {
     document.getElementById("userScoreDigit").innerText = ++zeroScore;
     console.log('User Wins');
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
+    document.getElementById('resultUpdate').classList.add('user-won');
+    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-won')}, 2000) 
 }
 
 function userLoses(userClicks, computerChooses) {
@@ -97,8 +101,9 @@ function userLoses(userClicks, computerChooses) {
     document.getElementById("compScoreDigit").innerText = ++zeroScore;
     console.log('User Loses');
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
+    document.getElementById('resultUpdate').classList.add('user-lost');
+    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-lost')}, 2000) 
 }
-
 
 
 /**
