@@ -56,7 +56,7 @@ function setChoices() {
         let randomNumber = Math.floor(Math.random() * 3); 
             return choiceArray[randomNumber];
 }
-console.log(setChoices())
+setChoices();
 
 /**
  * I have added event listener to each of the main elements. 
@@ -78,14 +78,15 @@ userClicks();
 
 /**
  * Three functions that collate the score from the gamne logic and incriment user & comp scores
- * I also update the results and choices in these functions
+ * I also update the results and choices in these functions, style them with classList add and remove, with css styling
  */
 function userDraws(userClicks) {
     console.log('User Draws');
     resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
     document.getElementById('resultUpdate').classList.add('user-draw');
-    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-draw')}, 2000) 
-}
+    setTimeout(function() {
+        document.getElementById('resultUpdate').classList.remove('user-draw')}, 2000) 
+};
 
 function userWins(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('userScoreDigit').innerText);
@@ -93,19 +94,23 @@ function userWins(userClicks, computerChooses) {
     console.log('User Wins');
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
-    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-won')}, 2000) 
-}
+    setTimeout(function() {
+        document.getElementById('resultUpdate').classList.remove('user-won')}, 2000) 
+};
 
 function userLoses(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('compScoreDigit').innerText);
     document.getElementById("compScoreDigit").innerText = ++zeroScore;
     console.log('User Loses');
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
-    document.getElementById('resultUpdate').classList.add('user-lost');
-    setTimeout(function() {document.getElementById('resultUpdate').classList.remove('user-lost')}, 2000) 
+    document.getElementById('resultUpdate').classList.add('user-loss');
+    setTimeout(function() {
+        document.getElementById('resultUpdate').classList.remove('user-loss')}, 2000) 
+};
+
+function reachedScoreLimit (userScored, compScored) {
+
 }
-
-
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
  */
