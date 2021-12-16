@@ -101,7 +101,7 @@ h1 {
 }
 
 /* result section */
-#result-section {
+.result-section {
     text-align: center;
     font-size: 200%;
     font-weight: 900;

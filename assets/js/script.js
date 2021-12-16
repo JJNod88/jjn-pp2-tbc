@@ -9,13 +9,12 @@ let paperIcon = document.getElementById('paper'); // User Clicks
 let scissorsIcon = document.getElementById('scissors'); // User Clicks
 let result; // User click result
 
-var userScore = 0;
+
 let userScored = document.getElementById('userScoreDigit'); // User score display
-var computerScore = 0;
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
-let resultDiv = document.getElementById('result-section');
+let resultDiv = document.getElementById('resultUpdate');
 
 
 
@@ -75,21 +74,28 @@ console.log(setChoices())
 userClicks();
 
 
-function userDraws() {
+/**
+ * Three functions that collate the score from the gamne logic and incriment user & comp scores
+ */
+function userDraws(userClicks, computerChooses) {
+    resultUpdate = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
     console.log('User Draws');
+    resultDiv.innerHTML = `A Draw! you both chose ${userClicks}. You got this.`;
 
 }
 
-function userWins() {
+function userWins(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('userScoreDigit').innerText);
     document.getElementById("userScoreDigit").innerText = ++zeroScore;
     console.log('User Wins');
+    resultDiv.innerHTML = `You won! ${userClicks}  beats ${computerChooses}. Good job!`;
 }
 
-function userLoses() {
+function userLoses(userClicks, computerChooses) {
     let zeroScore = parseInt(document.getElementById('compScoreDigit').innerText);
     document.getElementById("compScoreDigit").innerText = ++zeroScore;
     console.log('User Loses');
+    resultDiv.innerHTML = `Too bad. ${computerChooses} beats ${userClicks}. Try again!`;
 }
 
 
@@ -101,31 +107,25 @@ function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
             result = 'Draw!';
-            resultDiv = `You clicked ${userClicks} and the computer clicked ${computerChooses}. You drew!`;
-            userDraws();
+            userDraws(userClicks + computerChooses);
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
-            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
-            userWins();
+            userWins(userClicks, computerChooses);
         } else if (userClicks === 'scissors' && (computerChooses === 'paper')) {
             result = 'You Won!';
-            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
-            userWins();
+            userWins(userClicks, computerChooses);
         } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
             result = 'You Won!';
-            resultDiv = `You clicked ${userClicks} which beats the computers click of ${computerChooses}. Good job!`;
-            userWins();
+            userWins(userClicks, computerChooses);
         } else {
             if (userClicks === 'rock' && (computerChooses === 'paper')) {
                 result = 'You lost';
-                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
             } else if (userClicks === 'paper' && (computerChooses === 'scissors')) {
                 result = 'You lost';
-                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;
             } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
                 result = 'You lost';
-                resultDiv = `The computer chose ${computerChooses} which beat your choice of ${userClicks}. Try again.`;          
-            } userLoses();
+            } userLoses(userClicks, computerChooses);
         }
     }
 });
+thegame();

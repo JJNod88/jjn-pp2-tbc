@@ -76,6 +76,9 @@ JS ConsoleLog tests:
 7. When clicking my buttons, it wasn't incrementing the score every time.
     * I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
 
+8. I added innerHTML to the results display but nothing was happening. tried query selector, elemebt by id
+    * I hadn't called the game function. Once i did, this then updated!
+
 # Technologies
 Three technologies were used to build the interactive front-website website:
 * HTML for the structure
