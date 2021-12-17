@@ -72,20 +72,22 @@ JS ConsoleLog tests:
     * Fix: I had my user win, draw and loss functions added incorrectly. see bug 7. This fixed it. 
 
 7. When clicking my buttons, it wasn't incrementing the score every time.
-    * I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
+    * Fix: I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
 
 8. I added innerHTML to the results display but nothing was happening. I tried query selector, element by id etc.
-    * I hadn't called the game function. 
+    * Fix: I hadn't called the game function. 
 
 9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the draw functions parenthese.
-    * I had both userClick and computerChooses in the function parenthese on the actual Logic of the game (theGame function). I removed these also, and it worked!.
+    * Fix: I had both userClick and computerChooses in the function parenthese on the actual Logic of the game (theGame function). I removed these also, and it worked!.
 
 10. I wanted to add some text colour to the result section that correlated to the result. I added a classList, but it wasnt changing color:
-    * Because it was a class, i added the '.' - but removing this meant it worked.
+    * Fix: Because it was a class, i added the '.' - but removing this meant it worked.
 
 11. When i added colour to my result wording, it stayed there.
     * Fix: setTimeOut function helped with this
     
+12. I have created a Score Limit function. However it makes my win, lose draw functionality inactive.
+    * Fix: 
 
 # Technologies
 Three technologies were used to build the interactive front-website website:

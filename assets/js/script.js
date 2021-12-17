@@ -12,6 +12,7 @@ let result; // User click result
 
 let userScored = document.getElementById('userScoreDigit'); // User score display
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
+let zeroScoreUser = 0;
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 theGame();
             };
         });
-
+    });
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
@@ -89,8 +90,8 @@ function userDraws(userClicks) {
 };
 
 function userWins(userClicks, computerChooses) {
-    let zeroScore = parseInt(document.getElementById('userScoreDigit').innerText);
-    document.getElementById("userScoreDigit").innerText = ++zeroScore;
+    let zeroScoreUser = parseInt(document.getElementById('userScoreDigit').innerText);
+    document.getElementById("userScoreDigit").innerHTML = ++zeroScoreUser;
     console.log('User Wins');
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
@@ -99,26 +100,27 @@ function userWins(userClicks, computerChooses) {
 };
 
 function userLoses(userClicks, computerChooses) {
-    let zeroScore = parseInt(document.getElementById('compScoreDigit').innerText);
-    document.getElementById("compScoreDigit").innerText = ++zeroScore;
+    let zeroScoreComp = parseInt(document.getElementById('compScoreDigit').innerText);
+    document.getElementById("compScoreDigit").innerHTML = ++zeroScoreComp;
     console.log('User Loses');
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-loss')}, 2000) 
+        document.getElementById('resultUpdate').classList.remove('user-loss')}, 2000);
 };
 
-function reachedScoreLimit (userScored, compScored) {
-    if (this.getAttribute('userScored') === 10) {
-        resultDiv.innerHTML = "Congratulations, you reached 10 first.";
-        console.log('user reached 10')
-        } else { 
-            if (this.getAttribute('compScoredigit') === 10) {
-                resultDiv.innerHTML = 'Unlucky, the computer reached 10 first. Try Again!';
-                console.log('comp reached 10');
-            }
-        }
-    };
+/**
+ * Function that will complete the game round and reset the results, and in future make the second game available
+ */
+function resetGame() {
+    if (userScored = 10) {
+        document.getElementById("userScoreDigit").innerHTML = 0;
+        console.log('user won');
+    } else if (compScored = 10) {
+    document.getElementById("compScoreDigit").innerHTML = 0;
+    console.log('user lost');
+    }
+};
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
@@ -146,5 +148,5 @@ function theGame(userClicks) {
                 result = 'You lost';
             } userLoses(userClicks, computerChooses);
         }
-    }
-});
+    };
+
