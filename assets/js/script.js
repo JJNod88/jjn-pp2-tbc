@@ -12,11 +12,11 @@ let result; // User click result
 
 let userScored = document.getElementById('userScoreDigit'); // User score display
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
-let zeroScoreUser = 0;
+let userScore = 5;
+let compScore = 0;
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
-
 
 
 /** 
@@ -96,7 +96,7 @@ function userWins(userClicks, computerChooses) {
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-won')}, 2000) 
+        document.getElementById('resultUpdate').classList.remove('user-won')}, 2000);
 };
 
 function userLoses(userClicks, computerChooses) {
@@ -110,21 +110,22 @@ function userLoses(userClicks, computerChooses) {
 };
 
 /**
+ * TBC
  * Function that will complete the game round and reset the results, and in future make the second game available
- */
+**/
 function resetGame() {
-    if (userScored = 10) {
-        document.getElementById("userScoreDigit").innerHTML = 0;
-        console.log('user won');
-    } else if (compScored = 10) {
-    document.getElementById("compScoreDigit").innerHTML = 0;
-    console.log('user lost');
+    if (userScore === 10 || compScore === 10) {
+    return true;
+    } else {
+        return false;
     }
-};
+}
+resetGame()
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
- */
+**/
+
 function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
