@@ -109,8 +109,17 @@ function userLoses(userClicks, computerChooses) {
 };
 
 function reachedScoreLimit (userScored, compScored) {
+    if (this.getAttribute('userScored') === 10) {
+        resultDiv.innerHTML = "Congratulations, you reached 10 first.";
+        console.log('user reached 10')
+        } else { 
+            if (this.getAttribute('compScoredigit') === 10) {
+                resultDiv.innerHTML = 'Unlucky, the computer reached 10 first. Try Again!';
+                console.log('comp reached 10');
+            }
+        }
+    };
 
-}
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
  */
