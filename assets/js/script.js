@@ -12,8 +12,6 @@ let result; // User click result
 
 let userScored = document.getElementById('userScoreDigit'); // User score display
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
-let userScore = 5;
-let compScore = 0;
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
@@ -96,7 +94,7 @@ function userWins(userClicks, computerChooses) {
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-won')}, 2000);
+        document.getElementById('resultUpdate').classList.remove('user-won'); resetGame();}, 2000);
 };
 
 function userLoses(userClicks, computerChooses) {
@@ -106,7 +104,7 @@ function userLoses(userClicks, computerChooses) {
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-loss')}, 2000);
+        document.getElementById('resultUpdate').classList.remove('user-loss'); resetGame();}, 2000);
 };
 
 /**
@@ -114,13 +112,24 @@ function userLoses(userClicks, computerChooses) {
  * Function that will complete the game round and reset the results, and in future make the second game available
 **/
 function resetGame() {
-    if (userScore === 10 || compScore === 10) {
-    return true;
+    if (userScored.innerHTML === '10') {
+        resultDiv.innerHTML = `Well Done! You won this round`;
+        userScored.innerHTML = 0;
+        compScored.innerHTML = 0;
+        console.log('user won round');
+        return true
+    } else if (compScored.innerHTML === '10') {
+        resultDiv.innerHTML = `Unlucky, the computer won unfortunately`;
+        userScored.innerHTML = 0;
+        compScored.innerHTML = 0;
+        console.log('user lost round');
+        return true
     } else {
+        console.log('resetfunction');
         return false;
     }
 }
-resetGame()
+// resetGame()
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
