@@ -31,6 +31,7 @@ A score will be kept depending on the result of each round - When a user reaches
 The website comprises a number of features that make it intuitive, usable and fun.
 - Two runnable games of Rock, Paper Scissors
     - Gives a result to the user of how they won, drew or lost
+    - Has a score of 10 that resets the game scores and displays a message to the user that they won the game. 
     - Second game is of increased difficulty, only accessible when the first game is won
 - A score tracking System and results section
 - A score limit, giving Users something to aim for by gaining access to the second game by winning the first. 
@@ -40,6 +41,8 @@ The website comprises a number of features that make it intuitive, usable and fu
 * lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
 * I utilised the [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) resources to boost my knowledge of functions and how to structure them
     * settimeout was highlighted here - fixed my Result Text colour solution.
+* tutor Support - Fatima
+    * Helped me with my reset game function that reset the scores and gave a message. This then allowed me to build on this with further scoring functionality. 
 
 # Testing
 JS ConsoleLog tests:
