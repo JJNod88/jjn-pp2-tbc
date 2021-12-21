@@ -90,7 +90,9 @@ JS ConsoleLog tests:
     * Fix: setTimeOut function helped with this
     
 12. I have created a Score Limit function. However it makes my win, lose draw functionality inactive.
-    * Fix: 
+    * Fix: My scores increment is based on a string. Qhen looking for user scoree === 10, it wasnt registering. I added '10' for a string and it worked.
+
+13. I have created a Round tally funciton - It is incrementing the total round score after a score of 10 is reached, but not by 1 as expected, by 2/4/6.
 
 # Technologies
 Three technologies were used to build the interactive front-website website:

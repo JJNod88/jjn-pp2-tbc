@@ -12,8 +12,8 @@ let result; // User click result
 
 let userScored = document.getElementById('userScoreDigit'); // User score display
 let compScored = document.getElementById('compScoreDigit');  // Comp score display 
-let userRoundW = 0; // numerical variable to count the rounds won
-let compRoundW = 0; 
+let userRoundsWon = 0; // numerical variable to count the rounds won
+let compRoundsWon = 0; 
 
 let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
@@ -115,18 +115,18 @@ function userLoses(userClicks, computerChooses) {
 **/
 function resetGame() {
     if (userScored.innerHTML === '10') {
+        userRoundsWon = document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
         resultDiv.innerHTML = `Well Done! You won this round. The scores will now reset`;
         setTimeout(function() {
             userScored.innerHTML = 0;
-            compScored.innerHTML = 0;}, 4000);
-        console.log('user won round');
+            compScored.innerHTML = 0;}, 3000);
         return true
     } else if (compScored.innerHTML === '10') {
+        compRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
         resultDiv.innerHTML = `Oh no, you lost this round! The scores will now reset`;
         setTimeout(function() {
             userScored.innerHTML = 0;
-            compScored.innerHTML = 0;}, 4000);
-        console.log('user lost round');
+            compScored.innerHTML = 0;}, 3000);
         return true
     } else {
         return false;
