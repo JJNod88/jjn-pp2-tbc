@@ -93,6 +93,8 @@ JS ConsoleLog tests:
     * Fix: My scores increment is based on a string. Qhen looking for user scoree === 10, it wasnt registering. I added '10' for a string and it worked.
 
 13. I have created a Round tally funciton - It is incrementing the total round score after a score of 10 is reached, but not by 1 as expected, by 2/4/6.
+    So if ends up that i lost three times in a row ion opaoper, it adds by 3. If i lost on one paper, it adds by 1. This is the bug, 
+    Fix: I had the resetGame() function within a setTimeOut function which was in both my userWin and userLoses functions. I put the resetGame function outside of the setTimeOut function and tested it. it now works!
 
 # Technologies
 Three technologies were used to build the interactive front-website website:

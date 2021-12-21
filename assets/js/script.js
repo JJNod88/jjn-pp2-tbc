@@ -96,7 +96,8 @@ function userWins(userClicks, computerChooses) {
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-won'); resetGame();}, 2000);
+        document.getElementById('resultUpdate').classList.remove('user-won');}, 2000);
+        resetGame();
 };
 
 function userLoses(userClicks, computerChooses) {
@@ -106,7 +107,8 @@ function userLoses(userClicks, computerChooses) {
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-loss'); resetGame();}, 2000);
+        document.getElementById('resultUpdate').classList.remove('user-loss');}, 2000);
+        resetGame();
 };
 
 /**
