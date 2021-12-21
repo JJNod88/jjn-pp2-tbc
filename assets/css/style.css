@@ -133,8 +133,7 @@ h1 {
     font-size: 130%;
     font-weight: 900;
     padding-top: 3%;
-    flex-direction: column;
-    margin: 0 42%;
+    margin: 0 30%;
     opacity: 0.8;
 }
 
@@ -144,11 +143,14 @@ h1 {
 
 #userScore {
     flex: 1;
+    margin: 0 1%;
+    border-radius: 1rem;
 }
 
 #computerScore {
     flex: 1;
-    padding: 1%;
+    margin: 0 1%;
+    border-radius: 1rem;
 }
 
 #userScoreDigit {
@@ -158,6 +160,15 @@ h1 {
 #compScoreDigit {
     color: red;
 }
+
+#userRoundsWon {
+    color: green;
+}
+
+#compRoundsWon {
+    color: red;
+}
+
 
 /* footer */
 #footer {
