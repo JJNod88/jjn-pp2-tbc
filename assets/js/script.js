@@ -110,7 +110,7 @@ function userLoses(userClicks, computerChooses) {
         document.getElementById('resultUpdate').classList.remove('user-loss');}, 2000);
         resetGame();
 };
-
+ 
 /**
  * TBC
  * Function that will complete the game round and reset the results, and in future make the second game available
@@ -119,6 +119,7 @@ function resetGame() {
     if (userScored.innerHTML === '10') {
         userRoundsWon = document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
         resultDiv.innerHTML = `Well Done! You won this round. The scores will now reset`;
+        document.getElementById('resultUpdate').classList.add('user-won');
         setTimeout(function() {
             userScored.innerHTML = 0;
             compScored.innerHTML = 0;}, 3000);
@@ -126,6 +127,7 @@ function resetGame() {
     } else if (compScored.innerHTML === '10') {
         compRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
         resultDiv.innerHTML = `Oh no, you lost this round! The scores will now reset`;
+        document.getElementById('resultUpdate').classList.add('user-loss');
         setTimeout(function() {
             userScored.innerHTML = 0;
             compScored.innerHTML = 0;}, 3000);
