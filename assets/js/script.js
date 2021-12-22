@@ -3,6 +3,9 @@ console.log('hey');
 
 // JS variables
 let buttons = document.getElementsByTagName('buttons') // buttons
+let rulesButton = document.getElementById('rulesButton') // rule button
+
+let rulesDiv = document.getElementById('rules');
 
 let rockIcon = document.getElementById('rock'); // User Clicks
 let paperIcon = document.getElementById('paper'); // User Clicks
@@ -21,31 +24,38 @@ let resultDiv = document.getElementById('resultUpdate'); // This returns and dis
 
 /** 
  * Added Event Listeners following the loading of the Dom Content
+ * Looking to use this to open the new div for the rules button
 **/
 document.addEventListener("DOMContentLoaded", function () {
-
-    for (let button of buttons)
-        button.addEventListener("click", function () {
+            rulesButton.addEventListener("click", function () {
             if (this.getAttribute('data-type') === "rules-btn") {
-                let rulesDiv = document.getElementById('gameRules');
-                rulesDiv.innerHTML = (`
-                <div id="newRulesDiv> 
-                <h2>Here is how to play our simple game:</h2>
-                <ol>
-                    <li>Below are three choices of Rock, Paper and Scissors</li>
-                    <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
-                    <li>Your aim is to pick the icon that beats the computers chosen icon</li>
-                    <li>Each winner receives a point. The first to 5 points wins!</li>
-                </ol>
-                <p>Good luck, and enjoy!</p>
-                </div>
-                `);
-                document.body.insertBefore(gameRules, rulesDiv);
-            }  else {
-                theGame();
+                createRulesDiv();
+            } else {
+                return false;
             };
         });
-    });
+});
+
+/** function that contains the html when clicking on rules
+ * Not yet working 
+ */
+
+function createRulesDiv() {
+                let newRulesDiv = document.createElement('div');
+                newRulesDiv.innerHTML = 
+                `<div id="newRulesDiv> 
+                    <h2>Here is how to play our simple game:</h2>
+                        <ol>
+                            <li>Below are three choices of Rock, Paper and Scissors</li>
+                            <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
+                            <li>Your aim is to pick the icon that beats the computers chosen icon</li>
+                            <li>Each winner receives a point. The first to 5 points wins!</li>
+                    </ol>
+                    <p>Good luck, and enjoy!</p>
+                </div>
+                `;
+};
+
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
