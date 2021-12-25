@@ -43,7 +43,6 @@ function showRulesDiv() {
             showRulesDiv();}
 
                 let newRulesDiv = document.createElement('div');
-                newRulesDiv.id = 'rulesDiv';
                 newRulesDiv.className = 'newRulesStyle';
                 newRulesDiv.innerHTML = 
                 `<h2>Here is how to play our simple game:</h2>
@@ -51,8 +50,8 @@ function showRulesDiv() {
                             <li>Below are three choices of Rock, Paper and Scissors</li>
                             <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
                             <li>Your aim is to pick the icon that beats the computers chosen icon</li>
-                            <li>Each winner receives a point. The first to 5 points wins!</li>
-                    </ol>
+                            <li>Each winner receives a point. The first to 10 points wins!</li>
+                        </ol>
                     <p>Good luck, and enjoy!</p>
                 `;
                 document.getElementById('rulesDiv').appendChild(newRulesDiv);
