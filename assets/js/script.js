@@ -25,23 +25,23 @@ let resultDiv = document.getElementById('resultUpdate'); // This returns and dis
 /** 
  * Added Event Listeners following the loading of the Dom Content
  * Looking to use this to open the new div for the rules button
+**/
 
 document.addEventListener("DOMContentLoaded", function () {
-            rulesButton.addEventListener("click", function () {
-            if (this.getAttribute('data-type') === "rules-btn") {
-                console.log('button hey');
-                showRulesDiv();
-            } else {
-                return false;
-            };
-        });
+            
 });
+
 
 /** function that contains the html when clicking on rules
  * Not yet working 
  */
 
 function showRulesDiv() {
+            rulesButton.addEventListener("click", function () {
+            if (this.getAttribute('data-type') === "rules-btn") {
+            console.log('button hey');
+            showRulesDiv();}
+
                 let newRulesDiv = document.createElement('div');
                 newRulesDiv.id = 'rulesDiv';
                 newRulesDiv.className = 'newRulesStyle';
@@ -56,7 +56,8 @@ function showRulesDiv() {
                     <p>Good luck, and enjoy!</p>
                 `;
                 document.getElementById('rulesDiv').appendChild(newRulesDiv);
-};
+    });
+}
 showRulesDiv();
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
