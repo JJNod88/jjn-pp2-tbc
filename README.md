@@ -96,6 +96,8 @@ JS ConsoleLog tests:
     So if ends up that i lost three times in a row ion opaoper, it adds by 3. If i lost on one paper, it adds by 1. This is the bug, 
     Fix: I had the resetGame() function within a setTimeOut function which was in both my userWin and userLoses functions. I put the resetGame function outside of the setTimeOut function and tested it. it now works!
 
+14. The rules dom manipulation function is working, however, the new div is being created from the start.
+
 # Technologies
 Three technologies were used to build the interactive front-website website:
 * HTML for the structure

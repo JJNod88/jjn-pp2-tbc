@@ -25,11 +25,12 @@ let resultDiv = document.getElementById('resultUpdate'); // This returns and dis
 /** 
  * Added Event Listeners following the loading of the Dom Content
  * Looking to use this to open the new div for the rules button
-**/
+
 document.addEventListener("DOMContentLoaded", function () {
             rulesButton.addEventListener("click", function () {
             if (this.getAttribute('data-type') === "rules-btn") {
-                createRulesDiv();
+                console.log('button hey');
+                showRulesDiv();
             } else {
                 return false;
             };
@@ -40,11 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
  * Not yet working 
  */
 
-function createRulesDiv() {
+function showRulesDiv() {
                 let newRulesDiv = document.createElement('div');
+                newRulesDiv.id = 'rulesDiv';
+                newRulesDiv.className = 'newRulesStyle';
                 newRulesDiv.innerHTML = 
-                `<div id="newRulesDiv> 
-                    <h2>Here is how to play our simple game:</h2>
+                `<h2>Here is how to play our simple game:</h2>
                         <ol>
                             <li>Below are three choices of Rock, Paper and Scissors</li>
                             <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
@@ -52,10 +54,10 @@ function createRulesDiv() {
                             <li>Each winner receives a point. The first to 5 points wins!</li>
                     </ol>
                     <p>Good luck, and enjoy!</p>
-                </div>
                 `;
+                document.getElementById('rulesDiv').appendChild(newRulesDiv);
 };
-
+showRulesDiv();
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
