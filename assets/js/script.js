@@ -38,25 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 
 function showRulesDiv() {
-        rulesButton.addEventListener("click", showRulesDiv2);
+        document.getElementById("rulesDiv").style.display = "block";
         console.log('button hey');
     }
-showRulesDiv();
 
 function closeRulesDiv() {
-    closeButton.addEventListener("click", hideRulesDiv);
+    document.getElementById("rulesDiv").style.display = "none";
     console.log('button bye');
 }
-closeRulesDiv();
 
-function showRulesDiv2() {
-    document.getElementById("rulesDiv").style.display = "block";
-}
-
-function hideRulesDiv() {
-    document.getElementById("rulesDiv").style.display = "none";
-}
-            
+rulesButton.addEventListener("click", showRulesDiv);
+closeButton.addEventListener("click", closeRulesDiv);
+     
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
