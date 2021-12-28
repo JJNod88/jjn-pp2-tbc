@@ -47,12 +47,18 @@ h1 {
     padding: 1%;
 }
 
-.newRulesStyle {
-    color: white;
-    margin: 0 20%;
+#closeButton {
+    color: red;
+    background-color: white;
 }
 
-.newRulesStyle ol {
+#rulesDiv {
+    color: white;
+    margin: 0 20%;
+    display: none;
+}
+
+#rulesDiv ol {
     list-style: none;
 }
 

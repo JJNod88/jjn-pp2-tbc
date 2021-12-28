@@ -2,8 +2,9 @@ console.log('hey');
 
 
 // JS variables
-let buttons = document.getElementsByTagName('buttons') // buttons
-let rulesButton = document.getElementById('rulesButton') // rule button
+let buttons = document.getElementsByTagName('buttons'); // buttons
+let rulesButton = document.getElementById('rulesButton'); // rule button
+let closeButton = document.getElementById('closeButton');
 
 let rulesDiv = document.getElementById('rules');
 
@@ -37,27 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 
 function showRulesDiv() {
-            rulesButton.addEventListener("click", function () {
-            if (this.getAttribute('data-type') === "rules-btn") {
-            console.log('button hey');
-            showRulesDiv();}
-
-                let newRulesDiv = document.createElement('div');
-                newRulesDiv.className = 'newRulesStyle';
-                newRulesDiv.innerHTML = 
-                `<h2>Here is how to play our simple game:</h2>
-                        <ol>
-                            <li>Below are three choices of Rock, Paper and Scissors</li>
-                            <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
-                            <li>Your aim is to pick the icon that beats the computers chosen icon</li>
-                            <li>Each winner receives a point. The first to 10 points wins!</li>
-                        </ol>
-                    <p>Good luck, and enjoy!</p>
-                `;
-                document.getElementById('rulesDiv').appendChild(newRulesDiv);
-    });
-}
+        rulesButton.addEventListener("click", showRulesDiv2);
+        console.log('button hey');
+    }
 showRulesDiv();
+
+function closeRulesDiv() {
+    closeButton.addEventListener("click", hideRulesDiv);
+    console.log('button bye');
+}
+closeRulesDiv();
+
+function showRulesDiv2() {
+    document.getElementById("rulesDiv").style.display = "block";
+}
+
+function hideRulesDiv() {
+    document.getElementById("rulesDiv").style.display = "none";
+}
+            
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
