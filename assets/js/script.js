@@ -79,6 +79,12 @@ setChoices();
     scissorsIcon.addEventListener('click', function() {
         theGame('scissors');
     });
+    lizardIcon.addEventListener('click', function() {
+        theGame('lizard');
+    });
+    spockIcon.addEventListener('click', function() {
+        theGame('spock');
+    });
 };
 userClicks();
 
@@ -152,7 +158,7 @@ function theGame(userClicks) {
     let computerChooses = setChoices();
         if (userClicks === computerChooses) {
             result = 'Draw!';
-            userDraws(userClicks);
+            userDraws(userClicks); // draw
         } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
             result = 'You Won!';
             userWins(userClicks, computerChooses);
@@ -162,7 +168,34 @@ function theGame(userClicks) {
         } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
             result = 'You Won!';
             userWins(userClicks, computerChooses);
-        } else {
+        } 
+          else if (userClicks === 'rock' && (computerChooses === 'lizard')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } else if (userClicks === 'paper' && (computerChooses === 'spock')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } else if (userClicks === 'scissors' && (computerChooses === 'lizard')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } 
+        else if (userClicks === 'lizard' && (computerChooses === 'paper')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } 
+        else if (userClicks === 'lizard' && (computerChooses === 'spock')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } 
+        else if (userClicks === 'spock' && (computerChooses === 'scissors')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } 
+        else if (userClicks === 'spock' && (computerChooses === 'rock')) {
+            result = 'You Won!';
+            userWins(userClicks, computerChooses);
+        } // you won 
+        else {
             if (userClicks === 'rock' && (computerChooses === 'paper')) {
                 result = 'You lost';
             } else if (userClicks === 'paper' && (computerChooses === 'scissors')) {
