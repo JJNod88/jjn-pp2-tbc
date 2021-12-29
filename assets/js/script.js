@@ -11,6 +11,8 @@ let rulesDiv = document.getElementById('rules');
 let rockIcon = document.getElementById('rock'); // User Clicks
 let paperIcon = document.getElementById('paper'); // User Clicks
 let scissorsIcon = document.getElementById('scissors'); // User Clicks
+let lizardIcon = document.getElementById('lizard'); // User Clicks
+let spockIcon = document.getElementById('spock'); // User Clicks
 let result; // User click result
 
 
