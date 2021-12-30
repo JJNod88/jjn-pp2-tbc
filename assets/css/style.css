@@ -77,6 +77,36 @@ h1 {
     justify-content: center;
 }
 
+.liColor {
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 20%;
+}
+
+#liOne > i {
+    font-size: 120%;
+    color: red;
+}
+
+#liTwo > i {
+    font-size: 120%;
+    color: yellow;
+}
+
+#liThree > i {
+    font-size: 120%;
+    color: green;
+}
+
+#liFour > i {
+    font-size: 120%;
+    color: blue;
+}
+
+#liFive > i {
+    font-size: 120%;
+    color: orange;
+}
+
 /* Game Section */
 
 #game-area {
@@ -94,41 +124,41 @@ h1 {
 .btn:focus {
     outline: none;
 }
-.btn-red{
-    color: black;
-    border-color: black;
-    border-radius: 50%;
-    text-align: center;
-}
 
-.btn-red:active,
-.btn-red:hover {
+#rock:active,
+#rock:hover {
     background-color: red;
     color: white;
 }
 
-.btn-green{
-    color: black;
-    border-color: black;
-    border-radius: 50%;
-}
-
-.btn-green:active,
-.btn-green:hover {
-    background-color: red;
+#paper:active,
+#paper:hover {
+    background-color: yellow;
     color: white;
 }
 
-.btn-blue{
+#scissors:active,
+#scissors:hover {
+    background-color: green;
+    color: white;
+}
+
+#lizard:active,
+#lizard:hover {
+    background-color: blue;
+    color: white;
+}
+
+#spock:active,
+#spock:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn-white{
     color: black;
     border-color: black;
     border-radius: 50%;
-}
-
-.btn-blue:active,
-.btn-blue:hover {
-    background-color: red;
-    color: white;
 }
 
 /* result section */
@@ -141,15 +171,15 @@ h1 {
 }
 
 .user-won {
-    color: green;
+    color: rgb(7, 190, 7);
 }
 
 .user-draw {
-    color: #706e6e;
+    color: rgb(214, 214, 7);
 }
 
 .user-loss {
-    color: red;
+    color: rgb(247, 23, 23);
 }
 
 /* score section */

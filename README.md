@@ -24,6 +24,8 @@ A score will be kept depending on the result of each round - When a user reaches
 # UX
 
 # Accessibility
+Added title for cursor knowledge
+color coded in the rules and the icons
 
 # Responsiveness
 

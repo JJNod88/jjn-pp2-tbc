@@ -31,10 +31,19 @@
     <div id="rules">
         <button id="rulesButton" data-type="rules-btn">How to play</button>
         <div id='rulesDiv'>
-            <h2>Here is how to play our simple game:</h2>
+            <h2>Here is how to play our simple Rock Paper Scissors game, with a twist:</h2>
                         <ol>
-                            <li>Below are three choices of Rock, Paper and Scissors</li>
-                            <li>Rock Beats Scissors. Scissors beats Paper. Paper beats Rock</li>
+                            <li>Below are five choices: Rock, Paper, Scissors, Lizard, Spock</li><br>
+                            <li id="liOne" class="liColor">
+                                <i class="far fa-hand-rock"></i> Rock Beats Scissors & Lizard.</li>
+                            <li id="liTwo" class="liColor">
+                                <i class="far fa-hand-paper"></i> Scissors beats Paper & Lizard. </li>
+                            <li id="liThree" class="liColor">
+                                <i class="far fa-hand-scissors"></i> Paper beats Rock & Spock. </li>
+                            <li id="liFour" class="liColor">
+                                <i class="far fa-hand-lizard"></i> Lizard beats Paper & Spock. </li>
+                            <li id="liFive" class="liColor">
+                                <i class="far fa-hand-spock"></i> Spock beats Scissor & Rock. </li><br>
                             <li>Your aim is to pick the icon that beats the computers chosen icon</li>
                             <li>Each winner receives a point. The first to 10 points wins!</li>
                         </ol>
@@ -44,19 +53,19 @@
     
 <!-- Game Area Section -->
     <div id="game-area">
-        <button id="rock" title="Rock" data-type="rock" class="hand-btn btn-blue" aria-label="Rock button"><i data-type="rock"
+        <button id="rock" title="Rock" data-type="rock" class="hand-btn btn-white" aria-label="Rock button"><i data-type="rock"
             class="far fa-hand-rock"></i>
         </button>
-        <button id="paper" title="Paper" data-type="paper" class="hand-btn btn-red" aria-label="Paper button"><i data-type="paper"
+        <button id="paper" title="Paper" data-type="paper" class="hand-btn btn-white" aria-label="Paper button"><i data-type="paper"
             class="far fa-hand-paper"></i>
         </button>
-        <button id="scissors" title="Scissors" data-type="scissors" class="hand-btn btn-green" aria-label="Scissors button"><i data-type="scissors"
+        <button id="scissors" title="Scissors" data-type="scissors" class="hand-btn btn-white" aria-label="Scissors button"><i data-type="scissors"
             class="far fa-hand-scissors"></i>
         </button>
-        <button id="lizard" title="Lizard" data-type="lizard" class="hand-btn btn-blue" aria-label="lizard button"><i data-type="lizard"
+        <button id="lizard" title="Lizard" data-type="lizard" class="hand-btn btn-white" aria-label="lizard button"><i data-type="lizard"
                 class="far fa-hand-lizard"></i>
         </button>
-        <button id="spock" title="Spock" data-type="spock" class="hand-btn btn-blue" aria-label="spock button"><i data-type="spock"
+        <button id="spock" title="Spock" data-type="spock" class="hand-btn btn-white" aria-label="spock button"><i data-type="spock"
                 class="far fa-hand-spock"></i>
         </button>
         </div>
