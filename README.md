@@ -45,6 +45,7 @@ The website comprises a number of features that make it intuitive, usable and fu
     * settimeout was highlighted here - fixed my Result Text colour solution.
 * tutor Support - Fatima
     * Helped me with my reset game function that reset the scores and gave a message. This then allowed me to build on this with further scoring functionality. 
+* sep5 lead - Jack Controy - for my rules button open and closing div, he gave me the idea of storing the div in html and using display to show it. He also helped me condense the code into two functions (i originally had 4 functions that worked)
 
 # Testing
 JS ConsoleLog tests:
@@ -70,8 +71,8 @@ JS ConsoleLog tests:
     * fix: I hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
     * This was something i learned during my coding. At first, seeing grey made me think I had made a mistale, but on reflection things are grey because they havent been declared, called etc.
 
-5. Added event listener to my button, added inner.html to my 'rules infromation div' that on click, it shows all of the 'game rules'  in js html. But, when i click rule, nothing happen. I am keeping this as i want this to run from JS and not be set in the index.html file.
-    * 
+5. Had a rules button that hen clicked opens up a div explaining the rules etc. When clicking, it was creating duplications, and i could close the div with the button.
+    * Fix: I added a close button within the div, added two functions with event listeners to both open and close the div, this was done with style display being none and block.
 
 6. When clicking rock, it is only logging a draw to the console.
     * Fix: I had my user win, draw and loss functions added incorrectly. see bug 7. This fixed it. 
@@ -92,13 +93,15 @@ JS ConsoleLog tests:
     * Fix: setTimeOut function helped with this
     
 12. I have created a Score Limit function. However it makes my win, lose draw functionality inactive.
-    * Fix: My scores increment is based on a string. Qhen looking for user scoree === 10, it wasnt registering. I added '10' for a string and it worked.
+    * Fix: My scores increment is based on a string. When looking for user score === 10, it wasnt registering. I added '10' for a string and it worked.
 
 13. I have created a Round tally funciton - It is incrementing the total round score after a score of 10 is reached, but not by 1 as expected, by 2/4/6. So if ends up that i lost three times in a row ion opaoper, it adds by 3. If i lost on one paper, it adds by 1. This is the bug, 
-    Fix: I had the resetGame() function within a setTimeOut function which was in both my userWin and userLoses functions. I put the resetGame function outside of the setTimeOut function and tested it. it now works!
+    * Fix: I had the resetGame() function within a setTimeOut function which was in both my userWin and userLoses functions. I put the resetGame function outside of the setTimeOut function and tested it. it now works!
 
 14. Added addiitonal function to reset the game after 3 rounds have been run. It doesnt reset, and allows the rounds won score to increase incorrectly by simply clicking on one of the buttons (it should stop at 10 and not increase)
-    fix: 
+    * fix: 
+
+
 
 # Technologies
 Three technologies were used to build the interactive front-website website:
