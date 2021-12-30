@@ -15,7 +15,6 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 350%;
     margin: auto;
     padding: 0 0 2% 0;
     color: white;
@@ -35,6 +34,11 @@ p {
     background-color: rgba(0, 0, 0, .7);
 }
 
+#titleDiv {
+    padding: 2rem 0;
+    font-size: 130%;
+}
+
 /* header css */
 
 #main-header {
@@ -47,8 +51,12 @@ p {
     font-size: 150%;
     z-index: 999;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 900;
+}
+
+.fas {
+    padding: 0.5rem;
 }
 
 /* rules and play section */
