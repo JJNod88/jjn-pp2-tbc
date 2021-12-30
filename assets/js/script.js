@@ -202,6 +202,21 @@ function theGame(userClicks) {
                 result = 'You lost';
             } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
                 result = 'You lost';
+            } else if (userClicks === 'lizard' && (computerChooses === 'rock')) {
+                result = 'You lost';
+            } else if (userClicks === 'spock' && (computerChooses === 'paper')) {
+                result = 'You lost';
+            } else if (userClicks === 'lizard' && (computerChooses === 'scissors')) {
+                result = 'You lost';
+            } else if (userClicks === 'paper' && (computerChooses === 'lizard')) {
+                result = 'You lost';
+            } else if (userClicks === 'spock' && (computerChooses === 'lizard')) {
+                result = 'You lost';
+            } else if (userClicks === 'scissors' && (computerChooses === 'spock')) {
+                result = 'You lost';
+            } 
+            else if (userClicks === 'rock' && (computerChooses === 'spock')) {
+                result = 'You lost';
             } userLoses(userClicks, computerChooses);
         }
     };
