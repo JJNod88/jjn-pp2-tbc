@@ -21,6 +21,14 @@ h1 {
     color: white;
 }
 
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 #bImage {
     background-color: rgba(0, 0, 0, .7);
 }
@@ -51,6 +59,8 @@ h1 {
     padding: 1%;
 }
 
+
+
 #rulesButton:active,
 #rulesButton:hover {
     background-color: red;
@@ -66,6 +76,15 @@ h1 {
     color: white;
     margin: 0 20%;
     display: none;
+}
+
+#flexRules {
+    display: flex;
+    justify-content: center;
+}
+
+#list {
+    text-align: left;
 }
 
 #rulesDiv ol {
