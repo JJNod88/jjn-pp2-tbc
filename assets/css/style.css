@@ -21,8 +21,10 @@ h1 {
     color: white;
 }
 
-h3 {
+h2 {
+    font-size: 150%;
     margin: 0;
+    padding: 1rem 0;
 }
 
 p {
