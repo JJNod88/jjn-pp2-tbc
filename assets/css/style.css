@@ -52,6 +52,12 @@ h1 {
     padding: 1%;
 }
 
+#rulesButton:active,
+#rulesButton:hover {
+    background-color: red;
+    color: white;
+}
+
 #closeButton {
     color: red;
     background-color: white;
