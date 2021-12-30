@@ -2,36 +2,36 @@ console.log('hey');
 
 
 // JS variables
-let buttons = document.getElementsByTagName('buttons'); // buttons
-let rulesButton = document.getElementById('rulesButton'); // rule button
-let closeButton = document.getElementById('closeButton');
+const buttons = document.getElementsByTagName('buttons'); // buttons
+const rulesButton = document.getElementById('rulesButton'); // rule button
+const closeButton = document.getElementById('closeButton');
 
-let rulesDiv = document.getElementById('rules');
+const rulesDiv = document.getElementById('rules');
 
-let rockIcon = document.getElementById('rock'); // User Clicks
-let paperIcon = document.getElementById('paper'); // User Clicks
-let scissorsIcon = document.getElementById('scissors'); // User Clicks
-let lizardIcon = document.getElementById('lizard'); // User Clicks
-let spockIcon = document.getElementById('spock'); // User Clicks
+const rockIcon = document.getElementById('rock'); // User Clicks
+const paperIcon = document.getElementById('paper'); // User Clicks
+const scissorsIcon = document.getElementById('scissors'); // User Clicks
+const lizardIcon = document.getElementById('lizard'); // User Clicks
+const spockIcon = document.getElementById('spock'); // User Clicks
 let result; // User click result
 
-
-let userScored = document.getElementById('userScoreDigit'); // User score display
-let compScored = document.getElementById('compScoreDigit');  // Comp score display 
+const userScored = document.getElementById('userScoreDigit'); // User score display
+const compScored = document.getElementById('compScoreDigit'); // Comp score display 
 let userRoundsWon = 0; // numerical variable to count the rounds won
-let compRoundsWon = 0; 
+let compRoundsWon = 0;
 
-let scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
-let resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
+const scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
+const resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
 
 
 /** 
  * Added Event Listeners following the loading of the Dom Content
  * Looking to use this to open the new div for the rules button
-**/
+ **/
 
 document.addEventListener("DOMContentLoaded", function () {
-            
+    setChoices();
+    userClicks();
 });
 
 
@@ -40,18 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 
 function showRulesDiv() {
-        document.getElementById("rulesDiv").style.display = "block";
-        console.log('button hey');
-    }
+    document.getElementById("rulesDiv").style.display = "block";
+}
 
 function closeRulesDiv() {
     document.getElementById("rulesDiv").style.display = "none";
-    console.log('button bye');
 }
 
 rulesButton.addEventListener("click", showRulesDiv);
 closeButton.addEventListener("click", closeRulesDiv);
-     
+
 /** 
  * I needed to iterate through the choices in an array that returned some form of value.
  * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
@@ -59,34 +57,32 @@ closeButton.addEventListener("click", closeRulesDiv);
  **/
 
 function setChoices() {
-    let choiceArray = ['rock', 'paper', 'scissors'];
-        let randomNumber = Math.floor(Math.random() * 3); 
-            return choiceArray[randomNumber];
+    let choiceArray = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    let randomNumber = Math.floor(Math.random() * 5);
+    return choiceArray[randomNumber];
 }
-setChoices();
 
 /**
  * I have added event listener to each of the main elements. 
  * using 'thegame('element')' it then passes the value of each to thegame function
  */
- function userClicks() {
-    rockIcon.addEventListener('click', function() {
+function userClicks() {
+    rockIcon.addEventListener('click', function () {
         theGame('rock');
     });
-    paperIcon.addEventListener('click', function() {
+    paperIcon.addEventListener('click', function () {
         theGame('paper');
     });
-    scissorsIcon.addEventListener('click', function() {
+    scissorsIcon.addEventListener('click', function () {
         theGame('scissors');
     });
-    lizardIcon.addEventListener('click', function() {
+    lizardIcon.addEventListener('click', function () {
         theGame('lizard');
     });
-    spockIcon.addEventListener('click', function() {
+    spockIcon.addEventListener('click', function () {
         theGame('spock');
     });
 };
-userClicks();
 
 
 /**
@@ -97,9 +93,16 @@ function userDraws(userClicks) {
     console.log('User Draws');
     resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
     document.getElementById('resultUpdate').classList.add('user-draw');
-    setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-draw')}, 2000) 
+    setTimeout(function () {
+        document.getElementById('resultUpdate').classList.remove('user-draw')
+    }, 2000)
 };
+
+/**
+ * Explain function
+ * @param {*} userClicks 
+ * @param {*} computerChooses 
+ */
 
 function userWins(userClicks, computerChooses) {
     let zeroScoreUser = parseInt(document.getElementById('userScoreDigit').innerText);
@@ -107,9 +110,10 @@ function userWins(userClicks, computerChooses) {
     console.log('User Wins');
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
-    setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-won');}, 2000);
-        resetRounds();
+    setTimeout(function () {
+        document.getElementById('resultUpdate').classList.remove('user-won');
+    }, 2000);
+    resetRounds();
 };
 
 function userLoses(userClicks, computerChooses) {
@@ -118,129 +122,120 @@ function userLoses(userClicks, computerChooses) {
     console.log('User Loses');
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
     document.getElementById('resultUpdate').classList.add('user-loss');
-    setTimeout(function() {
-        document.getElementById('resultUpdate').classList.remove('user-loss');}, 2000);
-        resetRounds();
+    setTimeout(function () {
+        document.getElementById('resultUpdate').classList.remove('user-loss');
+    }, 2000);
+    resetRounds();
 };
- 
+
 /**
  * TBC
  * Function that will complete the game round and reset the results, and in future make the second game available
-**/
+ **/
 function resetRounds() {
     if (userScored.innerHTML === '10') {
-        userRoundsWon = document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
+        document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
         resultDiv.innerHTML = `Well Done! You won this round. The scores will now reset`;
         document.getElementById('resultUpdate').classList.add('user-won');
-        setTimeout(function() {
             userScored.innerHTML = 0;
-            compScored.innerHTML = 0;}, 3000);
+            compScored.innerHTML = 0;
+        resetGame();
         return true
     } else if (compScored.innerHTML === '10') {
-        compRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
+        document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
         resultDiv.innerHTML = `Oh no, you lost this round! The scores will now reset`;
         document.getElementById('resultUpdate').classList.add('user-loss');
-        setTimeout(function() {
             userScored.innerHTML = 0;
-            compScored.innerHTML = 0;}, 3000);
+            compScored.innerHTML = 0;
+        resetGame();
         return true
     } else {
         return false;
     }
 }
 
-/*
+
 // function to reset the game to 0
 function resetGame() {
-    if(userRoundsWon.innerHTML === 3) {
-        userRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
+    if(userRoundsWon === 3) {
+        document.getElementById('userRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Well done, you were the first to Three Rounds. You won!;`;
-        setTimeout(function() {
             userRoundsWon = 0;
-            userRoundsWon = 0;}, 3000);
+            userRoundsWon = 0;
         return true
-    } else if (compRoundsWon.innerHTML === 3) {
-        compRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
+    } else if (compRoundsWon === 3) {
+        document.getElementById('compRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Unlucky, the Computer was first to Three Rounds. Try again!;`;
-        setTimeout(function() {
             userRoundsWon = 0;
-            userRoundsWon = 0;}, 3000);
+            userRoundsWon = 0;
         return true
     } else {
         return false;
     }
 }
-
-*/
-
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
-**/
+ **/
 
-function theGame(userClicks) {
+function theGame(userclick) {
     let computerChooses = setChoices();
-        if (userClicks === computerChooses) {
-            result = 'Draw!';
-            userDraws(userClicks); // draw
-        } else if (userClicks === 'rock' && (computerChooses === 'scissors')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } else if (userClicks === 'scissors' && (computerChooses === 'paper')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } else if (userClicks === 'paper' && (computerChooses === 'rock')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } 
-          else if (userClicks === 'rock' && (computerChooses === 'lizard')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } else if (userClicks === 'paper' && (computerChooses === 'spock')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } else if (userClicks === 'scissors' && (computerChooses === 'lizard')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } 
-        else if (userClicks === 'lizard' && (computerChooses === 'paper')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } 
-        else if (userClicks === 'lizard' && (computerChooses === 'spock')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } 
-        else if (userClicks === 'spock' && (computerChooses === 'scissors')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } 
-        else if (userClicks === 'spock' && (computerChooses === 'rock')) {
-            result = 'You Won!';
-            userWins(userClicks, computerChooses);
-        } // you won 
-        else {
-            if (userClicks === 'rock' && (computerChooses === 'paper')) {
-                result = 'You lost';
-            } else if (userClicks === 'paper' && (computerChooses === 'scissors')) {
-                result = 'You lost';
-            } else if (userClicks === 'scissors' && (computerChooses === 'rock')) {
-                result = 'You lost';
-            } else if (userClicks === 'lizard' && (computerChooses === 'rock')) {
-                result = 'You lost';
-            } else if (userClicks === 'spock' && (computerChooses === 'paper')) {
-                result = 'You lost';
-            } else if (userClicks === 'lizard' && (computerChooses === 'scissors')) {
-                result = 'You lost';
-            } else if (userClicks === 'paper' && (computerChooses === 'lizard')) {
-                result = 'You lost';
-            } else if (userClicks === 'spock' && (computerChooses === 'lizard')) {
-                result = 'You lost';
-            } else if (userClicks === 'scissors' && (computerChooses === 'spock')) {
-                result = 'You lost';
-            } else if (userClicks === 'rock' && (computerChooses === 'spock')) {
-                result = 'You lost';
-            } userLoses(userClicks, computerChooses); // lose
+    if (userclick === computerChooses) {
+        result = 'Draw!';
+        userDraws(userclick); // draw
+    } else if (userclick === 'rock' && (computerChooses === 'scissors')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'scissors' && (computerChooses === 'paper')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'paper' && (computerChooses === 'rock')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'rock' && (computerChooses === 'lizard')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'paper' && (computerChooses === 'spock')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'scissors' && (computerChooses === 'lizard')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'lizard' && (computerChooses === 'paper')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'lizard' && (computerChooses === 'spock')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'spock' && (computerChooses === 'scissors')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } else if (userclick === 'spock' && (computerChooses === 'rock')) {
+        result = 'You Won!';
+        userWins(userclick, computerChooses);
+    } // you won 
+    else {
+        if (userclick === 'rock' && (computerChooses === 'paper')) {
+            result = 'You lost';
+        } else if (userclick === 'paper' && (computerChooses === 'scissors')) {
+            result = 'You lost';
+        } else if (userclick === 'scissors' && (computerChooses === 'rock')) {
+            result = 'You lost';
+        } else if (userclick === 'lizard' && (computerChooses === 'rock')) {
+            result = 'You lost';
+        } else if (userclick === 'spock' && (computerChooses === 'paper')) {
+            result = 'You lost';
+        } else if (userclick === 'lizard' && (computerChooses === 'scissors')) {
+            result = 'You lost';
+        } else if (userclick === 'paper' && (computerChooses === 'lizard')) {
+            result = 'You lost';
+        } else if (userclick === 'spock' && (computerChooses === 'lizard')) {
+            result = 'You lost';
+        } else if (userclick === 'scissors' && (computerChooses === 'spock')) {
+            result = 'You lost';
+        } else if (userclick === 'rock' && (computerChooses === 'spock')) {
+            result = 'You lost';
         }
-    };
-
+        userLoses(userclick, computerChooses); // lose
+    }
+};
