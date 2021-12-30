@@ -109,7 +109,7 @@ function userWins(userClicks, computerChooses) {
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function() {
         document.getElementById('resultUpdate').classList.remove('user-won');}, 2000);
-        resetGame();
+        resetRounds();
 };
 
 function userLoses(userClicks, computerChooses) {
@@ -120,14 +120,14 @@ function userLoses(userClicks, computerChooses) {
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function() {
         document.getElementById('resultUpdate').classList.remove('user-loss');}, 2000);
-        resetGame();
+        resetRounds();
 };
  
 /**
  * TBC
  * Function that will complete the game round and reset the results, and in future make the second game available
 **/
-function resetGame() {
+function resetRounds() {
     if (userScored.innerHTML === '10') {
         userRoundsWon = document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
         resultDiv.innerHTML = `Well Done! You won this round. The scores will now reset`;
@@ -148,7 +148,31 @@ function resetGame() {
         return false;
     }
 }
-// resetGame()
+
+/*
+// function to reset the game to 0
+function resetGame() {
+    if(userRoundsWon.innerHTML === 3) {
+        userRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
+        resultDiv.innerHTML = `Well done, you were the first to Three Rounds. You won!;`;
+        setTimeout(function() {
+            userRoundsWon = 0;
+            userRoundsWon = 0;}, 3000);
+        return true
+    } else if (compRoundsWon.innerHTML === 3) {
+        compRoundsWon = document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
+        resultDiv.innerHTML = `Unlucky, the Computer was first to Three Rounds. Try again!;`;
+        setTimeout(function() {
+            userRoundsWon = 0;
+            userRoundsWon = 0;}, 3000);
+        return true
+    } else {
+        return false;
+    }
+}
+
+*/
+
 
 /**
  * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
@@ -214,10 +238,9 @@ function theGame(userClicks) {
                 result = 'You lost';
             } else if (userClicks === 'scissors' && (computerChooses === 'spock')) {
                 result = 'You lost';
-            } 
-            else if (userClicks === 'rock' && (computerChooses === 'spock')) {
+            } else if (userClicks === 'rock' && (computerChooses === 'spock')) {
                 result = 'You lost';
-            } userLoses(userClicks, computerChooses);
+            } userLoses(userClicks, computerChooses); // lose
         }
     };
 
