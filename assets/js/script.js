@@ -4,9 +4,10 @@ console.log('hey');
 // JS variables
 const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
-const closeButton = document.getElementById('closeButton');
+const closeButton = document.getElementById('closeButton'); // close rule button
+const audioBtn = document.getElementById('audioButton'); // toggle audio on off
 
-const rulesDiv = document.getElementById('rules');
+const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
 const rockIcon = document.getElementById('rock'); // User Clicks
 const paperIcon = document.getElementById('paper'); // User Clicks
@@ -25,20 +26,17 @@ const resultDiv = document.getElementById('resultUpdate'); // This returns and d
 
 
 /** 
- * Added Event Listeners following the loading of the Dom Content
- * Looking to use this to open the new div for the rules button
+ * This function ensures the DomContent is loaded before certain functions are active
  **/
-
 document.addEventListener("DOMContentLoaded", function () {
     setChoices();
     userClicks();
 });
 
 
-/** function that contains the html when clicking on rules
- * Not yet working 
+/**
+ * Two functions to Show and Hide the Rules Div
  */
-
 function showRulesDiv() {
     document.getElementById("rulesDiv").style.display = "block";
 }
@@ -50,12 +48,11 @@ function closeRulesDiv() {
 rulesButton.addEventListener("click", showRulesDiv);
 closeButton.addEventListener("click", closeRulesDiv);
 
-/** 
- * I needed to iterate through the choices in an array that returned some form of value.
- * Mathfloor is used to capture a whole integer, and random * 3 (the number of possible choices)
- * it is labelled computerChoice as this is what i need to use for my main game function as a user opposes it
- **/
 
+/** 
+ * My Array for each of the five choices.
+ * Mathfloor is used to capture a whole integer, and random * 5 (the number of possible choices)
+ **/
 function setChoices() {
     let choiceArray = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let randomNumber = Math.floor(Math.random() * 5);
@@ -63,8 +60,8 @@ function setChoices() {
 }
 
 /**
- * I have added event listener to each of the main elements. 
- * using 'thegame('element')' it then passes the value of each to thegame function
+ * I have added event listener to each of the main choice elements. 
+ * Using 'thegame('element')' it then passes the value to theGame() function for it to work
  */
 function userClicks() {
     rockIcon.addEventListener('click', function () {
@@ -84,10 +81,14 @@ function userClicks() {
     });
 };
 
+function buttonAudio() {
+    
+}
+
 
 /**
- * Three functions that collate the score from the gamne logic and incriment user & comp scores
- * I also update the results and choices in these functions, style them with classList add and remove, with css styling
+ * This function displays the message when there is a draw following a user click
+ * @param {*} userClicks 
  */
 function userDraws(userClicks) {
     console.log('User Draws');
@@ -99,11 +100,10 @@ function userDraws(userClicks) {
 };
 
 /**
- * Explain function
+ * These two functions increment the round score after each user click, displays the choices and why said result
  * @param {*} userClicks 
  * @param {*} computerChooses 
  */
-
 function userWins(userClicks, computerChooses) {
     let zeroScoreUser = parseInt(document.getElementById('userScoreDigit').innerText);
     document.getElementById("userScoreDigit").innerHTML = ++zeroScoreUser;
@@ -128,9 +128,9 @@ function userLoses(userClicks, computerChooses) {
     resetRounds();
 };
 
+
 /**
- * TBC
- * Function that will complete the game round and reset the results, and in future make the second game available
+ * This is the function that resets the Rounds once a score of 10 is reached
  **/
 function resetRounds() {
     if (userScored.innerHTML === '10') {
@@ -155,7 +155,7 @@ function resetRounds() {
 }
 
 
-// function to reset the game to 0
+// This is the function that resets the game once 3 rounds has been achieved
 function resetGame() {
     if(userRoundsWon === 3) {
         document.getElementById('userRoundsWon').innerHTML = '0';
@@ -175,9 +175,9 @@ function resetGame() {
 }
 
 /**
- * This is the logic behind my game. Rock beats scissors etc. Each one links in with a win, lose draw function. 
- **/
-
+ * This is the function and logic that creates the game. Each user click is compared with a computers choice, giving a result
+ * @param {} userclick 
+ */
 function theGame(userclick) {
     let computerChooses = setChoices();
     if (userclick === computerChooses) {

@@ -59,6 +59,12 @@ p {
     padding: 0.5rem;
 }
 
+#audioButton {
+    font-size: 150%;
+    color: white;
+    font-weight: 900;
+}
+
 /* rules and play section */
 #rules {
     text-align: center;
