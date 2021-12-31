@@ -5,7 +5,6 @@ console.log('hey');
 const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
-const audioBtn = document.getElementById('audioButton'); // toggle audio on off
 
 const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
@@ -82,7 +81,8 @@ function userClicks() {
 };
 
 function buttonAudio() {
-    
+    const audioBtn = document.getElementById('audioButton');
+    audioBtn.muted = false;
 }
 
 
