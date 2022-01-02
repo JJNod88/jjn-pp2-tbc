@@ -15,13 +15,81 @@ ReadMe for Jon's new project 2, javaScript
 
 
 # Introduction
-The site has been built to host the iconic Rock, Paper Scissor game.
-The user can choose which element they want to choose in hopes of beating the comoputer. 
-A score will be kept depending on the result of each round - When a user reaches 10 before the computer, a second more challenging game is accessible.
+Welcome! This site has been built to host the iconic Rock, Paper, Scissor, Lizard Spock game.
+
+The focus of this site is to use the JavaScript language to provide an interactive game where Users can compete against the Computer.
+
+The site is aimed at everyone looking to play a chilled out, competetive game of Rock, Paper, Scissors, Lizard, Spock. 
 
 # Value
+New User / Target Audience
+* Users looking for a competetive game of Rock, Paper, Scissors, Lizard Spock.
+* Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game.
+
+## Return User
+* Users who have previously utilised the site to play the game
+* Who want to return to beat the computer
+* Enjoy a relaxing but competetive online game
+
+## Site Aims
+* The site aims to provide users a platform for playing a fun game
+* Providing the opportunity to:
+    * Learn how to play Rock, Paper, Scissors, Lizard Spock, famously introduced on the hit TV Show 'The Big Bang Theory'
+    * Play a more complex game of the typical Rock Paper Scissors game
+    * Compete against the Computer with Five options each turn to win, draw or lose
+    * Get to see each turn what icon they won, lost or draw against
+    * Track scores for rounds and the game, delivering an interactive and engaging game environment
+    * Toggle the option to play with sound or not
+
+## How the Site achieves this
+* The site has an SEO defined to accurately show up when people search for rock, paper scissor games, with the addition of lizard, spock, big bang theory and games
+* Three languages used to focus on structure, design and interactivity
+* Designed to be simple and engaging, users will know instantly what the sites intention is, and can navigate around the site with ease.
+    * A basic but effective design, with content displayed on one page, and functions to show and hide additional content
+    * Evident background picture that sets the scene, with an evident large title 
+    * A consistent Header with a Home and audio buttion, accessible at all times for each user
+
+### Page specific
+* One page site, with a clear image and title instantly telling the user the intention of the site
+* Background is transparent, ensuring all content displayed is easy to use, readable and accessible.
+* Navigation elements in the header accessible at all times, which are fixed with a high index.
+* The site is strucutred appropriately, with a rules section followed by the games essential components with a results and score section
+* Color coded buttons that correlates the rules and information content.
+* Consistent coloring for button hovers, and content.
+* Responsive design for all screen sizes and devices
 
 # UX
+## 1. Strategy Plane
+* My startegy Plane has been explained in detail in my Values section [here](#Value)
+* Wireframes were used for the basic designs and overview of funcitonality. It was designed to be easily identifyable with the use of apropriate background images, titles and icons. To be enjoyable, intuitive with a competetive edge.
+
+## 2. Scope Plane
+* The Scope plane includes the features needed to provide content, material, access and functionality for Users.
+* You can find this in detail here in my [Festures](#Festures)] section.
+* I needed to ensure the content was relevant and outline the key functions for a User of the site - Title, Images, Appropriate Icons, Rules, Results and Score Section for the site to feedback to the users, this was essential to making the game usable and interactive.
+* Key functions were:
+    * Enable the Users to choose their selection with the click of a button
+    * Result section to confirm the result of each user selevtion. This was color coded to represent win, draw and lose.
+    * Scoring section to track the results and provide tje opportunity to win rounds and the game. 
+
+## 3. Structure Plane
+* For the site I have used HTML for the core structure, CSS for styling and JavaScriot for interactivity-
+    ### HTML structuring:
+    * The structure of the site and its simplistic design results in a one page, interactive game
+    * Stylesheet, googlefonts, fontawesome, description and SEO were all linked within the Head element
+    * Script.js was linked at the bottom of the Body element.
+    * I followed the industry standard for a core html structure, utilising Flexbox to structure my content:
+        * Flexbox is very responsive and provided excellent opportunity to align all of my divs and content. 
+    * The order of my content aligns correctly with the structure of the site. At the top of the page is the header and h1 title. Followed by a rules div that as inner HTML and an assigned JS function so that is is both visible and hidden with clicks.
+    * Within the HTML, attributes have been chosen with appropriate and easy to identify names, as these interact both with CSS and JS.
+    * CSS Media Querys ensure that the structure of the site is maintained regardless of screen size and device.
+
+    ### CSS:
+    * 
+
+## 4. Skeleton Plane
+
+## 5. Surface Plane
 
 # Accessibility
 Added title for cursor knowledge
