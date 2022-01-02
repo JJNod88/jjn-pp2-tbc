@@ -119,7 +119,41 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
     * Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
     * The rules button and the close button are designed to hide and make visible the rules information div
 
+    ### Functionality
+    * I needed to confirm what the sies game did and how it would create a good experience for the User
+    * once i decided on the Rock Paper Scissor game, i needed to identify the process behind this:
+        * theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice.
+        * userclick Function() = 5 buttons representing each selection of Rock, Paper, Scissors, Lizard Spock
+        * Each button identified as a click, which represented a user Selection
+        * setChoices function() = acted as the comps selection. compared with the Comps automaed Choice = 
+        * User Draws, userWins, userLoses functions() = once a Selection was made, a result was displayed identoifying the result. This shows the user if they won, drew or lost, what their selection was and what the Comp chose
+        * roundReset function() = reset the round once a score of 10 was achieved
+        * gameReset Function() = reset the game once a score of 3 rounds was achieved
+        * showRules, closeRuled functions() = This provided the functiomality of hiding and making visible the rules div
+        * A set of highly identifiable variables
+        * A Dom content Loader event listener to ensure the site was loaded correctly before certain functions were made available.
+
 ## 5. Surface Plane
+* This identifies the sites main goals, its color, design, styling and images.
+
+    ### User Friendly
+    * The sites goal and content is specific
+        * With aclear site title, page title, background image, button icons and rules informstion, the sites is instantly recognisable to any User what its purpose and intentions are
+        * A Fun, interactive rock paper scissors type game.
+
+    ### Color Palette
+    * The site needs obly an index page. The color palette has been consistent throughout, and has been designed to be interactive.
+    * Bacground has a transparent black color, with all standard text in white.
+    * Buttons for the Rules div is standard, with a red hover color for both
+    * Each of the five main game buttons begin with the same color, however have actibve and hover status with indepedent colors. These colors have been choses for disparity but also how it appears against the background
+        * The colors of each background also directly reflect the same color in the content of the rules div. The rules div sets out the rolus and how to play, with each icon element colour to replicate the five main button choices.
+    * The text in the results section is designed to represent the result of each round. A win is green, a lose is red, and a draw is yellow (neutral)
+    * The incrementations of the score have also been colored with UX in mind. A user score is green, a comp score is red.
+
+    ### Font size, color, type and styling
+    * A google fonts has been loaded into the site
+    * The sites font is defaulted as Montserrat. This was chosen as the text reminds me of an arcade type game, which correlated to what i was tring to achieve. A san-Serif backup font was added incase for any reason the added font was not loaded
+    * The size of the fonts --- 
 
 # Accessibility
 Added title for cursor knowledge
