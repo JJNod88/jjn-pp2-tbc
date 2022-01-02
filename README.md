@@ -22,7 +22,7 @@ The focus of this site is to use the JavaScript language to provide an interacti
 The site is aimed at everyone looking to play a chilled out, competetive game of Rock, Paper, Scissors, Lizard, Spock. 
 
 # Value
-New User / Target Audience
+## New User / Target Audience
 * Users looking for a competetive game of Rock, Paper, Scissors, Lizard Spock.
 * Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game.
 
@@ -77,7 +77,7 @@ New User / Target Audience
     ### HTML structuring:
     * The structure of the site and its simplistic design results in a one page, interactive game
     * Stylesheet, googlefonts, fontawesome, description and SEO were all linked within the Head element
-    * Script.js was linked at the bottom of the Body element.
+    * Script.js was linked at the bottom of the Body element
     * I followed the industry standard for a core html structure, utilising Flexbox to structure my content:
         * Flexbox is very responsive and provided excellent opportunity to align all of my divs and content. 
     * The order of my content aligns correctly with the structure of the site. At the top of the page is the header and h1 title. Followed by a rules div that as inner HTML and an assigned JS function so that is is both visible and hidden with clicks.
@@ -85,9 +85,39 @@ New User / Target Audience
     * CSS Media Querys ensure that the structure of the site is maintained regardless of screen size and device.
 
     ### CSS:
-    * 
+    * CSS has been stored within a stylesheet that resides in an Asset Folder. This is best practice especially if you wanted to add aditional pages. It also helps keep the HTML clean
+    * Images have been stored within an Images folder, within the same Assets Folder
+        * The background Image used is of real people playing a similar game to the sites game
+        * It also has a transparent dark div over this to further improve how the content is displayed
+    * Icons are directly comparable to each button of the game. For Rock i have used the Rock icon for button. This is the same for all Five buttons
+        * Icons have an active and hover status with a different color for improved UX. In the Rules section, each btton has also been colored in the same color as the buttons, to improve identity and repetitition
+    * Button Hovers have been added for improved UX, and are consistent with a red color
+    * Images have been resized and converted to WebP for improved site functionality and performance
+    * Media Queries have been added to ensure the site is responsive on any device
+
+    ### JavaScript:
+    * JavaScript has been used for the sites interactiveness, enabling the game.
+    * The variables have been primarily stored as Const and Lets where appropriate as best practice. These variables are then used throughout the functions 
+        * Functions and Variables were all named approriately, giving obvious meaning to each
+    * Clear and informative comments has been added to every variable and function. This is absolutely vital both for my use but also any future developers who may want to copy / work on the game. These comments also acted as information and drivers for me as I built the site using JavaScripy. It acted as reminders for me
+        * Effective use of // and /** depending on the depth of comments neccessary
+    * A DomContentLoader event listener was added to ensure any functionality was active once the dom had loaded, to reduce and remove any user / site errors.
 
 ## 4. Skeleton Plane
+* Balsamiq Wireframes were used to for the initial structure, design and conent of the Site.
+
+    ### Layout
+    * I decided to go with just one page for the site, with all content and functions accessible from the landing page
+    * It has a relateale background image, with a background gradient for improved content visibility.
+    * The site flows appropriately from Top to Bottom. Header, H1 title, rules div, game div, result div, sscore div and finally a footer displaying a simple thank you message
+    * Font has been kept consistent. FleBox was primarily used for the display of each Div. Supporting the contents alignment and responsiveness.
+    * Appropriate use of only one H1, and then h2 and h3 utilised repectively
+    * To ensure the content was disoplayed appropriately, the rules section was confined to a button, that hid the div unless a button was clicked
+    * each div / section of the site has a clear prupose, and is manipulated in some way by JavaScript making it interactive and an enjoyable experiene for the user
+
+    ### Navigation
+    * Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
+    * The rules button and the close button are designed to hide and make visible the rules information div
 
 ## 5. Surface Plane
 
