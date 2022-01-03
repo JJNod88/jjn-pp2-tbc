@@ -283,16 +283,16 @@ Action: Visible and accessible
 * 350px
     * 
 * 300px
-    * 
+    
 
-<details>
+</details>
 
 ### Browser Testing
 
 <details><summary>Browser List</summary>
 
 * Google Chrome
-* 
+
 
 </details>
 
@@ -300,7 +300,6 @@ Action: Visible and accessible
 
 <details><summary>Device List</summary>
 
-* 
 * MacBook Air 13"
 * HP Monitor 24"
 
@@ -337,6 +336,7 @@ The purpose of a local deployment is for other coders to use my code to deploy m
 
 <details><summary>Bug List</summary>
 <br> 
+Below is a list of bugs and their fixes throughout the project
 
 * In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
@@ -380,7 +380,8 @@ The purpose of a local deployment is for other coders to use my code to deploy m
 * When 3 rounds won is reached, it is not resetting both scores to 0. 
     * Fix: I was only updating the rounds won inner HTML individually, so when user or comp reached 3, it was only resetting its own score. When i included both in each of the if else, it worked and reset both 'Rounds won' incriments.
 
-<details>
+</details>
+
 
 # Credits
 
@@ -403,5 +404,6 @@ The purpose of a local deployment is for other coders to use my code to deploy m
 * [promo.com](https://promo.com/tools/image-resizer/) for image resizing
 * [opengameart.org](https://opengameart.org/) for the audio files
 * Google Developer, including LightHouse
-* 
+* [fontawesome](https://fontawesome.com/) for icons
+* [googlefonts](https://fonts.google.com/) for my google font
 

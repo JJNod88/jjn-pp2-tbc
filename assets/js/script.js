@@ -6,8 +6,8 @@ const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
 const soundBtn = document.getElementById('audioButton'); // button for audio
-const audioOne = new Audio('assets/audio/click.wav');
-audioOne.muted = true;
+const audioOne = new Audio('assets/audio/click.wav'); // finds the audio file
+audioOne.muted = true; // site loads muted
 
 const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
@@ -34,11 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
     userClicks();
 });
 
+/** 
+ * Function that toggles the audio on and off, changing the color of the audio button
+ */
 soundBtn.addEventListener('click', function() {
-        soundBtn.setAttribute('style', 'color: green');
-        audioOne.muted = false;
-        console.log('mute btn');
+
+    if (audioOne.muted == false){
+    soundBtn.setAttribute('style', 'color: white');
+    audioOne.muted = true;
+    } else {
+    soundBtn.setAttribute('style', 'color: green');
+    audioOne.muted = false;
+    }
+    console.log('mute btn');
 });
+
 
 /**
  * Two functions to Show and Hide the Rules Div
@@ -53,6 +63,7 @@ function closeRulesDiv() {
 
 rulesButton.addEventListener("click", showRulesDiv);
 closeButton.addEventListener("click", closeRulesDiv);
+
 
 /** 
  * My Array for each of the five choices.
@@ -90,6 +101,7 @@ function userClicks() {
         audioOne.play();
     });
 };
+
 
 /**
  * This function displays the message when there is a draw following a user click
