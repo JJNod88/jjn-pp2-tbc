@@ -5,6 +5,7 @@ console.log('hey');
 const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
+const audioBtn = document.getElementById('audioButton'); // button for audio
 
 const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
@@ -32,6 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
     userClicks();
 });
 
+audioBtn.addEventListener('click', function() {
+    let audioOne = new Audio('assets/audio/click.wav');
+    audioOne.play();
+    console.log('audioclick');
+})
 
 /**
  * Two functions to Show and Hide the Rules Div
