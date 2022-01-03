@@ -227,14 +227,15 @@ The website comprises a number of features that make it intuitive and fun, which
 * Hidden rules Div
     * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
 
-# Credits
-* CloudConvert for webp converter imagecompressor.com to reduce image size
-* lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my rock paper scissors
-* I utilised the [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) resources to boost my knowledge of functions and how to structure them
-    * settimeout was highlighted here - fixed my Result Text colour solution.
-* tutor Support - Fatima
-    * Helped me with my reset game function that reset the scores and gave a message. This then allowed me to build on this with further scoring functionality. 
-* sep5 lead - Jack Controy - for my rules button open and closing div, he gave me the idea of storing the div in html and using display to show it. He also helped me condense the code into two functions (i originally had 4 functions that worked)
+# Technologies
+Three technologies were used to build the interactive front-website website:
+* HTML for the structure
+* CSS for the design
+* JavaScript for the interactivity and DOM manipulation.
+
+# Validation
+
+
 
 # Testing
 ### JS ConsoleLog tests:
@@ -252,9 +253,58 @@ The website comprises a number of features that make it intuitive and fun, which
 
 ### Manual Testing
 
+<details><summary>Actions, Expectations and Results</summary>
+
+### Header Elements
+Action: Visible and accessible
+* Expected: Visible and accessible 
+* Result: Pass.
+
+### Rules Div
+
+### The Main Game
+
+### Results Section
+
+### Score Section
+
+</details>
+
+<details> <summary>Responsiveness Tests for ux</summary>
+
+* 900px
+    * 
+* 750px
+    * 
+* 600px 
+    * 
+* 450px
+    * 
+* 350px
+    * 
+* 300px
+    * 
+
+<details>
+
 ### Browser Testing
 
+<details><summary>Browser List</summary>
+
+* Google Chrome
+* 
+
+</details>
+
 ### Device Testing
+
+<details><summary>Device List</summary>
+
+* 
+* MacBook Air 13"
+* HP Monitor 24"
+
+</details>
 
 ### ReadMe Testing
 
@@ -269,9 +319,24 @@ The website comprises a number of features that make it intuitive and fun, which
 5. Via the 'source' section, I selected 'Master Branch' from the drop down and published the link.
 6. My site was then displaying as published.
 7. I followed the link by clicking on it to check that the site was working.
+
 8. Link to my [site](https://jjnod88.github.io/jjn-rps-game/)
 
+## Local Deployment
+The purpose of a local deployment is for other coders to use my code to deploy my website, allowing them to utilise the code and design so that they cna make changes to build their own. You can do this by: 
+1. Ensure git is installed on your device
+2. In Github, locate the correct repository, click the code button 'next to the gitpod button'.
+3. Copy the link
+4. In a ternminal, type the following code: git clone 'pasted link of the code from the repository'
+5. Once loaded, change into the created directory
+6. Double click index.html which will open the website in the default browser.
+7. Check that the site is working, and begin to amend and edit the code.
+8. Because there is a repository in github, the commands add, commit and push can be used for version control
+
 # Bugs
+
+<details><summary>Bug List</summary>
+<br> 
 
 * In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
@@ -315,10 +380,29 @@ The website comprises a number of features that make it intuitive and fun, which
 * When 3 rounds won is reached, it is not resetting both scores to 0. 
     * Fix: I was only updating the rounds won inner HTML individually, so when user or comp reached 3, it was only resetting its own score. When i included both in each of the if else, it worked and reset both 'Rounds won' incriments.
 
+<details>
 
+# Credits
 
-# Technologies
-Three technologies were used to build the interactive front-website website:
-* HTML for the structure
-* CSS for the design
-* JavaScript for the interactivity and DOM manipulation.
+### Content 
+* lovemaths for math.floor and math.random technique for creating random numbers for my array to link with my game
+* I utilised the [FreeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) resources to boost my knowledge of functions and how to structure them
+    * Settimeout was highlighted here - fixed my Result Text colour solution.
+* Tutor Support - Fatima:
+    * Helped me with my reset game function that reset the scores and gave a message. This then allowed me to build on this with further scoring functionality. 
+* Sep5 lead - Jack Controy
+    * For my rules button open and closing div, he gave me the idea of storing the Rules Div in html and using JS Function to display. 
+    * He also advised me to condense four working Functions into just two (for the rules button event listeners and the Div)
+
+* Mentor - Dick:
+    * Advised me to reduce the use of 'let' variables and use 'Const' where more appropriate
+    * Helped with the 'Round Tally function' bug
+
+### Media
+* [cloudConvert](https://cloudconvert.com/) for webp converter 
+* [imagecompressor](https://imagecompressor.com/) to reduce image size
+* [promo.com](https://promo.com/tools/image-resizer/) for image resizing
+* [opengameart.org](https://opengameart.org/) for the audio files
+* Google Developer, including LightHouse
+* 
+
