@@ -75,8 +75,6 @@ p {
     padding: 1%;
 }
 
-
-
 #rulesButton:active,
 #rulesButton:hover {
     background-color: red;
@@ -92,6 +90,7 @@ p {
     color: white;
     margin: 0 20%;
     display: none;
+    justify-content: center;
 }
 
 #flexRules {
@@ -101,14 +100,12 @@ p {
 
 #list {
     text-align: left;
+    line-height: 1.5rem;
+    margin: 2% 0;
 }
 
 #rulesDiv ol {
     list-style: none;
-}
-
-#rulesDiv {
-    justify-content: center;
 }
 
 #liOne > i {
@@ -134,6 +131,16 @@ p {
 #liFive > i {
     font-size: 120%;
     color: orange;
+}
+
+#closeButton {
+    margin-top: 2%;
+}
+
+#closeButton:active,
+#closeButton:hover {
+    background-color: red;
+    color: white;
 }
 
 /* Game Section */
@@ -217,7 +224,7 @@ p {
     text-align: center;
     font-size: 130%;
     font-weight: 900;
-    padding-top: 1%;
+    padding-top: 4%;
     margin: 0 25%;
     opacity: 0.8;
 }
@@ -273,10 +280,22 @@ p {
 
 /* Media Queries */
 
+@media screen and (max-width: 900px) {
+
+    #rulesDiv {
+    color: white;
+    margin: 0 15%;
+    }
+}
+
 @media screen and (max-width: 750px) {
 
     #titleDiv {
         padding-top: 10%;
+    }
+
+    #rulesDiv p {
+    font-size: 90%;
     }
 
     #game-area button {
@@ -327,7 +346,19 @@ p {
     #titleDiv {
         padding-top: 10%;
     }
-    
+
+    #rulesDiv h2 {
+        font-size: 110%;
+    }
+
+    #rulesDiv {
+        margin: 0 7.5%;
+    }
+
+    #flexRules {
+        font-size: 80%;
+    }
+
     #game-area {
         padding-top: 10%;
     }
