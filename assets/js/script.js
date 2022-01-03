@@ -6,6 +6,7 @@ const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
 const audioBtn = document.getElementById('audioButton'); // button for audio
+const audioOne = new Audio('assets/audio/click.wav');
 
 const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 audioBtn.addEventListener('click', function() {
-    let audioOne = new Audio('assets/audio/click.wav');
     audioOne.play();
     console.log('audioclick');
 })
@@ -71,18 +71,23 @@ function setChoices() {
 function userClicks() {
     rockIcon.addEventListener('click', function () {
         theGame('rock');
+        audioOne.play();
     });
     paperIcon.addEventListener('click', function () {
         theGame('paper');
+        audioOne.play();
     });
     scissorsIcon.addEventListener('click', function () {
         theGame('scissors');
+        audioOne.play();
     });
     lizardIcon.addEventListener('click', function () {
         theGame('lizard');
+        audioOne.play();
     });
     spockIcon.addEventListener('click', function () {
         theGame('spock');
+        audioOne.play();
     });
 };
 
