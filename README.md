@@ -233,6 +233,9 @@ JS ConsoleLog tests:
 14. Added addiitonal function to reset the game after 3 rounds have been run. It doesnt reset, and allows the rounds won score to increase incorrectly by simply clicking on one of the buttons (it should stop at 10 and not increase)
     * fix: 
 
+15. When 3 rounds won is reached, it is not resetting both scores to 0. 
+Fix: 
+
 
 
 # Technologies
