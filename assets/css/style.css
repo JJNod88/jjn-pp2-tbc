@@ -204,6 +204,7 @@ p {
     font-weight: 900;
     padding-top: 2%;
     color: white;
+    margin: 0 2%;
 }
 
 .user-won {
@@ -360,7 +361,7 @@ p {
     }
 
     #game-area {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     #game-area button {
@@ -368,13 +369,13 @@ p {
     }
 
     .result-section {
-        padding-top: 5%;
+        padding-top: 2%;
         font-size: 100%;
     }
 
     .score-area {
         font-size: 90%;
-        padding-top: 10%;
+        padding-top: 5%;
         margin: 0 10%;
     }
 
@@ -387,7 +388,11 @@ p {
 
     #titleDiv {
         font-size: 100%;
-        padding-top: 10%;
+        padding-top: 15%;
+    }
+
+    #rulesDiv p {
+        font-size: 80%;
     }
 
     .score-area {
@@ -397,10 +402,10 @@ p {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 300px) {
 
     #titleDiv {
-        padding-top: 15%;
+        padding-top: 20%;
         font-size: 80%;
     }
 
@@ -418,7 +423,7 @@ p {
 
     .score-area {
         font-size: 80%;
-        padding-top: 4%;
+        padding-top: 10%;
         margin: 0 1%;
     }
 
