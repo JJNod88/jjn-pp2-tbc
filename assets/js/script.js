@@ -168,18 +168,16 @@ function resetRounds() {
 function resetGame() {
     if(userRoundsWon === 3) {
         document.getElementById('userRoundsWon').innerHTML = '0';
+        document.getElementById('compRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Well done, you were the first to Three Rounds. You won!;`;
             userRoundsWon = 0;
             compRoundsWon = 0;
-        return true
     } else if (compRoundsWon === 3) {
         document.getElementById('compRoundsWon').innerHTML = '0';
+        document.getElementById('userRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Unlucky, the Computer was first to Three Rounds. Try again!;`;
             userRoundsWon = 0;
             compRoundsWon = 0;
-        return true
-    } else {
-        return false;
     }
 }
 
