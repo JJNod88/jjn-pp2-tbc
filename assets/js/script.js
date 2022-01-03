@@ -5,8 +5,9 @@ console.log('hey');
 const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
-const audioBtn = document.getElementById('audioButton'); // button for audio
+const soundBtn = document.getElementById('audioButton'); // button for audio
 const audioOne = new Audio('assets/audio/click.wav');
+audioOne.muted = true;
 
 const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
@@ -34,10 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     userClicks();
 });
 
-audioBtn.addEventListener('click', function() {
-    audioOne.play();
-    console.log('audioclick');
-})
+
+soundBtn.addEventListener('click', function() {
+        soundBtn.setAttribute('style', 'color: green');
+        audioOne.muted = false;
+        console.log('mute btn');
+});
 
 /**
  * Two functions to Show and Hide the Rules Div
@@ -90,11 +93,6 @@ function userClicks() {
         audioOne.play();
     });
 };
-
-function buttonAudio() {
-    const audioBtn = document.getElementById('audioButton');
-    audioBtn.muted = false;
-}
 
 
 /**
