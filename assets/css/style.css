@@ -270,3 +270,128 @@ p {
     color: white;
     font-weight: 900;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 750px) {
+
+    #titleDiv {
+        padding-top: 10%;
+    }
+
+    #game-area button {
+        font-size: 300%;
+    }
+
+    .result-section {
+        font-size: 130%;
+    }
+
+    .score-area {
+        font-size: 100%;
+        padding-top: 2%;
+    }
+
+    #userScore {
+        padding: 2% 2%;
+    }
+
+    #computerScore {
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #titleDiv {
+        padding-top: 10%;
+    }
+
+    .score-area {
+        font-size: 90%;
+        padding-top: 2%;
+        margin: 0 15%;
+    }
+
+    #userScore {
+        padding: 2% 2%;
+    }
+
+    #computerScore {
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    #titleDiv {
+        padding-top: 10%;
+    }
+    
+    #game-area {
+        padding-top: 10%;
+    }
+
+    #game-area button {
+        font-size: 200%;
+    }
+
+    .result-section {
+        padding-top: 5%;
+        font-size: 100%;
+    }
+
+    .score-area {
+        font-size: 90%;
+        padding-top: 10%;
+        margin: 0 10%;
+    }
+
+    #footer {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #titleDiv {
+        font-size: 100%;
+        padding-top: 10%;
+    }
+
+    .score-area {
+        font-size: 90%;
+        padding-top: 4%;
+        margin: 0 1%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #titleDiv {
+        padding-top: 15%;
+        font-size: 80%;
+    }
+
+    #game-area {
+        padding-top: 2%;
+    }
+    
+    #game-area button {
+        font-size: 150%;
+    }
+
+    .result-section {
+        font-size: 80%;
+    }
+
+    .score-area {
+        font-size: 80%;
+        padding-top: 4%;
+        margin: 0 1%;
+    }
+
+    #footer {
+        font-size: 100%;
+    }
+}
