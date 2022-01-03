@@ -26,7 +26,6 @@ let compRoundsWon = 0;
 const scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 const resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
 
-
 /** 
  * This function ensures the DomContent is loaded before certain functions are active
  **/
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setChoices();
     userClicks();
 });
-
 
 soundBtn.addEventListener('click', function() {
         soundBtn.setAttribute('style', 'color: green');
@@ -55,7 +53,6 @@ function closeRulesDiv() {
 
 rulesButton.addEventListener("click", showRulesDiv);
 closeButton.addEventListener("click", closeRulesDiv);
-
 
 /** 
  * My Array for each of the five choices.
@@ -93,7 +90,6 @@ function userClicks() {
         audioOne.play();
     });
 };
-
 
 /**
  * This function displays the message when there is a draw following a user click
@@ -137,7 +133,6 @@ function userLoses(userClicks, computerChooses) {
     resetRounds();
 };
 
-
 /**
  * This is the function that resets the Rounds once a score of 10 is reached
  **/
@@ -162,7 +157,6 @@ function resetRounds() {
         return false;
     }
 }
-
 
 // This is the function that resets the game once 3 rounds has been achieved
 function resetGame() {
