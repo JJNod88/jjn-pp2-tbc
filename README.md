@@ -153,22 +153,79 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
     ### Font size, color, type and styling
     * A google fonts has been loaded into the site
     * The sites font is defaulted as Montserrat. This was chosen as the text reminds me of an arcade type game, which correlated to what i was tring to achieve. A san-Serif backup font was added incase for any reason the added font was not loaded
-    * The size of the fonts --- 
+    * Default font color has been set to white, with alternative colours for the selector buttons, results section and the incrimented scores. 
+    * The size of the fonts has been set using % for responsiveness, with sizes set to reflect its importance and position on the page
+    * Font weight has been set at 900% 
+    * H1 has been used for a header, h2 and h3 for subsequent headers
+    * Line-Height was used for the rules section to help distinguish between each selector element and its methodology.  
 
 # Accessibility
-Added title for cursor knowledge
-color coded in the rules and the icons
+* A modern and user friendly site must be user friendly, and accessible to users who may have a disability that prevents them from accessing the site in certain ways.
+* A useful tool to assess the accessibility of a site is by utilising google inspectors LightHouse function
+    * The site scored 100/100 for both mobile and desktop devices
+
+    ### Foundation
+* The foundation of this is the site layout and semantic HTML elements.
+    * The site is layed out with a standard HTML format to improve its flow, allowing screen readers to indicate header, nav, divs, buttons, icons, p, and footer elements of the site.
+    * Using these Semantic Elements in the correct order provides additional functionality for tab keys and screen readers to highlight the key information and content.
+    * UI Controls - Nav bar is set to fixed with a high index, and all buttons are accessible using the keyboard tab and enter functions.
+    * I have used aria-labels for all icons and buttons of the site. In addition to this, i have also added a title attribute to each of the five game choice icons to provide an additional reference to what each stands for. 
+    * Images and audio files have been loaded into the Asset Folder so they are always available. 
+    * Alt attributes have been added for images
 
 # Responsiveness
+* As technology advances, new devices are being released every day. It is extremely important to ensure that thre site and game can be played on any device. Not just its functionality, but its design and display too. A good site is not comprimised because of a smaller or larger screen. 
+
+### Structure
+* The site has been designed to adapt to any device and screen size. 
+    * It begins with a viewport in the HEAD of the index page and continues with the addition of media queries implemented with CSS
+    * Flexbox has been used to structure my elements which is an extremely responsive way of structuring the site. With display:flex and flex:1 for example, all of my sections and divs are automatically positioned correctly, and did so when scaling the screen size up and down. This saves a lot of time and means the HTML foundations of the site is already responsive. 
+
+### Units
+* For any element and font sizes, i have used only responsive units to increase the responsiveness of the content
+    * The main unit i have used throughout the site is %. This is the same for fonts, padding and margins. I have also used rem where necessary. 
+
+### Media queries
+* Media Queries in CSS has been used so that the site and game responds to any device and screen size.
+    * Using Google Developer, I have tested each element of the site to ensure it responds to scaling. This starts with testing the site in responsive mode, scaling it up and down easily. 
+    * For further testing, I tested the responsiveness in Google Developer for devices such as apple, android phones and tablets. 
+    * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11.
+
+* For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decresing the margins and adding padding between each div. 
+* Media query sizes are as follows: max900px, 750px, 600px, 450px, 350px, 300px.  
+    * The amount of media queries needed was limited due to responsive HTML and CSS coding
+
 
 # Features
-The website comprises a number of features that make it intuitive, usable and fun.
-- Two runnable games of Rock, Paper Scissors
-    - Gives a result to the user of how they won, drew or lost
-    - Has a score of 10 that resets the game scores and displays a message to the user that they won the game. 
-    - Second game is of increased difficulty, only accessible when the first game is won
-- A score tracking System and results section
-- A score limit, giving Users something to aim for by gaining access to the second game by winning the first. 
+The website comprises a number of features that make it intuitive and fun, which includes an interactive Game.
+
+### Header & Footer
+* A fixed Header consisting of two icon buttons.
+    * Home icon button that refreshes the Page and returns to the beginning
+    * An audio icon, with Audio functionality:
+        * The page loads muted, however an audio click for when a player selects a choice can be toggled on and off. 
+* Footer giving thanks for playing
+ 
+### Rules Div 
+* The User is able to open and close a div containing the rules and information of the game. 
+* This keeps the site clean when they are playing the game. The divs content is created in html, with JavaScript providing the functionality for clicking the buttons.
+
+### The Game
+* A game of Rock, Paper, Scissors, Lizard, Spock created with JavaScript. 
+* Five icons with active and hover status that forms the main part of the game. 
+    * Allows the User to compete against the computer
+
+### Result Section
+* Gives a result to the user which includes theirs and the computers choice. 
+* The result also has colour coding (green for a win, red for a loss, yellow for a draw) to improve UX.
+
+### Scoring Section
+* Collates a score for each turn up to a max score of 10. 
+* Collates number of rounds won once a player has reached thr max score. Gives a message once a round is won.
+* Collates rounds won scores and resets the game once a player has reached a total of 3 rounds. Gives a message one the game is won. 
+
+* Hidden rules Div
+    * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
 
 # Credits
 * CloudConvert for webp converter imagecompressor.com to reduce image size
@@ -180,61 +237,83 @@ The website comprises a number of features that make it intuitive, usable and fu
 * sep5 lead - Jack Controy - for my rules button open and closing div, he gave me the idea of storing the div in html and using display to show it. He also helped me condense the code into two functions (i originally had 4 functions that worked)
 
 # Testing
-JS ConsoleLog tests:
+### JS ConsoleLog tests:
 * Button array within the Dom Loader, including innerHTML addition to the 'Rules div'
     * console.log tested to see if it was showing....
 * Random choice array for each of the three main choices (rock, paper, scissors).
-    * console.log tested a random number to ensure the Math was working up to 3 - success
-* Event Listener for rock paper scissor. console.log(rock or paper or scissor). 
+    * console.log tested a random number to ensure the Math was working up to 5 - success
+* Event Listener for rock paper scissor lizard spock. 
+    * console.log(any of the 5 choices). 
     * Replaced by function = theGame()
 * console.log for the game logic. Testing user choice vs computer choice
     * Replaced by the functions = userDraws(), userWins(), userLoses()
     * console.log tested these - success.
-* 
+* AudioBtn test to see that it was working before adding functionality.
+
+### Manual Testing
+
+### Browser Testing
+
+### Device Testing
+
+### ReadMe Testing
+
+# Deployment
+
+* GitHub and GitPod has been used for the creation and deployment of the site. By using Github Pages, the site can be viewed on all devices. To do this I:
+
+1. Created a Repository on GitHub Pages using my user profile that i set up for personal use.
+2. Utilised GitPod, accessible in my repository, to create my site using html and css. The Gitpod Button is in bright green, below the setting tab and above the repository documents etc.
+3. GitPods version control funcitonality meant I could commit and push my code as I progressed. Previous commits were always accessible should I have needed to revisit them. I did this using the gitpod terminal: 'git add .' , 'git commit -m "message"' , 'Git push'. My Commit Messages were designed to be simple and descriptive.
+4. Returning to my repository in GitHub, I located the 'page section' in 'Settings'. Located above the green GitPod button.
+5. Via the 'source' section, I selected 'Master Branch' from the drop down and published the link.
+6. My site was then displaying as published.
+7. I followed the link by clicking on it to check that the site was working.
+8. Link to my [site](https://jjnod88.github.io/jjn-rps-game/)
 
 # Bugs
 
-2. In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
+* In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
 
-3. My console log for the rock, paper scissor iteration using math.floor & random was not giving me a number
+* My console log for the rock, paper scissor iteration using math.floor & random was not giving me a number
 
-4. My let array for my rock paper scissors in my setChoices was declared but valiue was never read, it was greyed out.
+* My let array for my rock paper scissors in my setChoices was declared but valiue was never read, it was greyed out.
     * fix: I hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
     * This was something i learned during my coding. At first, seeing grey made me think I had made a mistale, but on reflection things are grey because they havent been declared, called etc.
 
-5. Had a rules button that hen clicked opens up a div explaining the rules etc. When clicking, it was creating duplications, and i could close the div with the button.
+* Had a rules button that hen clicked opens up a div explaining the rules etc. When clicking, it was creating duplications, and i could close the div with the button.
     * Fix: I added a close button within the div, added two functions with event listeners to both open and close the div, this was done with style display being none and block.
 
-6. When clicking rock, it is only logging a draw to the console.
+* When clicking rock, it is only logging a draw to the console.
     * Fix: I had my user win, draw and loss functions added incorrectly. see bug 7. This fixed it. 
 
-7. When clicking my buttons, it wasn't incrementing the score every time.
+* When clicking my buttons, it wasn't incrementing the score every time.
     * Fix: I had my functions inside an individual if/else/else if statement, so it was only checking one particulsr piece of logic.
 
-8. I added innerHTML to the results display but nothing was happening. I tried query selector, element by id etc.
+* I added innerHTML to the results display but nothing was happening. I tried query selector, element by id etc.
     * Fix: I hadn't called the game function. 
 
-9. When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the draw functions parenthese.
+* When there is a draw, it duplicates the chosen button, even though i am just declaring userClicks in the innerhtml and the draw functions parenthese.
     * Fix: I had both userClick and computerChooses in the function parenthese on the actual Logic of the game (theGame function). I removed these also, and it worked!.
 
-10. I wanted to add some text colour to the result section that correlated to the result. I added a classList, but it wasnt changing color:
+* I wanted to add some text colour to the result section that correlated to the result. I added a classList, but it wasnt changing color:
     * Fix: Because it was a class, i added the '.' - but removing this meant it worked.
 
-11. When i added colour to my result wording, it stayed there.
+* When i added colour to my result wording, it stayed there.
     * Fix: setTimeOut function helped with this
     
-12. I have created a Score Limit function. However it makes my win, lose draw functionality inactive.
+* I have created a Score Limit function. However it makes my win, lose draw functionality inactive.
     * Fix: My scores increment is based on a string. When looking for user score === 10, it wasnt registering. I added '10' for a string and it worked.
 
-13. I have created a Round tally funciton - It is incrementing the total round score after a score of 10 is reached, but not by 1 as expected, by 2/4/6. So if ends up that i lost three times in a row ion opaoper, it adds by 3. If i lost on one paper, it adds by 1. This is the bug, 
+* I have created a Round tally funciton - It is incrementing the total round score after a score of 10 is reached, but not by 1 as expected, by 2/4/6. So if ends up that i lost three times in a row ion opaoper, it adds by 3. If i lost on one paper, it adds by 1. This is the bug, 
     * Fix: I had the resetGame() function within a setTimeOut function which was in both my userWin and userLoses functions. I put the resetGame function outside of the setTimeOut function and tested it. it now works!
 
-14. Added addiitonal function to reset the game after 3 rounds have been run. It doesnt reset, and allows the rounds won score to increase incorrectly by simply clicking on one of the buttons (it should stop at 10 and not increase)
-    * fix: 
+* Added addiitonal function to reset the game after 3 rounds have been run. It doesnt reset, and allows the rounds won score to increase incorrectly by simply clicking on one of the buttons (it should stop at 10 and not increase)
+    * fix: I removed the timeOut function. 
 
-15. When 3 rounds won is reached, it is not resetting both scores to 0. 
-Fix: 
+* When 3 rounds won is reached, it is not resetting both scores to 0. 
+    * Fix: I was only updating the rounds won inner HTML individually, so when user or comp reached 3, it was only resetting its own score. When i included both in each of the if else, it worked and reset both 'Rounds won' incriments.
 
 
 
