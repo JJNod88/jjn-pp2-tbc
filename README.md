@@ -22,16 +22,16 @@ The focus of this site is to use the JavaScript language to provide an interacti
 The site is aimed at everyone looking to play a chilled out, competetive game of Rock, Paper, Scissors, Lizard, Spock. 
 
 # Value
-## New User / Target Audience
+### New User / Target Audience
 * Users looking for a competetive game of Rock, Paper, Scissors, Lizard Spock.
 * Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game.
 
-## Return User
+### Return User
 * Users who have previously utilised the site to play the game
 * Who want to return to beat the computer
 * Enjoy a relaxing but competetive online game
 
-## Site Aims
+### Site Aims
 * The site aims to provide users a platform for playing a fun game
 * Providing the opportunity to:
     * Learn how to play Rock, Paper, Scissors, Lizard Spock, famously introduced on the hit TV Show 'The Big Bang Theory'
@@ -41,7 +41,7 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
     * Track scores for rounds and the game, delivering an interactive and engaging game environment
     * Toggle the option to play with sound or not
 
-## How the Site achieves this
+### How the Site achieves this
 * The site has an SEO defined to accurately show up when people search for rock, paper scissor games, with the addition of lizard, spock, big bang theory and games
 * Three languages used to focus on structure, design and interactivity
 * Designed to be simple and engaging, users will know instantly what the sites intention is, and can navigate around the site with ease.
@@ -65,7 +65,7 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
 
 ## 2. Scope Plane
 * The Scope plane includes the features needed to provide content, material, access and functionality for Users.
-* You can find this in detail here in my [Festures](#Festures)] section.
+* You can find this in detail here in my [Features](#Features) section.
 * I needed to ensure the content was relevant and outline the key functions for a User of the site - Title, Images, Appropriate Icons, Rules, Results and Score Section for the site to feedback to the users, this was essential to making the game usable and interactive.
 * Key functions were:
     * Enable the Users to choose their selection with the click of a button
@@ -174,7 +174,7 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
     * Alt attributes have been added for images
 
 # Responsiveness
-* As technology advances, new devices are being released every day. It is extremely important to ensure that thre site and game can be played on any device. Not just its functionality, but its design and display too. A good site is not comprimised because of a smaller or larger screen. 
+As technology advances, new devices are being released every day. It is extremely important to ensure that thre site and game can be played on any device. Not just its functionality, but its design and display too. A good site is not comprimised because of a smaller or larger screen. 
 
 ### Structure
 * The site has been designed to adapt to any device and screen size. 
@@ -393,7 +393,6 @@ The purpose of a local deployment is for other coders to use my code to deploy m
 * Sep5 lead - Jack Controy
     * For my rules button open and closing div, he gave me the idea of storing the Rules Div in html and using JS Function to display. 
     * He also advised me to condense four working Functions into just two (for the rules button event listeners and the Div)
-
 * Mentor - Dick:
     * Advised me to reduce the use of 'let' variables and use 'Const' where more appropriate
     * Helped with the 'Round Tally function' bug
