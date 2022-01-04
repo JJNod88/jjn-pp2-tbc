@@ -149,7 +149,7 @@ p {
 
 #game-area {
     display: flex;
-    padding-top: 2%;
+    padding-top: 5%;
     justify-content: center;
 }
 
@@ -285,13 +285,17 @@ p {
 
 @media screen and (max-width: 1250px) {
     
-        #titleDiv {
-        padding-top: 10%;
-        }
+    #titleDiv {
+    padding: 10% 0 5% 0;
+    }
 
-        #game-area {
-        padding-top: 5%;
-        }
+    #game-area {
+    padding-top: 10%;
+     }
+
+     .score-area {
+         padding-top: 6%;
+     }
 }
 
 @media screen and (max-width: 900px) {
