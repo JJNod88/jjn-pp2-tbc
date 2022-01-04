@@ -282,10 +282,16 @@ p {
 }
 
 /* Media Queries */
+
 @media screen and (max-width: 1250px) {
+    
         #titleDiv {
+        padding-top: 10%;
+        }
+
+        #game-area {
         padding-top: 5%;
-    }
+        }
 }
 
 @media screen and (max-width: 900px) {
