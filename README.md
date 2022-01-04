@@ -443,9 +443,12 @@ Using Google Developer Tool
 ### Browser Testing
 
 <details><summary>Browser List</summary>
+The site and its functionality has been tested on:
 
 * Google Chrome
-
+* Safari
+* Microsoft Edge
+* Mozilla Firefox
 
 </details>
 
@@ -453,8 +456,22 @@ Using Google Developer Tool
 
 <details><summary>Device List</summary>
 
+#### Actual device:
+
 * MacBook Air 13"
 * HP Monitor 24"
+* iphone 11
+* iphone 13
+* ipad 6th gen
+
+#### Emulated Device:
+
+* Moto G4
+* Galaxy s5
+* Iphone 6, 7, 8
+* Iphone 6, 7, 8 plus
+* Ipad Pro
+* Nest Hub
 
 </details>
 

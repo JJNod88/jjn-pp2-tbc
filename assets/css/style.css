@@ -30,12 +30,14 @@ p {
     margin: 0;
 }
 
+/*
 #bImage {
     background-color: rgba(0, 0, 0, .7);
 }
+*/ 
 
 #titleDiv {
-    padding: 2rem 0;
+    padding: 5rem 0 1rem 0;
     font-size: 130%;
 }
 
@@ -147,7 +149,7 @@ p {
 
 #game-area {
     display: flex;
-    padding-top: 1%;
+    padding-top: 2%;
     justify-content: center;
 }
 
@@ -280,6 +282,11 @@ p {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1250px) {
+        #titleDiv {
+        padding-top: 5%;
+    }
+}
 
 @media screen and (max-width: 900px) {
 
