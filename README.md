@@ -416,6 +416,9 @@ Action: Comp reaches a score of 3 rounds first
 <details> <summary>Responsiveness Tests for ux</summary>
 Using Google Developer Tool
 
+* 1250px
+    * Addiitonal padding for the Title div, h1
+    * Additional padding top on game and score area, improved spacing
 * 900px
     * Rules div gets a reduced margin so that it stays aligned 
 * 750px
