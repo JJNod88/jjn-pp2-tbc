@@ -414,20 +414,30 @@ Action: Comp reaches a score of 3 rounds first
 </details>
 
 <details> <summary>Responsiveness Tests for ux</summary>
+Using Google Developer Tool
 
 * 900px
-    * 
+    * Rules div gets a reduced margin so that it stays aligned 
 * 750px
-    * 
+    * h1 title increases its distance from the header with a padding-top
+    * Reduce font size for the rules, results and score divs
+    * Increses the Score Divs so that the wording stays aligned and clean
 * 600px 
-    * 
+    * h1 title increases its distance from the header with a padding-top
+    * Score area has its margins reduces for content alignment, reduced font size and padding added to increase distance with results section
 * 450px
-    * 
+    * Increase the h1 padding-top again
+    * Reduce the size of the h2 in rules div, and the margin too for alignment
+    * Reduce font size for the Rules, result and score Div. Reduce Icons so they remain parallel.
+    * Increase padding-Top so the divs are spread out from one another
 * 350px
-    * 
+    * Reduce h1 font size and increase padding-top
+    * Reduce font size for rules div and score area
+    * Reduce score area margin for content alignment
 * 300px
+    * Reduce all font sizes
+    * Add additional padding top for div spacing
     
-
 </details>
 
 ### Browser Testing
