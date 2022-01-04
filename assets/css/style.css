@@ -115,12 +115,12 @@ p {
 
 #liTwo > i {
     font-size: 120%;
-    color: yellow;
+    color: green;
 }
 
 #liThree > i {
     font-size: 120%;
-    color: green;
+    color: yellow;
 }
 
 #liFour > i {

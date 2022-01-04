@@ -255,18 +255,161 @@ Three technologies were used to build the interactive front-website website:
 
 <details><summary>Actions, Expectations and Results</summary>
 
+### On loading
+Action: audio muted
+* Expected: No audio when clicking rock, paper.. elements
+* Result: Pass
+
 ### Header Elements
 Action: Visible and accessible
 * Expected: Visible and accessible 
-* Result: Pass.
+* Result: Pass
+
+Action: Header stays fixed when scrolling
+* Expected: Header buttons move with the scrolling
+* Result: Pass
+
+Action: Home icon returns to Index
+* Expected: Clickable, and returns to Index
+* Result: Pass
+
+Action: Audio icon when clicked turns green
+* Expected: Clickable, and turns green
+* Result: Pass
+
+Action: Audio icon when green enables audio
+* Expected: Audio is enabled
+* Result: Pass
+
+Action: Audio icon when clicked again, turns white
+* Expected: Audio button turns white
+* Result: Pass
+
+Action: Audio icon when white disables audio
+* Expected: Audio disabled
+* Result: Pass
 
 ### Rules Div
+Action: Rules div not displayed on load, only the button
+* Expected: As above
+* Result: Pass
+
+Action: Hovering over the rules button
+* Expected: Button turns red when hovering
+* Result: Pass
+
+Action: Clicking the rules button
+* Expected: Rules div opens on click
+* Result: Pass
+
+Action: Rules Div opens
+* Expected: Rules Div looks clean and is responsive
+* Result: Pass
+
+Action: Hover over close button
+* Expected: Turn close button red
+* Result: Pass
+
+Action: Click close button
+* Expected: Closes the div
+* Result: Pass
 
 ### The Main Game
+Action: See all five icons on loading
+* Expected: Five icons on display
+* Result: Pass
+
+Action: Hover over each icon
+* Expected: Changes color, five different colors for each
+* Result: Pass
+
+Action: Hover over each icon
+* Expected: Colors match the same icon in the Rules Div
+* Result: Fail (paper and scissor swapped colors)
+* Update: Pass
+* Update 2: Also re-arranged the rules, so that the five icon explanations read: rock, paper scissors... (it originally had Rock, scissors, Paper)
+
+Action: Hover over each icon
+* Expected: Title is displayed identifying name of icon
+* Result: Pass
+
+Action: Click on each icon
+* Expected: Correct representation of the choice in the result section beneath it
+* Result: Pass
+
+Action: click on each icon
+* Expected: Increases Score and Round Score respectively for both User and Comp
+* Result: Pass
 
 ### Results Section
+Action: Site Loading
+* Expected: Has only Placeholder text
+* Result: Pass
+
+Action: Click on any of five icons
+* Expected: Provides a result with both User and Comp choices, correctly from the Users Choice 
+* Result: Pass
+
+Action: Click on any of five icons
+* Expected: The color of the text represents the result
+* Result: Pass - green for win, red for loss, yellow for draw
+
+Action: User Reaches 10 first
+* Expected: Displays a win message when user score reaches 10
+* Result: Pass
+
+Action: Comp Reaches 10 first
+* Expected: Displays a loss message when comp score reaches 10
+* Result: Pass
+
+Action: User reaches 3 rounds first
+* Expected: Displays a win message when user round score reaches 3
+* Result: Pass
+
+Action: Comp Reaches 3 rounds first
+* Expected: Displays a loss message when comp score reaches 3
+* Result: Pass
+
+Action: User clicks on a icon to kick start a new game 
+* Expected: Display reverts back to providing a result once user clicks after the game has ended
+* Result: Pass
 
 ### Score Section
+Action: Site Loading
+* Expected: Visible, scores are set at 0
+* Result: Pass
+
+Action: Site Loading and throughout playing the game
+* Expected: User score digit remains green. Comp score digit remains red
+* Result: Pass
+
+Action: User clicks on any of five icons
+* Expected: User incriments by one if user wins
+* Result: Pass
+
+Action: User clicks on any of five icons
+* Expected: Comp incriments by one if user loses
+* Result: Pass
+
+Action: User clicks on any of five icons
+* Expected: No incriments if it is a draw
+* Result: Pass
+
+Action: User reaches a score of 10 first
+* Expected: Score resets. User Round score incriments by 1
+* Result: Pass
+
+Action: Comp reaches a score of 10 first
+* Expected: Score resets. Comp Round score incriments by 1
+* Result: Pass
+
+Action: User reaches a score of 3 rounds first
+* Expected: All scores reset
+* Result: Pass
+
+Action: Comp reaches a score of 3 rounds first
+* Expected: All scores reset
+* Result: Pass
 
 </details>
 
