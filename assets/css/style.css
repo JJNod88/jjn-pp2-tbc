@@ -286,16 +286,16 @@ p {
 @media screen and (max-width: 1250px) {
     
     #titleDiv {
-    padding: 10% 0 5% 0;
+    padding: 10% 0 8% 0;
     }
 
     #game-area {
     padding-top: 10%;
      }
 
-     .score-area {
-         padding-top: 6%;
-     }
+    .score-area {
+    padding-top: 6%;
+    }
 }
 
 @media screen and (max-width: 900px) {

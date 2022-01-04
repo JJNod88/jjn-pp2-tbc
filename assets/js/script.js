@@ -1,15 +1,9 @@
-console.log('hey');
-
-
 // JS variables
-const buttons = document.getElementsByTagName('buttons'); // buttons
 const rulesButton = document.getElementById('rulesButton'); // rule button
 const closeButton = document.getElementById('closeButton'); // close rule button
 const soundBtn = document.getElementById('audioButton'); // button for audio
 const audioOne = new Audio('assets/audio/click.wav'); // finds the audio file
 audioOne.muted = true; // site loads muted
-
-const rulesDiv = document.getElementById('rules'); // Rules dive that can be hidden
 
 const rockIcon = document.getElementById('rock'); // User Clicks
 const paperIcon = document.getElementById('paper'); // User Clicks
@@ -23,7 +17,6 @@ const compScored = document.getElementById('compScoreDigit'); // Comp score disp
 let userRoundsWon = 0; // numerical variable to count the rounds won
 let compRoundsWon = 0;
 
-const scoreBoardDiv = document.querySelector('.score-area'); // Used a query selector to get the first element
 const resultDiv = document.getElementById('resultUpdate'); // This returns and displays the result, who chose what
 
 /** 
@@ -100,7 +93,7 @@ function userClicks() {
         theGame('spock');
         audioOne.play();
     });
-};
+}
 
 
 /**
@@ -112,9 +105,9 @@ function userDraws(userClicks) {
     resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
     document.getElementById('resultUpdate').classList.add('user-draw');
     setTimeout(function () {
-        document.getElementById('resultUpdate').classList.remove('user-draw')
-    }, 2000)
-};
+        document.getElementById('resultUpdate').classList.remove('user-draw');
+    }, 500);
+}
 
 /**
  * These two functions increment the round score after each user click, displays the choices and why said result
@@ -129,9 +122,9 @@ function userWins(userClicks, computerChooses) {
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function () {
         document.getElementById('resultUpdate').classList.remove('user-won');
-    }, 2000);
+    }, 500);
     resetRounds();
-};
+}
 
 function userLoses(userClicks, computerChooses) {
     let zeroScoreComp = parseInt(document.getElementById('compScoreDigit').innerText);
@@ -141,9 +134,9 @@ function userLoses(userClicks, computerChooses) {
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function () {
         document.getElementById('resultUpdate').classList.remove('user-loss');
-    }, 2000);
+    }, 500);
     resetRounds();
-};
+}
 
 /**
  * This is the function that resets the Rounds once a score of 10 is reached
@@ -156,7 +149,7 @@ function resetRounds() {
             userScored.innerHTML = 0;
             compScored.innerHTML = 0;
         resetGame();
-        return true
+        return true;
     } else if (compScored.innerHTML === '10') {
         document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
         resultDiv.innerHTML = `Oh no, you lost this round! The scores will now reset`;
@@ -164,7 +157,7 @@ function resetRounds() {
             userScored.innerHTML = 0;
             compScored.innerHTML = 0;
         resetGame();
-        return true
+        return true;
     } else {
         return false;
     }
@@ -251,4 +244,4 @@ function theGame(userclick) {
         }
         userLoses(userclick, computerChooses); // lose
     }
-};
+}
