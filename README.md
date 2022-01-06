@@ -1,16 +1,16 @@
 ReadMe for Jon's new project 2, javaScript
 
 * [Introduction](#Introduction)
-* Value
-* UX
-* Accessibility
-* Responsiveness
-* Features
-* Technologies
-* Validation
-* Testing
-* Deployment
-* Credits
+* [Value](#Value)
+* [UX](#UX)
+* [Accessibility](#Accessibility)
+* [Responsiveness](#Responsiveness)
+* [Features](#Features)
+* [Technologies](#Technologies)
+* [Validation](#Validation)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+* [Credits](#Credits)
 
 
 
@@ -108,7 +108,23 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
 ## 4. Skeleton Plane
 * Balsamiq Wireframes were used to for the initial structure, design and conent of the Site.
 
-    ### Layout
+<details><summary>Balmsamiq Wireframes</summary>
+
+### Desktop
+
+![image-wirframe-desktop](/assets/images/wf-desk.png)
+
+![image-wirframe-desktop2](/assets/images/wf-desk2.png)
+
+### Mobile
+
+![image-wirframe-mob](/assets/images/wf-mob.png)
+
+![image-wirframe-mob2](/assets/images/wf-mob2.png)
+
+</details>
+
+### Layout
     * I decided to go with just one page for the site, with all content and functions accessible from the landing page
     * It has a relateale background image, with a background gradient for improved content visibility.
     * The site flows appropriately from Top to Bottom. Header, H1 title, rules div, game div, result div, sscore div and finally a footer displaying a simple thank you message
@@ -117,11 +133,11 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
     * To ensure the content was disoplayed appropriately, the rules section was confined to a button, that hid the div unless a button was clicked
     * each div / section of the site has a clear prupose, and is manipulated in some way by JavaScript making it interactive and an enjoyable experiene for the user
 
-    ### Navigation
+### Navigation
     * Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
     * The rules button and the close button are designed to hide and make visible the rules information div
 
-    ### Functionality
+### Functionality
     * I needed to confirm what the sies game did and how it would create a good experience for the User
     * once i decided on the Rock Paper Scissor game, i needed to identify the process behind this:
         * theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice.
@@ -144,8 +160,8 @@ The site is aimed at everyone looking to play a chilled out, competetive game of
         * A Fun, interactive rock paper scissors type game.
 
     ### Color Palette
-    * The site needs obly an index page. The color palette has been consistent throughout, and has been designed to be interactive.
-    * Bacground has a transparent black color, with all standard text in white.
+    * The site needs only an index page. The color palette has been consistent throughout, and has been designed to be interactive.
+    * Bacground has a transparent black color utilising linear-gradient, with all standard text in white.
     * Buttons for the Rules div is standard, with a red hover color for both
     * Each of the five main game buttons begin with the same color, however have actibve and hover status with indepedent colors. These colors have been choses for disparity but also how it appears against the background
         * The colors of each background also directly reflect the same color in the content of the rules div. The rules div sets out the rolus and how to play, with each icon element colour to replicate the five main button choices.
