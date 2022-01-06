@@ -296,7 +296,7 @@ p {
     }
 
     .score-area {
-    padding-top: 6%;
+    padding-top: 10%;
     }
 }
 
@@ -374,6 +374,7 @@ p {
     
     #titleDiv {
         padding: 20% 0 10% 0;
+        font-size: 110%;
     }
 
     #rulesDiv h2 {
@@ -389,7 +390,7 @@ p {
     }
 
     #game-area {
-        padding: 20% 0 10% 0;
+        padding: 15% 0 5% 0;
     }
 
     #game-area button {
@@ -403,7 +404,7 @@ p {
 
     .score-area {
         font-size: 90%;
-        padding: 10% 0 5% 0;
+        padding: 5% 0 5% 0;
         margin: 0 10%;
     }
 
