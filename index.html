@@ -7,94 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- seo -->
-    <meta name="keywords" content="'rock', 'paper', 'scissors', 'lizard', 'spock', 'game', 'big bang theory', 'internet game' 'game website'">
+    <meta name="keywords"
+        content="'rock', 'paper', 'scissors', 'lizard', 'spock', 'game', 'big bang theory', 'internet game' 'game website'">
     <meta name="description" content="A site created using the JavaScript language">
 
     <!-- Links to stylesheet, font awesome and google fonts -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>Rock Paper Scissors Lizard Spock Game</title>
 
 </head>
 
 <body>
-        <!-- header section -->
-        <header id="main-header">
-            <a href="index.html" aria-label="Click to return to the Home Page" id="nav-header">
-                <i class="fas fa-home"></i></a>
-                <i id="audioButton" aria-label="Click to unmute and mute the audio" class="far fa-play-circle"></i>
-        </header>
-        <div id="titleDiv"><h1>Rock Paper Scissors Lizard Spock</h1></div>
+    <!-- header section -->
+    <header id="main-header">
+        <a href="index.html" aria-label="Click to return to the Home Page" id="nav-header">
+            <i class="fas fa-home"></i></a>
+        <i id="audioButton" class="far fa-play-circle"></i>
+    </header>
+    <div id="titleDiv">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </div>
 
-        <!-- rules section -->
-        <div id="rules">
-            <button id="rulesButton" aria-label="Click here to open the Rules section" data-type="rules-btn">How to play</button>
-            <div id='rulesDiv'>
-                <h2>Here is how to play the game:</h2>
-                <p>Below are five choices: Rock, Paper, Scissors, Lizard, Spock</p>
-                <div id="flexRules">
-                    <div id="list">
-                            <p id="liOne"><i class="far fa-hand-rock"></i> Rock Beats Scissors & Lizard. </p>
-                            <p id="liThree"><i class="far fa-hand-rock"></i> Paper beats Rock & Spock.</p> 
-                            <p id="liTwo"><i class="far fa-hand-rock"></i> Scissors beats Paper & Lizard.</p>
-                            <p id="liFour"><i class="far fa-hand-rock"></i> Lizard beats Paper & Spock.</p> 
-                            <p id="liFive"><i class="far fa-hand-rock"></i> Spock beats Scissor & Rock.</p> 
-                    </div>
+    <!-- rules section -->
+    <div id="rules">
+        <button id="rulesButton" aria-label="Click here to open the Rules section" data-type="rules-btn">How to
+            play</button>
+        <div id='rulesDiv'>
+            <h2>Here is how to play the game:</h2>
+            <p>Below are five choices: Rock, Paper, Scissors, Lizard, Spock</p>
+            <div id="flexRules">
+                <div id="list">
+                    <p id="liOne"><i class="far fa-hand-rock"></i> Rock Beats Scissors & Lizard. </p>
+                    <p id="liThree"><i class="far fa-hand-rock"></i> Paper beats Rock & Spock.</p>
+                    <p id="liTwo"><i class="far fa-hand-rock"></i> Scissors beats Paper & Lizard.</p>
+                    <p id="liFour"><i class="far fa-hand-rock"></i> Lizard beats Paper & Spock.</p>
+                    <p id="liFive"><i class="far fa-hand-rock"></i> Spock beats Scissor & Rock.</p>
                 </div>
-                <p>The first to ten points wins the round!</p>
-                <p>Three rounds wins the game.</p><br>
-                <p>Good luck, and enjoy!</p><button id='closeButton' aria-label="Click here to close the Rules section" data-type="close-btn">X</button>
-
             </div>
+            <p>The first to ten points wins the round!</p>
+            <p>Three rounds wins the game.</p><br>
+            <p>Good luck, and enjoy!</p><button id='closeButton' aria-label="Click here to close the Rules section"
+                data-type="close-btn">X</button>
 
-            <!-- Game Area Section -->
-            <div id="game-area">
-                <button id="rock" title="Rock" data-type="rock" class="hand-btn btn-white" aria-label="Rock button"><i
-                        data-type="rock" class="far fa-hand-rock"></i>
-                </button>
-                <button id="paper" title="Paper" data-type="paper" class="hand-btn btn-white"
-                    aria-label="Paper button"><i data-type="paper" class="far fa-hand-paper"></i>
-                </button>
-                <button id="scissors" title="Scissors" data-type="scissors" class="hand-btn btn-white"
-                    aria-label="Scissors button"><i data-type="scissors" class="far fa-hand-scissors"></i>
-                </button>
-                <button id="lizard" title="Lizard" data-type="lizard" class="hand-btn btn-white"
-                    aria-label="lizard button"><i data-type="lizard" class="far fa-hand-lizard"></i>
-                </button>
-                <button id="spock" title="Spock" data-type="spock" class="hand-btn btn-white"
-                    aria-label="spock button"><i data-type="spock" class="far fa-hand-spock"></i>
-                </button>
+        </div>
+    </div>
+        <!-- Game Area Section -->
+        <div id="game-area">
+            <button id="rock" title="Rock" data-type="rock" class="hand-btn btn-white" aria-label="Rock button"><i
+                    data-type="rock" class="far fa-hand-rock"></i>
+            </button>
+            <button id="paper" title="Paper" data-type="paper" class="hand-btn btn-white" aria-label="Paper button"><i
+                    data-type="paper" class="far fa-hand-paper"></i>
+            </button>
+            <button id="scissors" title="Scissors" data-type="scissors" class="hand-btn btn-white"
+                aria-label="Scissors button"><i data-type="scissors" class="far fa-hand-scissors"></i>
+            </button>
+            <button id="lizard" title="Lizard" data-type="lizard" class="hand-btn btn-white"
+                aria-label="lizard button"><i data-type="lizard" class="far fa-hand-lizard"></i>
+            </button>
+            <button id="spock" title="Spock" data-type="spock" class="hand-btn btn-white" aria-label="spock button"><i
+                    data-type="spock" class="far fa-hand-spock"></i>
+            </button>
+        </div>
+
+        <!-- Results section -->
+
+        <div class="result-section"> <span id="resultUpdate">Results</span></div>
+
+        <!-- Score Area Section -->
+
+        <section class="score-area">
+            <div id="userScore">
+                <h4>User Score: <span id="userScoreDigit">0</span></h4>
+                <h4> Rounds Won: <span id="userRoundsWon">0</span></h4>
             </div>
+            <div id="computerScore">
+                <h4>Comp Score: <span id="compScoreDigit">0</span></h4> 
+                <h4>Rounds Won: <span id="compRoundsWon">0</span></h4> 
+            </div>
+        </section>
 
-            <!-- Results section -->
+        <section class="score-area">
+        </section>
 
-            <div class="result-section"> <span id="resultUpdate">Results</span></div>
+        <footer>
+            <div id="footer">
+                <h4>Thanks for playing!</h4>
+            </div>
+        </footer>
 
-            <!-- Score Area Section -->
 
-            <section class="score-area">
-                <div id="userScore">
-                    <p> User Score: <span id="userScoreDigit">0</span></p>
-                    <p> Rounds Won: <span id="userRoundsWon">0</span></p>
-                </div>
-                <div id="computerScore">
-                    <p> Comp Score: <span id="compScoreDigit">0</span></p>
-                    <p> Rounds Won: <span id="compRoundsWon">0</span></p>
-                </div>
-            </section>
-
-            <section class="score-area">
-            </section>
-
-            <footer>
-                <div id="footer">
-                    <a href="#" rel="noopener" aria-label="Click here to visit our Join Us page">Thanks for playing!</a>
-                </div>
-            </footer>
-
-        
         <script src="assets/js/script.js"></script>
 
 </body>

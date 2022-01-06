@@ -205,7 +205,6 @@ p {
     text-align: center;
     font-size: 200%;
     font-weight: 900;
-    padding-top: 2%;
     color: white;
     margin: 0 2%;
 }
@@ -276,7 +275,7 @@ p {
     padding: 3%;
 }
 
-#footer a {
+#footer h4 {
     text-decoration: none;
     color: white;
     font-weight: 900;
