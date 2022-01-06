@@ -272,7 +272,7 @@ p {
     text-align: center;
     position: relative;
     z-index: 998;
-    padding: 3%;
+    padding-top: 10%;
     text-decoration: none;
     color: white;
     font-weight: 900;
