@@ -250,7 +250,7 @@ The website comprises a number of features that make it intuitive and fun, which
 * Collates number of rounds won once a player has reached thr max score. Gives a message once a round is won.
 * Collates rounds won scores and resets the game once a player has reached a total of 3 rounds. Gives a message one the game is won. 
 
-![Image-of-score-section](/assets/images/score-section.png)
+![Image-of-score-section](/assets/images/score-sec.png)
 
 * Hidden rules Div
     * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
@@ -528,8 +528,7 @@ The site and its functionality has been tested on:
 
 # Deployment
 
-* GitHub and GitPod has been used for the creation and deployment of the site. By using Github Pages, the site can be viewed on all devices. To do this I:
-
+GitHub and GitPod has been used for the creation and deployment of the site. By using Github Pages, the site can be viewed on all devices. To do this I:
 1. Created a Repository on GitHub Pages using my user profile that i set up for personal use.
 2. Utilised GitPod, accessible in my repository, to create my site using html and css. The Gitpod Button is in bright green, below the setting tab and above the repository documents etc.
 3. GitPods version control funcitonality meant I could commit and push my code as I progressed. Previous commits were always accessible should I have needed to revisit them. I did this using the gitpod terminal: 'git add .' , 'git commit -m "message"' , 'Git push'. My Commit Messages were designed to be simple and descriptive.
@@ -625,4 +624,6 @@ Below is a list of bugs and their fixes throughout the project
 * Google Developer, including LightHouse
 * [fontawesome](https://fontawesome.com/) for icons
 * [googlefonts](https://fonts.google.com/) for my google font
-
+* [w3c-css-validator](https://jigsaw.w3.org/css-validator/validator) for testing my css code
+* [w3c-html-validator](https://validator.w3.org/#validate_by_input) for testing my html code
+* [jshint](https://jshint.com/) for testing my javascript code
