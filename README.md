@@ -21,6 +21,8 @@ The focus of this site is to use the JavaScript language to provide an interacti
 
 The site is aimed at everyone looking to play a chilled out, competetive game of Rock, Paper, Scissors, Lizard, Spock. 
 
+![Image-of-design](/assets/images/responsive-des.png)
+
 # Value
 ### New User / Target Audience
 * Users looking for a competetive game of Rock, Paper, Scissors, Lizard Spock.
@@ -205,24 +207,34 @@ The website comprises a number of features that make it intuitive and fun, which
     * An audio icon, with Audio functionality:
         * The page loads muted, however an audio click for when a player selects a choice can be toggled on and off. 
 * Footer giving thanks for playing
+
+![Image-of-header-buttons](/assets/images/header-buttons.png)
  
 ### Rules Div 
 * The User is able to open and close a div containing the rules and information of the game. 
 * This keeps the site clean when they are playing the game. The divs content is created in html, with JavaScript providing the functionality for clicking the buttons.
+
+![Image-of-rules-div](/assets/images/rules-div.png)
 
 ### The Game
 * A game of Rock, Paper, Scissors, Lizard, Spock created with JavaScript. 
 * Five icons with active and hover status that forms the main part of the game. 
     * Allows the User to compete against the computer
 
+![Image-of-main-game](/assets/images/main-game.png)
+
 ### Result Section
 * Gives a result to the user which includes theirs and the computers choice. 
 * The result also has colour coding (green for a win, red for a loss, yellow for a draw) to improve UX.
+
+![Image-of-result-section](/assets/images/result-section.png)
 
 ### Scoring Section
 * Collates a score for each turn up to a max score of 10. 
 * Collates number of rounds won once a player has reached thr max score. Gives a message once a round is won.
 * Collates rounds won scores and resets the game once a player has reached a total of 3 rounds. Gives a message one the game is won. 
+
+![Image-of-score-section](/assets/images/score-section.png)
 
 * Hidden rules Div
     * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
