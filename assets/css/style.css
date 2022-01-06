@@ -37,7 +37,7 @@ p {
 */ 
 
 #titleDiv {
-    padding: 5rem 0 1rem 0;
+    padding: 5rem 0 3rem 0;
     font-size: 130%;
 }
 
@@ -93,6 +93,7 @@ p {
     margin: 0 20%;
     display: none;
     justify-content: center;
+    font-size: 110%;
 }
 
 #flexRules {
@@ -286,12 +287,13 @@ p {
 @media screen and (max-width: 1250px) {
     
     #titleDiv {
-    padding: 10% 0 8% 0;
+    padding: 10rem 0 3rem 0;
+    font-size: 150%;
     }
 
     #game-area {
     padding-top: 10%;
-     }
+    }
 
     .score-area {
     padding-top: 6%;
@@ -306,14 +308,19 @@ p {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
     #titleDiv {
-        padding-top: 10%;
+        padding-top: 15%;
+        font-size: 150%;
     }
 
     #rulesDiv p {
     font-size: 90%;
+    }
+
+    #rulesButton {
+        font-size: 120%;
     }
 
     #game-area button {
@@ -321,12 +328,12 @@ p {
     }
 
     .result-section {
-        font-size: 130%;
+        Padding-top: 10%;
     }
 
     .score-area {
         font-size: 100%;
-        padding-top: 5%;
+        padding-top: 10%;
     }
 
     #userScore {
@@ -341,13 +348,17 @@ p {
 @media screen and (max-width: 600px) {
 
     #titleDiv {
-        padding-top: 10%;
+        padding-top: 15%;
     }
 
     .score-area {
         font-size: 90%;
-        padding-top: 5%;
+        padding: 10% 0 5% 0;
         margin: 0 15%;
+    }
+
+    #game-area {
+        padding-top: 20%;
     }
 
     #userScore {
@@ -362,7 +373,7 @@ p {
 @media screen and (max-width: 450px) {
     
     #titleDiv {
-        padding-top: 10%;
+        padding: 20% 0 10% 0;
     }
 
     #rulesDiv h2 {
@@ -378,7 +389,7 @@ p {
     }
 
     #game-area {
-        padding-top: 5%;
+        padding: 20% 0 10% 0;
     }
 
     #game-area button {
@@ -386,13 +397,13 @@ p {
     }
 
     .result-section {
-        padding-top: 2%;
-        font-size: 100%;
+        padding: 5% 0;
+        font-size: 150%;
     }
 
     .score-area {
         font-size: 90%;
-        padding-top: 5%;
+        padding: 10% 0 5% 0;
         margin: 0 10%;
     }
 
@@ -405,7 +416,7 @@ p {
 
     #titleDiv {
         font-size: 100%;
-        padding-top: 15%;
+        padding: 5rem 0 3rem 0;
     }
 
     #rulesDiv p {
@@ -414,7 +425,6 @@ p {
 
     .score-area {
         font-size: 90%;
-        padding-top: 5%;
         margin: 0 1%;
     }
 }

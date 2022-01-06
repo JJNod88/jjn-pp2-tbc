@@ -1,6 +1,6 @@
 ReadMe for Jon's new project 2, javaScript
 
-* Introduction
+* [Introduction](#Introduction)
 * Value
 * UX
 * Accessibility
