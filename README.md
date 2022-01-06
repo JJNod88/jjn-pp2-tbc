@@ -235,7 +235,25 @@ Three technologies were used to build the interactive front-website website:
 
 # Validation
 
+### w3c HTML
+The site was put through the w3c html validator with no warning or errors. Please see below confirmation:
+![Image-of-html-validator](/assets/images/html-val.png)
 
+### w3x CSS
+The site was put through the w3c css validator with no warning or errors. Please see below confirmation:
+![Image-of-css-validator](/assets/images/css-val.png)
+
+### jshint validator
+The site was put through the js hint validator with... Please see below confirmation:
+
+### Lighthouse
+The site was put throught the google developer Lighthouse tool. 
+<details><summary>Evidence</summary>
+
+![Image-of-lighthouse-mob](/assets/images/lh-mob.png)
+
+![Image-of-lighthouse-web](/assets/images/lh-web.png)
+</details>
 
 # Testing
 ### JS ConsoleLog tests:
