@@ -44,7 +44,7 @@ soundBtn.addEventListener('click', function () {
 /** 
  * Function for mobile device audio 
  * */
-soundBtn.addEventListener('touch', function () {
+soundBtn.addEventListener('touchstart', function () {
 
     if (audioOne.muted == false) {
         soundBtn.setAttribute('style', 'color: white');
