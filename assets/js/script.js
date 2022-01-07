@@ -41,20 +41,6 @@ soundBtn.addEventListener('click', function () {
     }
 });
 
-/** 
- * Function for mobile device audio 
- * */
-soundBtn.addEventListener('touchstart', function () {
-
-    if (audioOne.muted == false) {
-        soundBtn.setAttribute('style', 'color: white');
-        audioOne.muted = true;
-    } else {
-        soundBtn.setAttribute('style', 'color: green');
-        audioOne.muted = false;
-    }
-});
-
 /**
  * Two functions to Show and Hide the Rules Div
  */

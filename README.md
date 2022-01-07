@@ -125,31 +125,32 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
 </details>
 
 ### Layout
-    * I decided to go with just one page for the site, with all content and functions accessible from the landing page
-    * It has a relateable background image, with a background gradient for improved content visibility.
-    * The site flows appropriately from Top to Bottom. Header, H1 title, rules div, game div, result div, score div and finally a footer displaying a simple thank you message
-    * Font has been kept consistent. FleBox was primarily used for the display of each Div. Supporting the contents alignment and responsiveness.
-    * Appropriate use of only one H1, and then h2 and h3 utilised respectively
-    * To ensure the content was displayed appropriately, the rules section was confined to a button, that hid the div unless a button was clicked
-    * each div / section of the site has a clear purpose, and is manipulated in some way by JavaScript making it interactive and an enjoyable experience for the user
+
+* I decided to go with just one page for the site, with all content and functions accessible from the landing page
+* It has a relateable background image, with a background gradient for improved content visibility.
+* The site flows appropriately from Top to Bottom. Header, H1 title, rules div, game div, result div, score div and finally a footer displaying a simple thank you message
+* Font has been kept consistent. FleBox was primarily used for the display of each Div. Supporting the contents alignment and responsiveness.
+* Appropriate use of only one H1, and then h2 and h3 utilised respectively
+* To ensure the content was displayed appropriately, the rules section was confined to a button, that hid the div unless a button was clicked
+* each div / section of the site has a clear purpose, and is manipulated in some way by JavaScript making it interactive and an enjoyable experience for the user
 
 ### Navigation
-    * Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
-    * The rules button and the close button are designed to hide and make visible the rules information div
+* Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
+* The rules button and the close button are designed to hide and make visible the rules information div
 
 ### Functionality
-    * I needed to confirm what the sites game did and how it would create a good experience for the User
-    * once i decided on the Rock Paper Scissor game, i needed to identify the process behind this:
-        * theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice.
-        * userclick Function() = 5 buttons representing each selection of Rock, Paper, Scissors, Lizard Spock
-        * Each button identified as a click, which represented a user Selection
-        * setChoices function() = acted as the comps selection. compared with the Comps automated Choice = 
-        * User Draws, userWins, userLoses functions() = once a Selection was made, a result was displayed identifying the result. This shows the user if they won, drew or lost, what their selection was and what the Comp chose
-        * roundReset function() = reset the round once a score of 10 was achieved
-        * gameReset Function() = reset the game once a score of 3 rounds was achieved
-        * showRules, closeRuled functions() = This provided the functionality of hiding and making visible the rules div
-        * A set of highly identifiable variables
-        * A Dom content Loader event listener to ensure the site was loaded correctly before certain functions were made available.
+* I needed to confirm what the sites game did and how it would create a good experience for the User
+* once i decided on the Rock Paper Scissor game, i needed to identify the process behind this:
+* theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice.
+* userclick Function() = 5 buttons representing each selection of Rock, Paper, Scissors, Lizard Spock
+* Each button identified as a click, which represented a user Selection
+* setChoices function() = acted as the comps selection. compared with the Comps automated Choice = 
+* User Draws, userWins, userLoses functions() = once a Selection was made, a result was displayed identifying the result. This shows the user if they won, drew or lost, what their selection was and what the Comp chose
+* roundReset function() = reset the round once a score of 10 was achieved
+* gameReset Function() = reset the game once a score of 3 rounds was achieved
+* showRules, closeRuled functions() = This provided the functionality of hiding and making visible the rules div
+* A set of highly identifiable variables
+* A Dom content Loader event listener to ensure the site was loaded correctly before certain functions were made available.
 
 ## 5. Surface Plane
 * This identifies the sites main goals, its color, design, styling and images.
@@ -610,7 +611,8 @@ Below is a list of bugs and their fixes throughout the project
 
 ### Unfixed Bugs
 
-* The audio sound works on all devices minus Apples Safari. The first click on loading makes a sound, however every click following this is muted.
+* The audio sound works on all desktop browsers minus Apples Safari. The first click on loading makes a sound, however every click following this is muted.
+* The audio works only sometimes on mobile devices.
 
 </details>
 
