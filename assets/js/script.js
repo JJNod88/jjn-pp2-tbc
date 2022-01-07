@@ -41,6 +41,9 @@ soundBtn.addEventListener('click', function () {
     }
 });
 
+/** 
+ * Function for mobile device audio 
+ * */
 soundBtn.addEventListener('touch', function () {
 
     if (audioOne.muted == false) {
