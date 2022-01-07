@@ -21,7 +21,7 @@ The focus of this site is to use the JavaScript language to provide an interacti
 
 The site is aimed at everyone looking to play a chilled out, competetive game of Rock, Paper, Scissors, Lizard, Spock. 
 
-![Image-of-design](/assets/images/responsive-des.png)
+![Image-of-design](/assets/images/responsive-design.png)
 
 # Value
 ### New User / Target Audience
@@ -254,6 +254,12 @@ The website comprises a number of features that make it intuitive and fun, which
 
 * Hidden rules Div
     * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
+
+### Future Features
+
+* Add a user signup form so that instead of 'You won' in the result section - it will be 'User_Name, You won!' 
+* An additional game will become available once a user has won three rounds before the computer.
+    * This additional game will be a Top trumps type game, where by users will be given a pack of cards and their aim is to chose each round their card attribute in hopes of beating the computers. 
 
 # Technologies
 Three technologies were used to build the interactive front-website website:
@@ -560,6 +566,8 @@ The purpose of a local deployment is for other coders to use my code to deploy m
 <br> 
 Below is a list of bugs and their fixes throughout the project
 
+### Fixed bugs
+
 * In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
 
@@ -599,6 +607,10 @@ Below is a list of bugs and their fixes throughout the project
 
 * When 3 rounds won is reached, it is not resetting both scores to 0. 
     * Fix: I was only updating the rounds won inner HTML individually, so when user or comp reached 3, it was only resetting its own score. When i included both in each of the if else, it worked and reset both 'Rounds won' incriments.
+
+### Unfixed Bugs
+
+* The audio sound works on all devices minus Apples Safari. The first click on loading makes a sound, however every click following this is muted.
 
 </details>
 
