@@ -39,7 +39,17 @@ soundBtn.addEventListener('click', function () {
         soundBtn.setAttribute('style', 'color: green');
         audioOne.muted = false;
     }
-    console.log('mute btn');
+});
+
+soundBtn.addEventListener('touch', function () {
+
+    if (audioOne.muted == false) {
+        soundBtn.setAttribute('style', 'color: white');
+        audioOne.muted = true;
+    } else {
+        soundBtn.setAttribute('style', 'color: green');
+        audioOne.muted = false;
+    }
 });
 
 /**
@@ -98,7 +108,6 @@ function userClicks() {
  * @param {*} userClicks 
  */
 function userDraws(userClicks) {
-    console.log('User Draws');
     resultDiv.innerHTML = `A Draw! You both chose ${userClicks}. Keep going!`;
     document.getElementById('resultUpdate').classList.add('user-draw');
     setTimeout(function () {
@@ -114,7 +123,6 @@ function userDraws(userClicks) {
 function userWins(userClicks, computerChooses) {
     let zeroScoreUser = parseInt(document.getElementById('userScoreDigit').innerText);
     document.getElementById("userScoreDigit").innerHTML = ++zeroScoreUser;
-    console.log('User Wins');
     resultDiv.innerHTML = `You won! ${userClicks}  beats the computers ${computerChooses}. Good job!`;
     document.getElementById('resultUpdate').classList.add('user-won');
     setTimeout(function () {
@@ -126,7 +134,6 @@ function userWins(userClicks, computerChooses) {
 function userLoses(userClicks, computerChooses) {
     let zeroScoreComp = parseInt(document.getElementById('compScoreDigit').innerText);
     document.getElementById("compScoreDigit").innerHTML = ++zeroScoreComp;
-    console.log('User Loses');
     resultDiv.innerHTML = `Too bad. ${computerChooses} beats your choice of ${userClicks}. Try again!`;
     document.getElementById('resultUpdate').classList.add('user-loss');
     setTimeout(function () {
