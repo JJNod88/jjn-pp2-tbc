@@ -30,18 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
 /** 
  * Function that toggles the audio on and off, changing the color of the audio button
  */
-soundBtn.addEventListener('click', function() {
+soundBtn.addEventListener('click', function () {
 
-    if (audioOne.muted == false){
-    soundBtn.setAttribute('style', 'color: white');
-    audioOne.muted = true;
+    if (audioOne.muted == false) {
+        soundBtn.setAttribute('style', 'color: white');
+        audioOne.muted = true;
     } else {
-    soundBtn.setAttribute('style', 'color: green');
-    audioOne.muted = false;
+        soundBtn.setAttribute('style', 'color: green');
+        audioOne.muted = false;
     }
     console.log('mute btn');
 });
-
 
 /**
  * Two functions to Show and Hide the Rules Div
@@ -57,7 +56,6 @@ function closeRulesDiv() {
 rulesButton.addEventListener("click", showRulesDiv);
 closeButton.addEventListener("click", closeRulesDiv);
 
-
 /** 
  * My Array for each of the five choices.
  * Mathfloor is used to capture a whole integer, and random * 5 (the number of possible choices)
@@ -70,7 +68,7 @@ function setChoices() {
 
 /**
  * I have added event listener to each of the main choice elements. 
- * Using 'thegame('element')' it then passes the value to theGame() function for it to work
+ * Using 'thegame('element')' it then passes the value to theGame() function
  */
 function userClicks() {
     rockIcon.addEventListener('click', function () {
@@ -94,7 +92,6 @@ function userClicks() {
         audioOne.play();
     });
 }
-
 
 /**
  * This function displays the message when there is a draw following a user click
@@ -146,16 +143,16 @@ function resetRounds() {
         document.getElementById('userRoundsWon').innerHTML = ++userRoundsWon;
         resultDiv.innerHTML = `Well Done! You won this round. The scores will now reset`;
         document.getElementById('resultUpdate').classList.add('user-won');
-            userScored.innerHTML = 0;
-            compScored.innerHTML = 0;
+        userScored.innerHTML = 0;
+        compScored.innerHTML = 0;
         resetGame();
         return true;
     } else if (compScored.innerHTML === '10') {
         document.getElementById('compRoundsWon').innerHTML = ++compRoundsWon;
         resultDiv.innerHTML = `Oh no, you lost this round! The scores will now reset`;
         document.getElementById('resultUpdate').classList.add('user-loss');
-            userScored.innerHTML = 0;
-            compScored.innerHTML = 0;
+        userScored.innerHTML = 0;
+        compScored.innerHTML = 0;
         resetGame();
         return true;
     } else {
@@ -165,18 +162,18 @@ function resetRounds() {
 
 // This is the function that resets the game once 3 rounds has been achieved
 function resetGame() {
-    if(userRoundsWon === 3) {
+    if (userRoundsWon === 3) {
         document.getElementById('userRoundsWon').innerHTML = '0';
         document.getElementById('compRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Well done, you were the first to Three Rounds. You won!;`;
-            userRoundsWon = 0;
-            compRoundsWon = 0;
+        userRoundsWon = 0;
+        compRoundsWon = 0;
     } else if (compRoundsWon === 3) {
         document.getElementById('compRoundsWon').innerHTML = '0';
         document.getElementById('userRoundsWon').innerHTML = '0';
         resultDiv.innerHTML = `Unlucky, the Computer was first to Three Rounds. Try again!;`;
-            userRoundsWon = 0;
-            compRoundsWon = 0;
+        userRoundsWon = 0;
+        compRoundsWon = 0;
     }
 }
 

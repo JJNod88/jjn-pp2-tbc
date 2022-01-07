@@ -280,7 +280,7 @@ p {
 
 /* Media Queries */
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
     
     #titleDiv {
     padding: 10rem 0 3rem 0;
@@ -293,6 +293,10 @@ p {
 
     .score-area {
     padding-top: 10%;
+    }
+
+    #footer {
+        padding-top: 5%;
     }
 }
 

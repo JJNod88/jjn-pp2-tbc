@@ -210,7 +210,7 @@ As technology advances, new devices are being released every day. It is extremel
     * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11.
 
 * For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decresing the margins and adding padding between each div. 
-* Media query sizes are as follows: max900px, 750px, 600px, 450px, 350px, 300px.  
+* Media query sizes are as follows: max1280, 900px, 750px, 600px, 450px, 350px, 300px.  
     * The amount of media queries needed was limited due to responsive HTML and CSS coding
 
 
@@ -257,9 +257,11 @@ The website comprises a number of features that make it intuitive and fun, which
 
 # Technologies
 Three technologies were used to build the interactive front-website website:
+* Github for repositories
+* Gitpod for coding
 * HTML for the structure
 * CSS for the design
-* JavaScript for the interactivity and DOM manipulation.
+* JavaScript for the interactivity and DOM manipulation
 
 # Validation
 
@@ -272,7 +274,8 @@ The site was put through the w3c css validator with no warning or errors. Please
 ![Image-of-css-validator](/assets/images/css-val.png)
 
 ### jshint validator
-The site was put through the js hint validator with... Please see below confirmation:
+The site was put through the js hint validator with no warnings or Errors. Please see below confirmation:
+![Image-of-js-validator](/assets/images/jshint-val.png)
 
 ### Lighthouse
 The site was put throught the google developer Lighthouse tool. 
@@ -462,15 +465,16 @@ Action: Comp reaches a score of 3 rounds first
 <details> <summary>Responsiveness Tests for ux</summary>
 Using Google Developer Tool
 
-* 1250px
+* 1280px
     * Addiitonal padding for the Title div, h1
-    * Additional padding top on game and score area, improved spacing
+    * Additional padding top on game and score area, improved spacing, reduced padding top for footer
 * 900px
     * Rules div gets a reduced margin so that it stays aligned 
 * 750px
     * h1 title increases its distance from the header with a padding-top
     * Reduce font size for the rules, results and score divs
-    * Increses the Score Divs so that the wording stays aligned and clean
+    * Increases the Score Divs spacing so that the wording stays aligned and clean
+    * Increases in padding-top for spacing
 * 600px 
     * h1 title increases its distance from the header with a padding-top
     * Score area has its margins reduces for content alignment, reduced font size and padding added to increase distance with results section
@@ -559,11 +563,9 @@ Below is a list of bugs and their fixes throughout the project
 * In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadnt actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
 
-* My console log for the rock, paper scissor iteration using math.floor & random was not giving me a number
-
-* My let array for my rock paper scissors in my setChoices was declared but valiue was never read, it was greyed out.
+* My let array for my rock paper scissors in my setChoices was declared but value was never read, it was greyed out.
     * fix: I hadnt returned it. Once i added a return and included the new let of random numbers, it worked.
-    * This was something i learned during my coding. At first, seeing grey made me think I had made a mistale, but on reflection things are grey because they havent been declared, called etc.
+    * This was something i learned during my coding. At first, seeing grey made me think I had made a mistake, but on reflection things are grey because they havent been declared or called etc.
 
 * Had a rules button that hen clicked opens up a div explaining the rules etc. When clicking, it was creating duplications, and i could close the div with the button.
     * Fix: I added a close button within the div, added two functions with event listeners to both open and close the div, this was done with style display being none and block.
