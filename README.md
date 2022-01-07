@@ -210,7 +210,7 @@ As technology advances, new devices are being released every day. It is extremel
     * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11.
 
 * For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decresing the margins and adding padding between each div. 
-* Media query sizes are as follows: max1280, 900px, 750px, 600px, 450px, 350px, 300px.  
+* Media query sizes are as follows: max1280, 950px, 750px, 600px, 450px, 350px, 300px.  
     * The amount of media queries needed was limited due to responsive HTML and CSS coding
 
 
@@ -474,7 +474,7 @@ Using Google Developer Tool
 * 1280px
     * Addiitonal padding for the Title div, h1
     * Additional padding top on game and score area, improved spacing, reduced padding top for footer
-* 900px
+* 950px
     * Rules div gets a reduced margin so that it stays aligned 
 * 750px
     * h1 title increases its distance from the header with a padding-top
