@@ -30,12 +30,6 @@ p {
     margin: 0;
 }
 
-/*
-#bImage {
-    background-color: rgba(0, 0, 0, .7);
-}
-*/ 
-
 #titleDiv {
     padding: 5rem 0 3rem 0;
     font-size: 130%;
@@ -67,7 +61,8 @@ p {
     font-weight: 900;
 }
 
-/* rules and play section */
+/* rules section */
+
 #rules {
     text-align: center;
 }
@@ -111,27 +106,27 @@ p {
     list-style: none;
 }
 
-#liOne > i {
+#liOne>i {
     font-size: 120%;
     color: red;
 }
 
-#liTwo > i {
+#liTwo>i {
     font-size: 120%;
     color: green;
 }
 
-#liThree > i {
+#liThree>i {
     font-size: 120%;
     color: yellow;
 }
 
-#liFour > i {
+#liFour>i {
     font-size: 120%;
     color: blue;
 }
 
-#liFive > i {
+#liFive>i {
     font-size: 120%;
     color: orange;
 }
@@ -194,13 +189,14 @@ p {
     color: white;
 }
 
-.btn-white{
+.btn-white {
     color: black;
     border-color: black;
     border-radius: 50%;
 }
 
 /* result section */
+
 .result-section {
     text-align: center;
     font-size: 200%;
@@ -222,6 +218,7 @@ p {
 }
 
 /* score section */
+
 .score-area {
     display: flex;
     text-align: center;
@@ -232,7 +229,7 @@ p {
     opacity: 0.8;
 }
 
-.score-area div{
+.score-area div {
     background-color: white;
 }
 
@@ -264,7 +261,6 @@ p {
     color: red;
 }
 
-
 /* footer */
 #footer {
     height: 2em;
@@ -279,20 +275,21 @@ p {
 }
 
 /* Media Queries */
+/* Large screens */
 
 @media screen and (max-width: 1280px) {
-    
+
     #titleDiv {
-    padding: 10rem 0 3rem 0;
-    font-size: 150%;
+        padding: 10rem 0 3rem 0;
+        font-size: 150%;
     }
 
     #game-area {
-    padding-top: 10%;
+        padding-top: 10%;
     }
 
     .score-area {
-    padding-top: 10%;
+        padding-top: 10%;
     }
 
     #footer {
@@ -300,11 +297,13 @@ p {
     }
 }
 
+/* medium screens */
+
 @media screen and (max-width: 900px) {
 
     #rulesDiv {
-    color: white;
-    margin: 0 15%;
+        color: white;
+        margin: 0 15%;
     }
 }
 
@@ -316,7 +315,7 @@ p {
     }
 
     #rulesDiv p {
-    font-size: 90%;
+        font-size: 90%;
     }
 
     #rulesButton {
@@ -370,8 +369,10 @@ p {
     }
 }
 
+/* small screens */
+
 @media screen and (max-width: 450px) {
-    
+
     #titleDiv {
         padding: 20% 0 10% 0;
         font-size: 110%;
@@ -440,7 +441,7 @@ p {
     #game-area {
         padding-top: 2%;
     }
-    
+
     #game-area button {
         font-size: 150%;
     }
