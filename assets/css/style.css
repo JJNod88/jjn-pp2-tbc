@@ -31,8 +31,8 @@ p {
 }
 
 #titleDiv {
-    padding: 5rem 0 3rem 0;
-    font-size: 130%;
+    padding: 5rem 1rem 3rem 1rem;
+    font-size: 200%;
 }
 
 /* header css */
@@ -280,7 +280,7 @@ p {
 @media screen and (max-width: 1280px) {
 
     #titleDiv {
-        padding: 10rem 0 3rem 0;
+        padding: 10rem 1rem 3rem 1rem;
         font-size: 150%;
     }
 
@@ -289,7 +289,7 @@ p {
     }
 
     .score-area {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     #footer {
@@ -299,7 +299,7 @@ p {
 
 /* medium screens */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
 
     #rulesDiv {
         color: white;
