@@ -629,3 +629,4 @@ Below is a list of bugs and their fixes throughout the project
 * [w3c-css-validator](https://jigsaw.w3.org/css-validator/validator) for testing my css code
 * [w3c-html-validator](https://validator.w3.org/#validate_by_input) for testing my html code
 * [jshint](https://jshint.com/) for testing my javascript code
+* [favicon](https://favicon.io/emoji-favicons/) for my site favicon
