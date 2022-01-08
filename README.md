@@ -12,8 +12,6 @@ ReadMe for Jon's new project 2, javaScript
 * [Deployment](#Deployment)
 * [Credits](#Credits)
 
-
-
 # Introduction
 Welcome! This site has been built to host the iconic Rock, Paper, Scissor, Lizard Spock game.
 
@@ -112,13 +110,13 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
 
 ### Desktop
 
-![image-wirframe-desktop](/assets/images/wf-desk.png)
+![image-wirframe-desktop](/assets/images/wf-desk1.png)
 
 ![image-wirframe-desktop2](/assets/images/wf-desk2.png)
 
 ### Mobile
 
-![image-wirframe-mob](/assets/images/wf-mob.png)
+![image-wirframe-mob](/assets/images/wf-mob1.png)
 
 ![image-wirframe-mob2](/assets/images/wf-mob2.png)
 
@@ -230,14 +228,14 @@ The website comprises a number of features that make it intuitive and fun, which
 * The User is able to open and close a div containing the rules and information of the game
 * This keeps the site clean when they are playing the game. The divs content is created in html, with JavaScript providing the functionality for clicking the buttons
 
-![Image-of-rules-div](/assets/images/rules-div.png)
+![Image-of-rules-div](/assets/images/rules-div-pic.png)
 
 ### The Game
 * A game of Rock, Paper, Scissors, Lizard, Spock created with JavaScript
 * Five icons with active and hover status that forms the main part of the game
     * Allows the User to compete against the computer
 
-![Image-of-main-game](/assets/images/main-game.png)
+![Image-of-main-game](/assets/images/main-game-pic.png)
 
 ### Result Section
 * Gives a result to the user which includes theirs and the computers choice
