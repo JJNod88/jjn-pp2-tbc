@@ -294,9 +294,9 @@ The site was put through the google developer Lighthouse tool.
 # Testing
 ### JS ConsoleLog tests:
 * Button array within the Dom Loader, including innerHTML addition to the 'Rules div'
-    * console.log tested to see if it was showing....
-* Random choice array for each of the three main choices (rock, paper, scissors).
-    * console.log tested a random number to ensure the Math was working up to 5 - success
+    * console.log tested to see if it was showing
+* Random comp choice array for each of the five main choices (rock, paper, scissors, lizard, spock).
+    * console.log tested a random number to ensure the Math was working up to 5 by displaying comp choice
 * Event Listener for rock paper scissor lizard spock. 
     * console.log(any of the 5 choices)
     * Replaced by function = theGame()
@@ -341,6 +341,14 @@ Action: Audio icon when clicked again, turns white
 
 Action: Audio icon when white disables audio
 * Expected: Audio disabled
+* Result: Pass
+
+Action: Audio icon when screen size 600px +
+* Expected: Audio button visible
+* Result: Pass
+
+Action: Audio icon when screen size -600px
+* Expected: Audio button hidden
 * Result: Pass
 
 ### Rules Div
