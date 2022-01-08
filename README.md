@@ -25,8 +25,8 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
 
 # Value
 ### New User / Target Audience
-* Users looking for a competitive game of Rock, Paper, Scissors, Lizard Spock.
-* Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game.
+* Users looking for a competitive game of Rock, Paper, Scissors, Lizard Spock
+* Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game
 
 ### Return User
 * Users who have previously utilised the site to play the game
@@ -46,18 +46,18 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
 ### How the Site achieves this
 * The site has an SEO defined to accurately show up when people search for rock, paper scissor games, with the addition of lizard, spock, big bang theory and games
 * Three languages used to focus on structure, design and interactivity
-* Designed to be simple and engaging, users will know instantly what the sites intention is, and can navigate around the site with ease.
+* Designed to be simple and engaging, users will know instantly what the sites intention is, and can navigate around the site with ease:
     * A basic but effective design, with content displayed on one page, and functions to show and hide additional content
     * Evident background picture that sets the scene, with an evident large title 
     * A consistent Header with a Home and audio button, accessible at all times for each user
 
 ### Page specific
 * One page site, with a clear image and title instantly telling the user the intention of the site
-* Background is transparent, ensuring all content displayed is easy to use, readable and accessible.
-* Navigation elements in the header accessible at all times, which are fixed with a high index.
+* Background is transparent, ensuring all content displayed is easy to use, readable and accessible
+* Navigation elements in the header accessible at all times, which are fixed with a high index
 * The site is structured appropriately, with a rules section followed by the games essential components with a results and score section
-* Color coded buttons that correlates the rules and information content.
-* Consistent coloring for button hovers, and content.
+* Color coded buttons that correlates the rules and information content
+* Consistent coloring for button hovers, and content
 * Responsive design for all screen sizes and devices
 
 # UX
@@ -81,10 +81,10 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
     * Stylesheet, googlefonts, fontawesome, description and SEO were all linked within the Head element
     * Script.js was linked at the bottom of the Body element
     * I followed the industry standard for a core html structure, utilising Flexbox to structure my content:
-        * Flexbox is very responsive and provided excellent opportunity to align all of my divs and content. 
-    * The order of my content aligns correctly with the structure of the site. At the top of the page is the header and h1 title. Followed by a rules div that as inner HTML and an assigned JS function so that is is both visible and hidden with clicks.
-    * Within the HTML, attributes have been chosen with appropriate and easy to identify names, as these interact both with CSS and JS.
-    * CSS Media Queries ensure that the structure of the site is maintained regardless of screen size and device.
+        * Flexbox is very responsive and provided excellent opportunity to align all of my divs and content
+    * The order of my content aligns correctly with the structure of the site. At the top of the page is the header and h1 title. Followed by a rules div that as inner HTML and an assigned JS function so that is is both visible and hidden with clicks
+    * Within the HTML, attributes have been chosen with appropriate and easy to identify names, as these interact both with CSS and JS
+    * CSS Media Queries ensure that the structure of the site is maintained regardless of screen size and device
 
     ### CSS:
     * CSS has been stored within a stylesheet that resides in an Asset Folder. This is best practice especially if you wanted to add additional pages. It also helps keep the HTML clean
@@ -98,7 +98,7 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
     * Media Queries have been added to ensure the site is responsive on any device
 
     ### JavaScript:
-    * JavaScript has been used for the sites interactiveness, enabling the game.
+    * JavaScript has been used for the sites interactiveness, enabling the game
     * The variables have been primarily stored as Const and Lets where appropriate as best practice. These variables are then used throughout the functions 
         * Functions and Variables were all named appropriately, giving obvious meaning to each
     * Clear and informative comments has been added to every variable and function. This is absolutely vital both for my use but also any future developers who may want to copy / work on the game. These comments also acted as information and drivers for me as I built the site using JavaScript. It acted as reminders for me
@@ -127,30 +127,30 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
 ### Layout
 
 * I decided to go with just one page for the site, with all content and functions accessible from the landing page
-* It has a relateable background image, with a background gradient for improved content visibility.
+* It has a relateable background image, with a background gradient for improved content visibility
 * The site flows appropriately from Top to Bottom. Header, H1 title, rules div, game div, result div, score div and finally a footer displaying a simple thank you message
-* Font has been kept consistent. FleBox was primarily used for the display of each Div. Supporting the contents alignment and responsiveness.
+* Font has been kept consistent. FleBox was primarily used for the display of each Div. Supporting the contents alignment and responsiveness
 * Appropriate use of only one H1, and then h2 and h3 utilised respectively
 * To ensure the content was displayed appropriately, the rules section was confined to a button, that hid the div unless a button was clicked
 * each div / section of the site has a clear purpose, and is manipulated in some way by JavaScript making it interactive and an enjoyable experience for the user
 
 ### Navigation
-* Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site.
+* Because there is only one page, the header of the site is basic. It consists of a home button which refreshes the page, and an audio button, that is used to toggle sound for the site
 * The rules button and the close button are designed to hide and make visible the rules information div
 
 ### Functionality
 * I needed to confirm what the sites game did and how it would create a good experience for the User
 * once i decided on the Rock Paper Scissor game, i needed to identify the process behind this:
-* theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice.
+* theGame function(). This was the pivotal function that provided the foundations of each choice and how it compared with the computers choice
 * userclick Function() = 5 buttons representing each selection of Rock, Paper, Scissors, Lizard Spock
 * Each button identified as a click, which represented a user Selection
 * setChoices function() = acted as the comps selection. compared with the Comps automated Choice = 
-* User Draws, userWins, userLoses functions() = once a Selection was made, a result was displayed identifying the result. This shows the user if they won, drew or lost, what their selection was and what the Comp chose
+* User Draws, userWins, userLoses functions() = once a Selection was made, a result was displayed identifying the result This shows the user if they won, drew or lost, what their selection was and what the Comp chose
 * roundReset function() = reset the round once a score of 10 was achieved
 * gameReset Function() = reset the game once a score of 3 rounds was achieved
 * showRules, closeRuled functions() = This provided the functionality of hiding and making visible the rules div
 * A set of highly identifiable variables
-* A Dom content Loader event listener to ensure the site was loaded correctly before certain functions were made available.
+* A Dom content Loader event listener to ensure the site was loaded correctly before certain functions were made available
 
 ## 5. Surface Plane
 * This identifies the sites main goals, its color, design, styling and images.
@@ -158,59 +158,59 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
     ### User Friendly
     * The sites goal and content is specific
         * With a clear site title, page title, background image, button icons and rules information, the sites is instantly recognisable to any User what its purpose and intentions are
-        * A Fun, interactive rock paper scissors type game.
+        * A Fun, interactive rock paper scissors type game
 
     ### Color Palette
-    * The site needs only an index page. The color palette has been consistent throughout, and has been designed to be interactive.
-    * Background has a transparent black color utilising linear-gradient, with all standard text in white.
+    * The site needs only an index page. The color palette has been consistent throughout, and has been designed to be interactive
+    * Background has a transparent black color utilising linear-gradient, with all standard text in white
     * Buttons for the Rules div is standard, with a red hover color for both
     * Each of the five main game buttons begin with the same color, however have active and hover status with independent colors. These colors have been choses for disparity but also how it appears against the background
-        * The colors of each background also directly reflect the same color in the content of the rules div. The rules div sets out the rules and how to play, with each icon element colour to replicate the five main button choices.
+        * The colors of each background also directly reflect the same color in the content of the rules div. The rules div sets out the rules and how to play, with each icon element colour to replicate the five main button choices
     * The text in the results section is designed to represent the result of each round. A win is green, a lose is red, and a draw is yellow (neutral)
-    * The incrementation of the score have also been colored with UX in mind. A user score is green, a comp score is red.
+    * The incrementation of the score have also been colored with UX in mind. A user score is green, a comp score is red
 
     ### Font size, color, type and styling
     * A google fonts has been loaded into the site
     * The sites font is defaulted as Montserrat. This was chosen as the text reminds me of an arcade type game, which correlated to what i was trying to achieve. A san-Serif backup font was added incase for any reason the added font was not loaded
-    * Default font color has been set to white, with alternative colours for the selector buttons, results section and the incrimented scores. 
+    * Default font color has been set to white, with alternative colours for the selector buttons, results section and the incrimented scores
     * The size of the fonts has been set using % for responsiveness, with sizes set to reflect its importance and position on the page
     * Font weight has been set at 900% 
     * H1 has been used for a header, h2 and h3 for subsequent headers
-    * Line-Height was used for the rules section to help distinguish between each selector element and its methodology.  
+    * Line-Height was used for the rules section to help distinguish between each selector element and its methodology
 
 # Accessibility
-* A modern and user friendly site must be user friendly, and accessible to users who may have a disability that prevents them from accessing the site in certain ways.
+* A modern and user friendly site must be user friendly, and accessible to users who may have a disability that prevents them from accessing the site in certain ways
 * A useful tool to assess the accessibility of a site is by utilising google inspectors LightHouse function
     * The site scored 100/100 for both mobile and desktop devices
 
     ### Foundation
-* The foundation of this is the site layout and semantic HTML elements.
-    * The site is laid out with a standard HTML format to improve its flow, allowing screen readers to indicate header, nav, divs, buttons, icons, p, and footer elements of the site.
-    * Using these Semantic Elements in the correct order provides additional functionality for tab keys and screen readers to highlight the key information and content.
-    * UI Controls - Nav bar is set to fixed with a high index, and all buttons are accessible using the keyboard tab and enter functions.
-    * I have used aria-labels for all icons and buttons of the site. In addition to this, i have also added a title attribute to each of the five game choice icons to provide an additional reference to what each stands for. 
-    * Images and audio files have been loaded into the Asset Folder so they are always available. 
+* The foundation of this is the site layout and semantic HTML elements
+    * The site is laid out with a standard HTML format to improve its flow, allowing screen readers to indicate header, nav, divs, buttons, icons, p, and footer elements of the site
+    * Using these Semantic Elements in the correct order provides additional functionality for tab keys and screen readers to highlight the key information and content
+    * UI Controls - Nav bar is set to fixed with a high index, and all buttons are accessible using the keyboard tab and enter functions
+    * I have used aria-labels for all icons and buttons of the site. In addition to this, i have also added a title attribute to each of the five game choice icons to provide an additional reference to what each stands for
+    * Images and audio files have been loaded into the Asset Folder so they are always available
     * Alt attributes have been added for images
 
 # Responsiveness
-As technology advances, new devices are being released every day. It is extremely important to ensure that the site and game can be played on any device. Not just its functionality, but its design and display too. A good site is not compromised because of a smaller or larger screen. 
+As technology advances, new devices are being released every day. It is extremely important to ensure that the site and game can be played on any device. Not just its functionality, but its design and display too. A good site is not compromised because of a smaller or larger screen
 
 ### Structure
-* The site has been designed to adapt to any device and screen size. 
+* The site has been designed to adapt to any device and screen size
     * It begins with a viewport in the HEAD of the index page and continues with the addition of media queries implemented with CSS
-    * Flexbox has been used to structure my elements which is an extremely responsive way of structuring the site. With display:flex and flex:1 for example, all of my sections and divs are automatically positioned correctly, and did so when scaling the screen size up and down. This saves a lot of time and means the HTML foundations of the site is already responsive. 
+    * Flexbox has been used to structure my elements which is an extremely responsive way of structuring the site. With display:flex and flex:1 for example, all of my sections and divs are automatically positioned correctly, and did so when scaling the screen size up and down. This saves a lot of time and means the HTML foundations of the site is already responsive
 
 ### Units
 * For any element and font sizes, i have used only responsive units to increase the responsiveness of the content
-    * The main unit i have used throughout the site is %. This is the same for fonts, padding and margins. I have also used rem where necessary. 
+    * The main unit i have used throughout the site is %. This is the same for fonts, padding and margins. I have also used rem where necessary
 
 ### Media queries
 * Media Queries in CSS has been used so that the site and game responds to any device and screen size.
-    * Using Google Developer, I have tested each element of the site to ensure it responds to scaling. This starts with testing the site in responsive mode, scaling it up and down easily. 
-    * For further testing, I tested the responsiveness in Google Dev Tools for devices such as apple, android phones and tablets. 
-    * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11.
+    * Using Google Developer, I have tested each element of the site to ensure it responds to scaling. This starts with testing the site in responsive mode, scaling it up and down easily
+    * For further testing, I tested the responsiveness in Google Dev Tools for devices such as apple, android phones and tablets
+    * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11
 
-* For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decreasing the margins and adding padding between each div. 
+* For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decreasing the margins and adding padding between each div
 * Media query sizes are as follows: max1280, 950px, 750px, 600px, 450px, 350px, 300px.  
     * The amount of media queries needed was limited due to responsive HTML and CSS coding
 
@@ -219,48 +219,49 @@ As technology advances, new devices are being released every day. It is extremel
 The website comprises a number of features that make it intuitive and fun, which includes an interactive Game.
 
 ### Header & Footer
-* A fixed Header consisting of two icon buttons.
+* A fixed Header consisting of two icon buttons
     * Home icon button that refreshes the Page and returns to the beginning
     * An audio icon, with Audio functionality:
-        * The page loads muted, however an audio click for when a player selects a choice can be toggled on and off. 
+        * The page loads muted, however an audio click for when a player selects a choice can be toggled on and off 
 * Footer giving thanks for playing
 
 ![Image-of-header-buttons](/assets/images/header-buttons.png)
  
 ### Rules Div 
-* The User is able to open and close a div containing the rules and information of the game. 
-* This keeps the site clean when they are playing the game. The divs content is created in html, with JavaScript providing the functionality for clicking the buttons.
+* The User is able to open and close a div containing the rules and information of the game
+* This keeps the site clean when they are playing the game. The divs content is created in html, with JavaScript providing the functionality for clicking the buttons
 
 ![Image-of-rules-div](/assets/images/rules-div.png)
 
 ### The Game
-* A game of Rock, Paper, Scissors, Lizard, Spock created with JavaScript. 
-* Five icons with active and hover status that forms the main part of the game. 
+* A game of Rock, Paper, Scissors, Lizard, Spock created with JavaScript
+* Five icons with active and hover status that forms the main part of the game
     * Allows the User to compete against the computer
 
 ![Image-of-main-game](/assets/images/main-game.png)
 
 ### Result Section
-* Gives a result to the user which includes theirs and the computers choice. 
-* The result also has colour coding (green for a win, red for a loss, yellow for a draw) to improve UX.
+* Gives a result to the user which includes theirs and the computers choice
+* The result also has colour coding (green for a win, red for a loss, yellow for a draw) to improve UX
 
 ![Image-of-result-section](/assets/images/result-section.png)
 
 ### Scoring Section
-* Collates a score for each turn up to a max score of 10. 
-* Collates number of rounds won once a player has reached the max score. Gives a message once a round is won.
-* Collates rounds won scores and resets the game once a player has reached a total of 3 rounds. Gives a message one the game is won. 
+* Collates a score for each turn up to a max score of 10
+* Collates number of rounds won once a player has reached the max score. Gives a message once a round is won
+* Collates rounds won scores and resets the game once a player has reached a total of 3 rounds. Gives a message one the game is won
 
 ![Image-of-score-section](/assets/images/score-sec.png)
 
 * Hidden rules Div
-    * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game. 
+    * The User is able to open and close a div containing the rules and information of the game. This keeps the site clean when they are playing the game
 
 ### Future Features
 
 * Add a user signup form so that instead of 'You won' in the result section - it will be 'User_Name, You won!' 
-* An additional game will become available once a user has won three rounds before the computer.
-    * This additional game will be a Top trumps type game, where by users will be given a pack of cards and their aim is to chose each round their card attribute in hopes of beating the computers. 
+* An additional game will become available once a user has won three rounds before the computer
+    * This additional game will be a Top trumps type game, where by users will be given a pack of cards and their aim is to chose each round their card attribute in hopes of beating the computers
+* Amend additional functionality for audio. At the moment, after testing and looking into audio in more detail, .muted is a known bug for ios, for now i have removed the audio button on mobiles to limit its effect on the user
 
 # Technologies
 Three technologies were used to build the interactive front-website website:
@@ -300,11 +301,11 @@ The site was put through the google developer Lighthouse tool.
 * Random choice array for each of the three main choices (rock, paper, scissors).
     * console.log tested a random number to ensure the Math was working up to 5 - success
 * Event Listener for rock paper scissor lizard spock. 
-    * console.log(any of the 5 choices). 
+    * console.log(any of the 5 choices)
     * Replaced by function = theGame()
 * console.log for the game logic. Testing user choice vs computer choice
     * Replaced by the functions = userDraws(), userWins(), userLoses()
-    * console.log tested these - success.
+    * console.log tested these - success
 * AudioBtn test to see that it was working before adding functionality.
 
 ### Manual Testing
@@ -343,6 +344,14 @@ Action: Audio icon when clicked again, turns white
 
 Action: Audio icon when white disables audio
 * Expected: Audio disabled
+* Result: Pass
+
+Action: Audio Icon when screen size reached 600px or lower
+* Expected: Display hidden
+* Result: Pass
+
+Action: Audio Icon when screen size reached 601px or higher
+* Expected: Display visible
 * Result: Pass
 
 ### Rules Div
