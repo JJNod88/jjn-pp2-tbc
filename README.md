@@ -214,7 +214,6 @@ As technology advances, new devices are being released every day. It is extremel
 * Media query sizes are as follows: max1280, 950px, 750px, 600px, 450px, 350px, 300px.  
     * The amount of media queries needed was limited due to responsive HTML and CSS coding
 
-
 # Features
 The website comprises a number of features that make it intuitive and fun, which includes an interactive Game.
 
@@ -344,14 +343,6 @@ Action: Audio icon when clicked again, turns white
 
 Action: Audio icon when white disables audio
 * Expected: Audio disabled
-* Result: Pass
-
-Action: Audio Icon when screen size reached 600px or lower
-* Expected: Display hidden
-* Result: Pass
-
-Action: Audio Icon when screen size reached 601px or higher
-* Expected: Display visible
 * Result: Pass
 
 ### Rules Div
@@ -621,7 +612,7 @@ Below is a list of bugs and their fixes throughout the project
 ### Unfixed Bugs
 
 * The audio sound works on all desktop browsers minus Apples Safari. The first click on loading makes a sound, however every click following this is muted.
-* The audio works only sometimes on mobile devices.
+* The audio works only sometimes on ios mobile devices.
 
 </details>
 
