@@ -59,6 +59,7 @@ p {
     font-size: 150%;
     color: white;
     font-weight: 900;
+    cursor: pointer;
 }
 
 /* rules section */
@@ -357,7 +358,7 @@ p {
     #audioButton {
         display: none;
     }
-    
+
     .score-area {
         font-size: 90%;
         padding: 10% 0 5% 0;
