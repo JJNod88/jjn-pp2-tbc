@@ -543,37 +543,18 @@ The site and its functionality has been tested on:
 
 ### ReadMe Testing
 
-# Deployment
+* All links checked
+* Format checked
+* Images checked 
+* Content checked (grammar and spelling included)
 
-GitHub and GitPod has been used for the creation and deployment of the site. By using Github Pages, the site can be viewed on all devices. To do this I:
-1. Created a Repository on GitHub Pages using my user profile that i set up for personal use.
-2. Utilised GitPod, accessible in my repository, to create my site using html and css. The Gitpod Button is in bright green, below the setting tab and above the repository documents etc.
-3. GitPods version control functionality meant I could commit and push my code as I progressed. Previous commits were always accessible should I have needed to revisit them. I did this using the gitpod terminal: 'git add .' , 'git commit -m "message"' , 'Git push'. My Commit Messages were designed to be simple and descriptive.
-4. Returning to my repository in GitHub, I located the 'page section' in 'Settings'. Located above the green GitPod button.
-5. Via the 'source' section, I selected 'Master Branch' from the drop down and published the link.
-6. My site was then displaying as published.
-7. I followed the link by clicking on it to check that the site was working.
-
-8. Link to my [site](https://jjnod88.github.io/jjn-rps-game/)
-
-## Local Deployment
-The purpose of a local deployment is for other coders to use my code to deploy my website, allowing them to utilise the code and design so that they can make changes to build their own. You can do this by: 
-1. Ensure git is installed on your device
-2. In Github, locate the correct repository, click the code button 'next to the gitpod button'.
-3. Copy the link
-4. In a terminal, type the following code: git clone 'pasted link of the code from the repository'
-5. Once loaded, change into the created directory
-6. Double click index.html which will open the website in the default browser.
-7. Check that the site is working, and begin to amend and edit the code.
-8. Because there is a repository in github, the commands add, commit and push can be used for version control
-
-# Bugs
+### Bugs
 
 <details><summary>Bug List</summary>
 <br> 
 Below is a list of bugs and their fixes throughout the project
 
-### Fixed bugs
+#### Fixed bugs
 
 * In my event listeners, I tested with console.log and it worked with a message. I then changed the console.log to a function, but nothing happened.
     * fix: I hadn't actually created the function, so it was displaying 'theGame is not defined'. This prompted me to create the main game function that consisted of my game logic. 
@@ -615,13 +596,36 @@ Below is a list of bugs and their fixes throughout the project
 * When 3 rounds won is reached, it is not resetting both scores to 0. 
     * Fix: I was only updating the rounds won inner HTML individually, so when user or comp reached 3, it was only resetting its own score. When i included both in each of the if else, it worked and reset both 'Rounds won' increments.
 
-### Unfixed Bugs
+#### Unfixed Bugs
 
 * The audio sound works on all desktop browsers minus Apples Safari. The first click on loading makes a sound, however every click following this is muted.
 * The audio works only sometimes on ios mobile devices.
 
 </details>
 
+# Deployment
+
+GitHub and GitPod has been used for the creation and deployment of the site. By using Github Pages, the site can be viewed on all devices. To do this I:
+1. Created a Repository on GitHub Pages using my user profile that i set up for personal use.
+2. Utilised GitPod, accessible in my repository, to create my site using html and css. The Gitpod Button is in bright green, below the setting tab and above the repository documents etc.
+3. GitPods version control functionality meant I could commit and push my code as I progressed. Previous commits were always accessible should I have needed to revisit them. I did this using the gitpod terminal: 'git add .' , 'git commit -m "message"' , 'Git push'. My Commit Messages were designed to be simple and descriptive.
+4. Returning to my repository in GitHub, I located the 'page section' in 'Settings'. Located above the green GitPod button.
+5. Via the 'source' section, I selected 'Master Branch' from the drop down and published the link.
+6. My site was then displaying as published.
+7. I followed the link by clicking on it to check that the site was working.
+
+8. Link to my [site](https://jjnod88.github.io/jjn-rps-game/)
+
+## Local Deployment
+The purpose of a local deployment is for other coders to use my code to deploy my website, allowing them to utilise the code and design so that they can make changes to build their own. You can do this by: 
+1. Ensure git is installed on your device
+2. In Github, locate the correct repository, click the code button 'next to the gitpod button'.
+3. Copy the link
+4. In a terminal, type the following code: git clone 'pasted link of the code from the repository'
+5. Once loaded, change into the created directory
+6. Double click index.html which will open the website in the default browser.
+7. Check that the site is working, and begin to amend and edit the code.
+8. Because there is a repository in github, the commands add, commit and push can be used for version control
 
 # Credits
 
