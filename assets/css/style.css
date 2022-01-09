@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 /* body and top level css */
-
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +35,6 @@ p {
 }
 
 /* header css */
-
 #main-header {
     height: 3em;
     width: 100%;
@@ -63,7 +61,6 @@ p {
 }
 
 /* rules section */
-
 #rules {
     text-align: center;
 }
@@ -143,7 +140,6 @@ p {
 }
 
 /* Game Section */
-
 #game-area {
     display: flex;
     padding-top: 5%;
@@ -197,7 +193,6 @@ p {
 }
 
 /* result section */
-
 .result-section {
     text-align: center;
     font-size: 200%;
@@ -219,7 +214,6 @@ p {
 }
 
 /* score section */
-
 .score-area {
     display: flex;
     text-align: center;
@@ -269,7 +263,7 @@ p {
     text-align: center;
     position: relative;
     z-index: 998;
-    padding-top: 10%;
+    padding: 5% 0;
     text-decoration: none;
     color: white;
     font-weight: 900;
@@ -277,7 +271,6 @@ p {
 
 /* Media Queries */
 /* Large screens */
-
 @media screen and (max-width: 1280px) {
 
     #titleDiv {
