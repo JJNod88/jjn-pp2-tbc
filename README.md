@@ -47,7 +47,7 @@ The site is aimed at everyone looking to play a chilled out game of Rock, Paper,
 * Designed to be simple and engaging, users will know instantly what the sites intention is, and can navigate around the site with ease:
     * A basic but effective design, with content displayed on one page, and functions to show and hide additional content
     * Evident background picture that sets the scene, with an evident large title 
-    * A consistent Header with a Home and audio button, accessible at all times for each user
+    * A consistent Header with a Home and audio button
 
 ### Page specific
 * One page site, with a clear image and title instantly telling the user the intention of the site
