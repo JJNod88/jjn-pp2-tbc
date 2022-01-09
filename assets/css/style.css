@@ -296,7 +296,6 @@ p {
 }
 
 /* medium screens */
-
 @media screen and (max-width: 950px) {
 
     #rulesDiv {
@@ -372,7 +371,6 @@ p {
 }
 
 /* small screens */
-
 @media screen and (max-width: 450px) {
 
     #titleDiv {

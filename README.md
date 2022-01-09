@@ -15,21 +15,21 @@ ReadMe for Jon's new project 2, javaScript
 # Introduction
 Welcome! This site has been built to host the iconic Rock, Paper, Scissor, Lizard Spock game.
 
-The focus of this site is to use the JavaScript language to provide an interactive game where Users can compete against the Computer.
+The focus of this site is to use the JavaScript language to provide an interactive game where Users can play against the Computer.
 
-The site is aimed at everyone looking to play a chilled out, competitive game of Rock, Paper, Scissors, Lizard, Spock. 
+The site is aimed at everyone looking to play a chilled out game of Rock, Paper, Scissors, Lizard, Spock, with an intuitive background and responsive design so it can be played on any screen size. 
 
 ![Image-of-design](/assets/images/responsive-design.png)
 
 # Value
 ### New User / Target Audience
-* Users looking for a competitive game of Rock, Paper, Scissors, Lizard Spock
+* Users looking to play an online game of Rock, Paper, Scissors, Lizard Spock
 * Who want to test themselves in a game that is more complex than the famous Rock, Paper, Scissors game
 
 ### Return User
 * Users who have previously utilised the site to play the game
 * Who want to return to beat the computer
-* Enjoy a relaxing but competitive online game
+* Enjoy a chilled out online game against the computer
 
 ### Site Aims
 * The site aims to provide users a platform for playing a fun game
@@ -104,7 +104,7 @@ The site is aimed at everyone looking to play a chilled out, competitive game of
     * A DomContentLoader event listener was added to ensure any functionality was active once the dom had loaded, to reduce and remove any user / site errors
 
 ## 4. Skeleton Plane
-* Balsamiq Wireframes were used to for the initial structure, design and content of the Site.
+* Balsamiq Wireframes were used to for the initial structure, design and content of the Site. Please see below to view these. 
 
 <details><summary>Balsamiq Wireframes</summary>
 
@@ -209,7 +209,7 @@ As technology advances, new devices are being released every day. It is extremel
     * A further test was then done on my own devices - MacBookAir 13", Ipad 6, iphone 11
 
 * For smartphones and Tablets I adapted the media queries to use smaller font sizes, also decreasing the margins and adding padding between each div
-* Media query sizes are as follows: max1280, 950px, 750px, 600px, 450px, 350px, 300px.  
+* Media query sizes are as follows: max1280, 950px, 800px, 600px, 450px, 350px, 300px.  
     * The amount of media queries needed was limited due to responsive HTML and CSS coding
 
 # Features
@@ -257,8 +257,8 @@ The website comprises a number of features that make it intuitive and fun, which
 
 * Add a user signup form so that instead of 'You won' in the result section - it will be 'User_Name, You won!' 
 * An additional game will become available once a user has won three rounds before the computer
-    * This additional game will be a Top trumps type game, where by users will be given a pack of cards and their aim is to chose each round their card attribute in hopes of beating the computers
-* Amend additional functionality for audio. At the moment, after testing and looking into audio in more detail, .muted is a known bug for ios, for now i have removed the audio button on mobiles to limit its effect on the user
+    * This additional game will be a Top trumps type game, where by users will be given a pack of cards and their aim is to chose each round their card attribute in hopes of beating the computers card
+* Amend additional functionality for audio. At the moment, after testing and looking into audio in more detail, .muted is a known bug for ios, for now I have removed the audio button on mobiles to limit the impace on the user
 
 # Technologies
 Three technologies were used to build the interactive front-website website:
@@ -343,7 +343,7 @@ Action: Audio icon when white disables audio
 * Expected: Audio disabled
 * Result: Pass
 
-Action: Audio icon when screen size 600px +
+Action: Audio icon when screen size +600px 
 * Expected: Audio button visible
 * Result: Pass
 
@@ -483,7 +483,7 @@ Using Google Developer Tool
     * Additional padding top on game and score area, improved spacing, reduced padding top for footer
 * 950px
     * Rules div gets a reduced margin so that it stays aligned 
-* 750px
+* 800px
     * h1 title increases its distance from the header with a padding-top
     * Reduce font size for the rules, results and score divs
     * Increases the Score Divs spacing so that the wording stays aligned and clean
@@ -641,6 +641,7 @@ Below is a list of bugs and their fixes throughout the project
 ### Media
 * [cloudConvert](https://cloudconvert.com/) for webp converter 
 * [imagecompressor](https://imagecompressor.com/) to reduce image size
+* [pexels](https://www.pexels.com/photo/people-playing-rock-paper-scissor-game-8111311/) for background image
 * [promo.com](https://promo.com/tools/image-resizer/) for image resizing
 * [opengameart.org](https://opengameart.org/) for the audio files
 * Google Dev Tools, including LightHouse
