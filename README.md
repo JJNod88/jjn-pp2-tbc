@@ -614,7 +614,7 @@ GitHub and GitPod has been used for the creation and deployment of the site. By 
 6. My site was then displaying as published.
 7. I followed the link by clicking on it to check that the site was working.
 
-8. Link to my [site](https://jjnod88.github.io/jjn-rps-game/)
+8. Link to my [site](https://jjnod88.github.io/jjn-rpsls-game/)
 
 ## Local Deployment
 The purpose of a local deployment is for other coders to use my code to deploy my website, allowing them to utilise the code and design so that they can make changes to build their own. You can do this by: 
